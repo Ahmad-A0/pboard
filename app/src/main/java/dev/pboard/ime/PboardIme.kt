@@ -146,6 +146,20 @@ class PboardIme : InputMethodService(), KeyboardHost, dev.pboard.ime.view.Toolba
         }
     }
 
+    private val themeCycleToken = Any()
+
+    /** Debug broadcast: draws the built views in theme [themeId] (null: the selected theme) without rebuilding them. */
+    private fun recolor(themeId: String?) {
+        KeyboardTheme.debugOverride = themeId?.let { id ->
+            KeyboardTheme.resolve(id, KeyboardTheme.systemDark(this), { dark -> dev.pboard.ime.theme.Palette.resolve(this, dark) })
+        }
+        val c = KeyboardTheme.colors(this)
+        painter?.colors = c
+        root?.let { it.colors = c; it.overlay.colors = c; it.invalidate(); it.overlay.invalidate() }
+        topBar?.let { it.colors = c; it.invalidate() }
+        keyboardView?.invalidateKeys()
+    }
+
     /**
      * Debug builds only: lets scripts tune rendering without rebuilding, e.g.
      * adb shell am broadcast -a dev.pboard.DEBUG --es font roboto-flex --es fvs "'opsz' 28"
@@ -154,6 +168,18 @@ class PboardIme : InputMethodService(), KeyboardHost, dev.pboard.ime.view.Toolba
         override fun onReceive(context: Context, intent: Intent) {
             // Voice typing from a 16 kHz mono WAV instead of the microphone: --es voiceWav /data/local/tmp/x.wav
             intent.getStringExtra("voiceWav")?.let { openVoice(java.io.File(it)); return }
+            // Restyle the keyboard in place, on a timer, while it is being typed on (demo recordings; a theme chosen
+            // in Settings rebuilds the views instead): --es themes color_blue,default_dark --ei themeEveryMs 1500
+            // [--ei themeDelayMs 500]; --es themes "" goes back to the selected theme.
+            intent.getStringExtra("themes")?.let { list ->
+                main.removeCallbacksAndMessages(themeCycleToken)
+                val every = intent.getIntExtra("themeEveryMs", 1500).toLong()
+                val delay = intent.getIntExtra("themeDelayMs", 0).toLong()
+                val ids = list.split(',').filter { it.isNotEmpty() }
+                if (ids.isEmpty()) recolor(null)
+                ids.forEachIndexed { i, id -> main.postDelayed({ recolor(id) }, themeCycleToken, delay + i * every) }
+                return
+            }
             val p = painter ?: return
             intent.getStringExtra("fontFile")?.let { name ->
                 runCatching { Typeface.createFromFile(java.io.File(filesDir, name)) }.getOrNull()
@@ -164,6 +190,8 @@ class PboardIme : InputMethodService(), KeyboardHost, dev.pboard.ime.view.Toolba
             }
             // Live tuning of measured dimensions: --ef <name> <px at 420dpi>, --ei fnWeight <w>, --ez hintBold <b>
             val d = dims
+            // Slowed-down recordings: --ei trailFadeMs 3000 keeps the glide trail three times as long.
+            if (intent.hasExtra("trailFadeMs")) root?.overlay?.trailFadeMs = intent.getIntExtra("trailFadeMs", 1000).toLong()
             intent.extras?.let { x ->
                 fun f(k: String, set: (Float) -> Unit) { if (x.containsKey(k)) set(d.m(x.getFloat(k))) }
                 f("letterSize") { d.letterSize = it }

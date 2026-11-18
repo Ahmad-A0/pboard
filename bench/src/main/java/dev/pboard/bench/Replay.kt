@@ -51,6 +51,7 @@ import kotlin.math.roundToInt
  *   stallTapMs, stallSwipeMs   retry threshold for real-time stalls (default 150 / 150)
  *   retries    max retries per item                             (default 3)
  *   variant    PlaygroundActivity field variant                 (default "default")
+ *   preShell   shell command run right before the first item is injected (e.g. to start something in step with it)
  *   slots      predict: "x:y,x:y,x:y" screen coords of suggestion slots, best slot first
  *   ready      predict: pixel probe "x:y,...;r,g,b;tol" that holds only while suggestions are shown
  *   hz, durMs, reps   timing: sample rates, duration and repetitions of the synthetic test swipes
@@ -158,10 +159,25 @@ class Replay : Instrumentation() {
 
     /** Converts one trace item into a time-ordered single-pointer event list (t in trace ms). */
     private fun events(item: JSONObject): List<Ev> {
+        val out = ArrayList<Ev>()
+        if (item.getString("kind") == "strokes") {
+            // A whole performance in one item: every stroke is DOWN, MOVEs, UP at its points' times (a tap is a
+            // two-point stroke), all on one clock, so the pauses between the strokes are the trace's too.
+            val strokes = item.getJSONArray("strokes")
+            for (s in 0 until strokes.length()) {
+                val sp = strokes.getJSONArray(s)
+                val m = sp.length()
+                for (i in 0 until m) {
+                    val q = sp.getJSONArray(i)
+                    val a = when (i) { 0 -> MotionEvent.ACTION_DOWN; m - 1 -> MotionEvent.ACTION_UP; else -> MotionEvent.ACTION_MOVE }
+                    out += Ev(q.getDouble(2), a, q.getDouble(0).toFloat(), q.getDouble(1).toFloat())
+                }
+            }
+            return out
+        }
         val pts = item.getJSONArray("points")
         val n = pts.length()
         fun p(i: Int) = pts.getJSONArray(i)
-        val out = ArrayList<Ev>()
         if (item.getString("kind") == "swipe") {
             for (i in 0 until n) {
                 val a = when (i) { 0 -> MotionEvent.ACTION_DOWN; n - 1 -> MotionEvent.ACTION_UP; else -> MotionEvent.ACTION_MOVE }
@@ -402,14 +418,15 @@ class Replay : Instrumentation() {
                     before.getString("text").trimEnd().equals(ctx.trimEnd(), ignoreCase = true)
                 val startText = if (chained) before.getString("text") else ctx
                 val evs = events(item)
-                val metric: (DoubleArray) -> Double = if (kind == "swipe") ::stall else ::holdStretch
+                val continuous = kind == "swipe" || kind == "strokes"
+                val metric: (DoubleArray) -> Double = if (continuous) ::stall else ::holdStretch
                 // Host load can stall an injection call (typically a DOWN). Event timestamps stay
                 // exact regardless, but real-time arrival matters to IME timers (long-press), so an
                 // attempt whose injection stretched a swipe gap / a tap hold by more than the limit is redone from a
                 // reset to the same starting text. Same if the IME produced nothing at all.
-                val stallLimit = args.getString(if (kind == "swipe") "stallSwipeMs" else "stallTapMs")?.toDouble()
+                val stallLimit = args.getString(if (continuous) "stallSwipeMs" else "stallTapMs")?.toDouble()
                     ?: 150.0
-                val settleMs = args.getString("settleMs")?.toLong() ?: if (kind == "swipe") 600 else 300
+                val settleMs = args.getString("settleMs")?.toLong() ?: if (continuous) 600 else 300
                 var attempt = 0
                 var late: DoubleArray
                 var after: JSONObject
@@ -421,6 +438,7 @@ class Replay : Instrumentation() {
                         before = settleReset(resetMs)
                     }
                     val ups0 = upsNow()
+                    if (idx == 0 && attempt == 0) args.getString("preShell")?.let { shell(it) }
                     late = inject(evs)
                     settled = settleAfter(settleMs, ups0 + nUps)
                     after = settled.state

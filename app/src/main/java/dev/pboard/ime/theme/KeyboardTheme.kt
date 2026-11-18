@@ -99,8 +99,11 @@ object KeyboardTheme {
     fun systemDark(context: Context) =
         (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
 
+    /** Debug builds only (the keyboard's debug broadcast): colours shown instead of the selected theme's. */
+    @Volatile var debugOverride: KeyboardColors? = null
+
     /** Colours of the selected theme ([Config.current]) in [context]: its night mode and its Material You palette. */
-    fun colors(context: Context): KeyboardColors = Config.current.let { cfg ->
+    fun colors(context: Context): KeyboardColors = debugOverride ?: Config.current.let { cfg ->
         resolve(cfg.themeId, systemDark(context), { dark -> Palette.resolve(context, dark) }, cfg.customThemes)
     }
 

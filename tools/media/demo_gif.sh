@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Record the README demo (docs/media/demo.gif): a tapped sentence with an autocorrection, glide-typed words and an
-# emoji from the panel, while the theme changes between words.
+# Record the README demo (docs/media/demo.gif): three glide-typed sentences and an emoji from the panel, typed without
+# a break while the keyboard changes theme about every second.
 #
 #   ANDROID_SERIAL=emulator-5556 tools/media/demo_gif.sh [out.gif]
 #
@@ -11,19 +11,29 @@
 #   adb shell ime enable dev.pboard/.ime.PboardIme; adb shell ime set dev.pboard/.ime.PboardIme
 # and gifski on the PATH (e.g. `nix shell nixpkgs#gifski`).
 #
-# The typing is recorded human typing, not synthesised: demo_trace.py takes one tapped sentence and the glide strokes
-# from the human evaluation sets (tools/data/human/splits/v1, sources and licences in its ATTRIBUTION.txt) and the
-# bench injector replays them with their original timing on the keys as located on a screenshot
-# (tools/bench/measure_geometry.py). Only the second space (which makes the full stop) and the taps on the emoji
-# panel are made up.
+# For the same reason the recording is made with the screen at a lower resolution (RENDER_WIDTH, same layout, set
+# with `wm size` and `wm density` and reset afterwards); the GIF is 540 px wide anyway.
 #
-# The injector lets the field settle after every word; the host changes the theme (debug-build PrefsReceiver) in some
-# of those waits, so a theme change never lands inside a word. demo_retime.py then shortens the waits, and gifski
-# encodes the frames. The picture is the text-field band stacked directly on the keyboard: the empty part of the
-# test screen between them is left out.
+# The touches are recorded human typing: demo_trace.py takes the glide strokes from the human
+# evaluation sets (tools/data/human/splits/v1, sources and licences in its ATTRIBUTION.txt), places them on the keys
+# as located on a screenshot (tools/bench/measure_geometry.py) and joins them into one performance; the pauses
+# between words, a few taps on single keys and the emoji taps are made up (see demo_trace.py). The bench injector
+# plays the whole thing in one go, in real time, with the trace's timestamps.
 #
-# The demo changes these settings and leaves them changed: theme, and the enabled languages (one language only, so
-# that the space bar does not flash the language name whenever the keyboard is rebuilt).
+# The themes: right before the first touch the injector arms the debug build's in-place restyling (broadcast
+# dev.pboard.DEBUG, extra `themes`), which then runs on the keyboard's own timer, independent of the typing.
+#
+# Slow motion: a software-rendered emulator draws 15-30 uneven frames a second, which shows as a stuttering glide
+# trail. So everything runs SLOW times slower while it is recorded - the injected touches, the theme timer, the
+# system's animations (animator_duration_scale), the trail's fade and the long-press delay - and the recording is
+# played SLOW times faster: true speed again, with SLOW times the frames to choose from. The text cursor is hidden (its
+# blinking cannot be slowed). Nothing else is retimed: demo_retime.py only cuts the performance out of the recording,
+# and prints how far each word's appearance in the sped-up recording is from its time in the trace. The picture is the text-field band stacked
+# directly on the keyboard: the empty part of the test screen between them is left out (so is the top of the emoji
+# panel, which is taller than the keyboard).
+#
+# The demo changes these settings and leaves them changed: theme, the enabled languages (one language only), and
+# the key long-press delay (back to its default, 300 ms).
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 
@@ -31,28 +41,49 @@ cd "$(dirname "$0")/../.."
 OUT="${1:-docs/media/demo.gif}"
 WORK="${WORK:-$(mktemp -d)}"
 mkdir -p "$WORK"
-rm -f "$WORK/log"
 A=(adb -s "$ANDROID_SERIAL")
 IME=dev.pboard/.ime.PboardIme
 
-# What is typed (ids in tools/data/human/splits/v1).
-#  - tapped, 83 wpm, "beautoful" as typed: TSI dataset (Google, CC BY 4.0), participant user01
-SENTENCE="${SENTENCE:-tsi/user01/task4/6}"
-KEYS="${KEYS- }"   # a second space right after the sentence: full stop
-#  - glides "you would love it": How We Swipe (MIT) and swipe.futo.org (MIT), four different people
-GLIDES="${GLIDES:-hws/21dadeslkumk72cll4tqlce9t0/are_you_being_a_baby/w1/1583722204007,futo/tune/545992,hws/8k86nv1j6q7rj77qhjbms4n7ju/he_would_love_anything_about_rocks/w2/1583213567898,futo/test/444185}"
 # Screen coordinates on the emoji panel: an emoji in the grid, and the ABC key.
 EMOJI_XY="${EMOJI_XY:-608,1764}"
 ABC_XY="${ABC_XY:-79,2212}"
-# The theme typed in, then "<trace item>:<theme>": the theme set once that item (0-based: the four tapped words, the
-# four glides, the emoji) has been typed. The last one should be the first again (the GIF loops).
+# The performance (demo_trace.py steps; ids in tools/data/human/splits/v1): everything is glide-typed, with strokes
+# by thirteen different people from How We Swipe (hws/..., MIT) and swipe.futo.org (futo/..., MIT). keys=__ : two
+# spaces after a word make the full stop.
+if [ -z "${STEPS:-}" ]; then
+  STEPS="
+    glide=hws/glak4t90cofpt4m87h2duu99s4/thanks_for_the_quick_turnaround/w0/1583267957461
+    glide=hws/r21jt4hd575enrjohj7r5iu8ao/nice_weather_for_it/w2/1583726131623
+    glide=futo/tune/34239
+    glide=hws/rkppohiv2dltud3igeoedbu2ip/that_would_be_great/w3/1582819058848
+    glide=futo/tune/987870
+    keys=__
+    glide=hws/qj2dt0en5angphdf8ndno06eeu/are_you_available/w1/1583262776176
+    glide=futo/tune/545992
+    glide=hws/c6de62d52slctlmelc9725glhn/he_would_love_anything_about_rocks/w2/1581014730038
+    glide=futo/tune/284968
+    glide=hws/2chg3chjs300cu7oenvbo9votb/can_you_help_me_here/w4/1582181513939
+    keys=__
+    glide=hws/40e8ac5f8a9rb5nmeut9ng9hpi/could_you_see_where_this_stands/w2/1581976560551
+    glide=hws/6fcskrnk2ggr1h4sbg127g9smn/hope_you_guys_are_doing_fine/w1/1582867061344
+    glide=futo/test/514875
+    keys=_ emoji=@EMOJI@"
+fi
+EXPECT="${EXPECT:-Thanks for the great day. You would love it here. See you soon }"   # then the emoji
+# The theme typed in, and the themes it changes to at equal intervals: the first after THEME_FIRST_MS, the last
+# (the first theme again: the GIF loops) THEME_LAST_MS before the end, while the emoji panel is still open, so that
+# the keyboard comes back in it. Ordered for contrast; every one shows the glide trail clearly except the one before
+# last, which is the theme of the emoji panel.
 THEME="${THEME:-default_light}"
-THEME_AFTER="${THEME_AFTER:-1:default_dark 3:color_blue 5:gradient_dark_1 7:gradient_light_1 8:default_light}"
+THEMES="${THEMES:-default_dark gradient_light_1 gradient_dark_1 dynamic color_green color_sand color_black gradient_light_9 color_cyan color_teal default_light}"
+THEME_FIRST_MS="${THEME_FIRST_MS:-600}"
+THEME_LAST_MS="${THEME_LAST_MS:-700}"
+TRAIL_FADE_MS="${TRAIL_FADE_MS:-650}"   # the keyboard's own is 1000: consecutive strokes read cleaner
 LANGUAGE="${LANGUAGE:-en-US:qwerty}"
-# Rows of the screen: the text band that is kept, and where the (taller) emoji panel starts.
-BAND_TEXT="${BAND_TEXT:-132:262}"
-PANEL_TOP="${PANEL_TOP:-1190}"
+BAND_TEXT="${BAND_TEXT:-132:284}"   # rows of the screen with the field's first two lines of text
 WIDTH="${WIDTH:-540}"
+RENDER_WIDTH="${RENDER_WIDTH:-720}"
+SLOW="${SLOW:-3}"
 FPS="${FPS:-30}"
 QUALITY="${QUALITY:-90}"
 
@@ -62,7 +93,11 @@ field_text() { playground get | python3 -c 'import sys, re, json
 m = re.search(r"data=\"(.*)\"\s*$", sys.stdin.read(), re.S)
 print(json.loads(m.group(1))["text"] if m else "")'; }
 
+"${A[@]}" shell wm size reset; "${A[@]}" shell wm density reset
 [ "$("${A[@]}" shell wm size | tr -d '\r' | awk 'END {print $NF}')" = 1080x2400 ] || { echo "needs a 1080x2400 screen" >&2; exit 1; }
+# Positions in this script are for 1080x2400; px scales them to the screen as recorded.
+SW_PX=$RENDER_WIDTH; SH_PX=$((RENDER_WIDTH * 20 / 9))
+px() { echo $(( ($1 * SW_PX + 540) / 1080 )); }
 "${A[@]}" shell settings get secure default_input_method | grep -q "^$IME" || { echo "pboard is not the current keyboard" >&2; exit 1; }
 "${A[@]}" shell pm path dev.pboard.bench >/dev/null || { echo "bench injector not installed" >&2; exit 1; }
 command -v gifski >/dev/null || { echo "gifski not found" >&2; exit 1; }
@@ -71,81 +106,86 @@ echo "== prepare (work dir $WORK)"
 pref --es enabled_languages "$LANGUAGE" --es theme "$THEME"
 "${A[@]}" shell am start -n dev.pboard/.PlaygroundActivity >/dev/null 2>&1   # no -S: that would force-stop the keyboard
 sleep 2
+"${A[@]}" shell am broadcast -a dev.pboard.DEBUG --es themes , >/dev/null   # no restyling left over from a run
 playground reset >/dev/null
 sleep 2
 "${A[@]}" exec-out screencap -p > "$WORK/keys.png"
-python3 -I tools/bench/measure_geometry.py "$WORK/keys.png" "$WORK/geometry.json" --name demo --ime "$IME" >/dev/null
-FINAL="$(python3 -I tools/media/demo_trace.py "$WORK/geometry.json" "$WORK/trace.jsonl" --sentence "$SENTENCE" \
-  --keys "$KEYS" --glide "$GLIDES" --emoji "$EMOJI_XY" --abc "$ABC_XY")"
+python3 -I tools/bench/measure_geometry.py "$WORK/keys.png" "$WORK/geometry-1080.json" --name demo --ime "$IME" >/dev/null
+# The same keyboard at the recording resolution.
+python3 - "$WORK/geometry-1080.json" "$WORK/geometry.json" "$SW_PX" <<'PY'
+import json, sys
+f = int(sys.argv[3]) / 1080.0
+def scale(v, k=None):
+    if isinstance(v, dict):
+        return {n: scale(x, n) for n, x in v.items()}
+    if isinstance(v, list):
+        return [scale(x) for x in v]
+    return v * f if isinstance(v, (int, float)) and not isinstance(v, bool) and k not in ("density", "row") else v
+json.dump(scale(json.load(open(sys.argv[1]))), open(sys.argv[2], "w"))
+PY
+restore() {
+  "${A[@]}" shell wm size reset; "${A[@]}" shell wm density reset
+  "${A[@]}" shell settings put global animator_duration_scale 1
+  "${A[@]}" shell am broadcast -a dev.pboard.DEBUG --ei trailFadeMs 1000 >/dev/null
+  "${A[@]}" shell am broadcast -a dev.pboard.DEBUG --es themes , >/dev/null
+  pref --ei long_press_delay_ms 300
+  playground reset --ez cursor true >/dev/null
+}
+trap restore EXIT
+"${A[@]}" shell settings put global animator_duration_scale "$SLOW"
+pref --ei long_press_delay_ms $((300 * SLOW))
+"${A[@]}" shell wm size "${SW_PX}x${SH_PX}"
+"${A[@]}" shell wm density $((420 * SW_PX / 1080))
+sleep 5
+playground reset --ez cursor false >/dev/null
+sleep 2
+"${A[@]}" shell am broadcast -a dev.pboard.DEBUG --ei trailFadeMs $((TRAIL_FADE_MS * SLOW)) >/dev/null
+emoji="$(px "${EMOJI_XY%,*}"),$(px "${EMOJI_XY#*,}"),$(px "${ABC_XY%,*}"),$(px "${ABC_XY#*,}")"
+# shellcheck disable=SC2086
+python3 -I tools/media/demo_trace.py "$WORK/geometry.json" "$WORK/trace.jsonl" --slow "$SLOW" ${STEPS//@EMOJI@/$emoji}
+read -r -a themes <<< "$THEMES"
+read -r length every < <(python3 -c 'import json, sys
+s = json.load(open(sys.argv[1])); n, first = int(sys.argv[2]), int(sys.argv[3])
+length = s[-1]["up"] - s[0]["down"]
+print(length, max(1, round((length - int(sys.argv[4]) - first) / max(1, n - 1))))' "$WORK/trace.jsonl.timing.json" "${#themes[@]}" "$THEME_FIRST_MS" "$THEME_LAST_MS")
+echo "performance: $length ms; a theme change every $every ms"
+echo "am broadcast -a dev.pboard.DEBUG --es themes $(IFS=,; echo "${themes[*]}") --ei themeEveryMs $((every * SLOW)) --ei themeDelayMs $((THEME_FIRST_MS * SLOW))" > "$WORK/arm.sh"
 "${A[@]}" push "$WORK/trace.jsonl" /data/local/tmp/demo_trace.jsonl >/dev/null
-last_item=$(( $(wc -l < "$WORK/trace.jsonl") - 1 ))
+"${A[@]}" push "$WORK/arm.sh" /data/local/tmp/demo_arm.sh >/dev/null
 
 echo "== record"
-"${A[@]}" logcat -c
-"${A[@]}" shell "screenrecord --bit-rate 20000000 --time-limit 150 /sdcard/pboard_demo.mp4" &
+"${A[@]}" shell "screenrecord --bit-rate 20000000 --time-limit 170 /sdcard/pboard_demo.mp4" &
 REC=$!
 sleep 1.5
-# settleMs: the wait after every item, long enough for a theme change to finish before the next word starts.
-"${A[@]}" shell am instrument -w -e mode replay -e trace /data/local/tmp/demo_trace.jsonl -e retries 0 -e settleMs 2500 \
-  -e holdMs 60 -e out demo.jsonl dev.pboard.bench/.Replay > "$WORK/instrument.txt" &
-RUN=$!
-# When to change the theme: the test screen logs the field's text on every change, so the theme is set as soon as the
-# text an item should leave is there, at the start of the injector's wait. Only the last item (the emoji panel) is
-# followed by the injector's own "item <i>/<n> ..." line, logged once it has settled.
-python3 - "$WORK/trace.jsonl" $THEME_AFTER > "$WORK/cues.txt" <<'PY'
-import json, sys
-items = [json.loads(l) for l in open(sys.argv[1], encoding="utf-8")]
-for cue in sys.argv[2:]:
-    i, theme = cue.split(":")
-    i = int(i)
-    print(theme, "text=" + json.dumps(items[i + 1]["context"]) if i + 1 < len(items) else "item %d/" % i, sep="\t")
-PY
-mkfifo "$WORK/log"
-"${A[@]}" logcat -v raw -s PboardBench:I > "$WORK/log" &
-LOG=$!
-while read -r line; do
-  while IFS=$'\t' read -r theme cue; do
-    case "$cue" in
-      text=*) [ "$line" = "$cue" ] && pref --es theme "$theme" ;;
-      *) [[ "$line" == "$cue"* ]] && pref --es theme "$theme" ;;
-    esac
-  done < "$WORK/cues.txt"
-  [[ "$line" == "item $last_item/"* ]] && break
-done < "$WORK/log"
-kill "$LOG" 2>/dev/null || true
-rm -f "$WORK/log"
-wait "$RUN" || true
+"${A[@]}" shell am instrument -w -e mode replay -e trace /data/local/tmp/demo_trace.jsonl -e retries 0 -e settleMs $((1500 * SLOW)) -e stallSwipeMs 1000 \
+  -e preShell "'sh /data/local/tmp/demo_arm.sh'" -e out demo.jsonl dev.pboard.bench/.Replay > "$WORK/instrument.txt"
 grep -E "summary|error" "$WORK/instrument.txt" || true
-sleep 2
 "${A[@]}" shell pkill -INT screenrecord
 wait "$REC" || true
 sleep 1
 "${A[@]}" pull /sdcard/pboard_demo.mp4 "$WORK/raw.mp4" >/dev/null
 "${A[@]}" shell run-as dev.pboard.bench cat files/demo.jsonl > "$WORK/replay.jsonl"
-"${A[@]}" shell rm -f /sdcard/pboard_demo.mp4 /data/local/tmp/demo_trace.jsonl
-# Every item must have continued from what the ones before produced (otherwise the injector rewrote the field).
+"${A[@]}" shell rm -f /sdcard/pboard_demo.mp4 /data/local/tmp/demo_trace.jsonl /data/local/tmp/demo_arm.sh
 got="$(field_text)"
 echo "final text: $got"
-if [[ "$got" != "$FINAL "* ]] || [ "$(grep -c '"chained":true' "$WORK/replay.jsonl")" != "$last_item" ]; then
-  echo "expected '$FINAL' + an emoji; see $WORK/replay.jsonl" >&2
-  exit 1
-fi
+python3 -c 'import json, sys
+r = json.loads(open(sys.argv[1]).readline()); print("injection: largest stall %.0f ms of true time, %d attempt(s)" % (r["stallMs"] / float(sys.argv[2]), r["attempts"]))' "$WORK/replay.jsonl" "$SLOW"
+[[ "$got" == "$EXPECT"?* ]] || { echo "expected '$EXPECT' + an emoji" >&2; exit 1; }
 
 echo "== frames"
-t0=${BAND_TEXT%:*}; t1=${BAND_TEXT#*:}
+t0=$(px "${BAND_TEXT%:*}"); t1=$(px "${BAND_TEXT#*:}")
 read -r kb0 kb1 < <(python3 -c 'import json, sys
-g = json.load(open(sys.argv[1])); print(g["keyboard"]["y"], g["rows"][-1]["bottom"] + 29)' "$WORK/geometry.json")
-stack() {  # $1 = first row of the lower band
-  echo "[0:v]fps=$FPS,split[a][b];[a]crop=iw:$((t1 - t0)):0:$t0[top];[b]crop=iw:$((kb1 - $1)):0:$1[bot];[top][bot]vstack"
-}
+g = json.load(open(sys.argv[1])); print(round(g["keyboard"]["y"]), round(g["rows"][-1]["bottom"]) + int(sys.argv[2]))' "$WORK/geometry.json" "$(px 29)")
+STACK="[0:v]setpts=PTS/$SLOW,fps=$FPS,scale=$SW_PX:$SH_PX:flags=bicubic,split[a][b];[a]crop=iw:$((t1 - t0)):0:$t0[top];[b]crop=iw:$((kb1 - kb0)):0:$kb0[bot];[top][bot]vstack"
 rm -rf "$WORK/frames" "$WORK/sel"
 mkdir -p "$WORK/frames" "$WORK/sel"
-ffmpeg -v error -y -i "$WORK/raw.mp4" -filter_complex "$(stack "$kb0"),scale=$WIDTH:-2:flags=lanczos" "$WORK/frames/%05d.png"
-# Small RGB copies for the retimer, including the rows the emoji panel covers.
-SW=108; SH=$(( ((t1 - t0) + (kb1 - PANEL_TOP)) / 10 ))
-ffmpeg -v error -y -i "$WORK/raw.mp4" -filter_complex "$(stack "$PANEL_TOP"),scale=$SW:$SH:flags=area" -f rawvideo -pix_fmt rgb24 "$WORK/small.rgb"
-python3 -I tools/media/demo_retime.py "$WORK/small.rgb" "$SW" "$SH" --fps "$FPS" --field-rows "$(( (t1 - t0) / 10 ))" \
-  --panel-rows "$(( (kb0 - PANEL_TOP) / 10 ))" > "$WORK/select.txt"
+ffmpeg -v error -y -i "$WORK/raw.mp4" -filter_complex "$STACK,scale=$WIDTH:-2:flags=lanczos" "$WORK/frames/%05d.png"
+# Small RGB copies for the cut and the timing check.
+SW=108; SH=$(( ((t1 - t0) + (kb1 - kb0)) * 108 / SW_PX ))
+ffmpeg -v error -y -i "$WORK/raw.mp4" -filter_complex "$STACK,scale=$SW:$SH:flags=area" -f rawvideo -pix_fmt rgb24 "$WORK/small.rgb"
+python3 -I tools/media/demo_retime.py "$WORK/small.rgb" "$SW" "$SH" --fps "$FPS" --field-rows "$(( (t1 - t0) * 108 / SW_PX ))" \
+  --timing "$WORK/trace.jsonl.timing.json" > "$WORK/select.txt" 2> "$WORK/timing.txt"
+cat "$WORK/timing.txt"
 n=0
 while read -r f; do
   n=$((n + 1))

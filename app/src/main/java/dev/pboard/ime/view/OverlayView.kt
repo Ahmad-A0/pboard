@@ -184,6 +184,8 @@ class OverlayView(context: Context, val d: Dimens) : View(context) {
     private var trailStart = 0
     private var trailCount = 0
     private var trailActive = false
+    /** How long a trail point stays (debug builds can stretch it for slowed-down recordings). */
+    var trailFadeMs = TRAIL_FADE_MS
 
     fun trailBegin() { trailStart = 0; trailCount = 0; trailActive = true }
 
@@ -341,7 +343,7 @@ class OverlayView(context: Context, val d: Dimens) : View(context) {
 
     /** Draws the trail; returns true while it still needs animation frames (fading). */
     private fun drawTrail(canvas: Canvas, c: KeyboardColors, now: Long): Boolean {
-        while (trailCount > 0 && now - trailT[trailStart] > TRAIL_FADE_MS) {
+        while (trailCount > 0 && now - trailT[trailStart] > trailFadeMs) {
             trailStart = (trailStart + 1) % MAX_TRAIL
             trailCount--
         }
@@ -371,7 +373,7 @@ class OverlayView(context: Context, val d: Dimens) : View(context) {
         for (n in 1 until trailCount) {
             val i0 = (trailStart + n - 1) % MAX_TRAIL
             val i1 = (trailStart + n) % MAX_TRAIL
-            val f = 1f - (now - trailT[i1]).coerceAtLeast(0L) / TRAIL_FADE_MS.toFloat()
+            val f = 1f - (now - trailT[i1]).coerceAtLeast(0L) / trailFadeMs.toFloat()
             if (f <= 0f) continue
             val a = (TRAIL_ALPHA * f).toInt().coerceIn(0, 255)
             trailPaint.color = android.graphics.Color.rgb(a, a, a)

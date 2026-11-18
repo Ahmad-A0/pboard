@@ -32,7 +32,8 @@ import org.json.JSONObject
  * autocorrects and predicts as it would in a messaging app. The benchmark harness drives it with
  * ordered broadcasts (action [ACTION], explicit package `dev.pboard`), extra `cmd`:
  *  - `reset`: set the field to extra `text` (default ""), cursor at the end, optionally switch the
- *    input variant (extra `variant`, see [VARIANTS]) or raw `inputType`/`imeOptions` ints, then
+ *    input variant (extra `variant`, see [VARIANTS]) or raw `inputType`/`imeOptions` ints, hide or show the cursor
+ *    (boolean extra `cursor`; slowed-down screen recordings hide it, its blinking would be sped up with them), then
  *    restart input so the IME re-reads the preceding context.
  *  - `get`: report the field's full text, selection and composing region.
  *  - `probe_start` / `probe_get`: record / dump every MotionEvent the activity window receives
@@ -169,6 +170,7 @@ class PlaygroundActivity : ComponentActivity() {
                 if (type != field.inputType) field.inputType = type
                 if (opts != field.imeOptions) field.imeOptions = opts
                 if (intent.hasExtra("privateImeOptions")) field.privateImeOptions = intent.getStringExtra("privateImeOptions")
+                if (intent.hasExtra("cursor")) field.isCursorVisible = intent.getBooleanExtra("cursor", true)
                 val text = intent.getStringExtra("text") ?: ""
                 field.setText(text)
                 field.setSelection(text.length)
