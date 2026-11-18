@@ -1,0 +1,12 @@
+pboard voice pack (English, accurate) - dev.pboard.pack.voice.en.accurate
+
+This pack contains the model "parakeet-tdt_ctc-110m" by NVIDIA (TDT decoder head), exported to ONNX by the
+sherpa-onnx project (k2-fsa; archive sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000-int8) and converted by
+pboard to ONNX Runtime's ORT format (tools/voice/to_ort.sh). The weights are otherwise unmodified.
+
+Source: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+Attribution: "parakeet-tdt_ctc-110m" by NVIDIA, licensed under CC BY 4.0. Changes: int8 quantisation (sherpa-onnx)
+and conversion to ORT format (pboard).
+
+pboard uses it to re-decode each finished utterance of voice typing on the device (docs/voice-eval.md).

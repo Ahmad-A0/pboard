@@ -1,0 +1,36 @@
+{
+ "id": "repro/0",
+ "src": "qol",
+ "field": {
+  "variant": "nocap",
+  "text": ""
+ },
+ "steps": [
+  {
+   "op": "gesture",
+   "strokes": [
+    [
+     [
+      540,
+      1645,
+      0
+     ],
+     [
+      540,
+      1645,
+      60
+     ]
+    ]
+   ],
+   "m": {
+    "k": "tap",
+    "key": "y",
+    "depth": 0.0,
+    "nb": "t",
+    "x": 540,
+    "y": 1645
+   }
+  }
+ ],
+ "item": "TF-02"
+}

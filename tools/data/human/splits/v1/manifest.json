@@ -1,0 +1,333 @@
+{
+ "format": "pboard-human-eval/1",
+ "version": "v1",
+ "inputs": {
+  "futo_swipe/swipe-5/layouts/qwerty.json": {
+   "url": "https://huggingface.co/datasets/futo-org/swipe.futo.org/resolve/main/swipe-5/layouts/qwerty.json",
+   "sha256": "1965ecd59c9e4bff89446bb56ff3a2d0070b16eeae4ce424ce08b06ed6864632"
+  },
+  "futo_swipe/dev.jsonl": {
+   "url": "https://huggingface.co/datasets/futo-org/swipe.futo.org/resolve/main/dev.jsonl",
+   "sha256": "8d9d34ec1c12f564d02dcb69cf132ba19d45b75632a205af90d3a81290e24972"
+  },
+  "futo_swipe/test.jsonl": {
+   "url": "https://huggingface.co/datasets/futo-org/swipe.futo.org/resolve/main/test.jsonl",
+   "sha256": "d4e42e34ced1cae925a5ec94672bdaf48b4532598a1e39d72884f9c7b588721e"
+  },
+  "google_tsi/keyboard_data.json": {
+   "url": "https://raw.githubusercontent.com/google-research-datasets/tap-typing-with-touch-sensing-images/main/keyboard_data.json",
+   "sha256": "642e95984ed8b04f5bb7c56bb6237c6654034c5ff0c15aef55a127c93530213d"
+  },
+  "google_tsi/prompt_data.csv": {
+   "url": "https://raw.githubusercontent.com/google-research-datasets/tap-typing-with-touch-sensing-images/main/prompt_data.csv",
+   "sha256": "c0992922ff3f85440c7f3eaf2537d82df75202a9882d20757e49859ae5d13ba6"
+  },
+  "google_tsi/touch_data.csv": {
+   "url": "https://raw.githubusercontent.com/google-research-datasets/tap-typing-with-touch-sensing-images/main/touch_data.csv",
+   "sha256": "f6aaa9c79596a5d61c5d2429d722db30013fd92d333d28863adc77e54ef4d8a3"
+  },
+  "vertanen_noisy/vertanen_noisy_typing_iui2023.zip": {
+   "url": "https://osf.io/download/7ev5z/",
+   "sha256": "76d9cc798b5694686333da8baec46ce025174068bbfef909a31fe01e67dcdf5d"
+  },
+  "vertanen_noisy/vertanen_noisy_typing_json.zip": {
+   "url": "https://osf.io/download/sdb23/",
+   "sha256": "286468f58cc2d91acda2955035db15ec06eb309ae40dce1af16ebdb24e7fa821"
+  },
+  "howweswipe/metadata.tsv": {
+   "url": "https://osf.io/download/wy9q8/",
+   "sha256": "51ff11cd83a2da668b4faa01d85280655f023d4458a5c67d623f05352caf4f68"
+  },
+  "howweswipe/swipelogs.zip": {
+   "url": "https://osf.io/download/x4yjn/",
+   "sha256": "c7e6398d630906d664654d8f5a7ba2b1531882636fd110d8d6c05a723ca00874"
+  },
+  "howweswipe/stats-words.tsv": {
+   "url": "https://osf.io/download/vpc5a/",
+   "sha256": "0694c533cd181bc2c8948d8e0240490363e292909e1d6d6ea9ffb936663ea527"
+  },
+  "enronmobile/enronmobile.zip": {
+   "url": "https://www.keithv.com/software/enronmobile/enronmobile.zip",
+   "sha256": "bedd81e7002ee2d9b033ce1d31bbce79a6e3258a6a1c2557a8f7e0910922d72e"
+  },
+  "wikipedia_misspellings/for_machines.wiki": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Lists_of_common_misspellings/For_machines&action=raw",
+   "sha256": "3b6a9290e5aaad968da7ec769a5174adb45247688ef7ae097fd2dd80237a3050"
+  }
+ },
+ "traceFormat": "JSONL {context, target, kind: tap|swipe, points: [[x, y, tMs]...], ...annotations}; points are SCREEN px of the target geometry, t from the item's first touch",
+ "geometry": {
+  "path": "tools/data/human/geometry/gboard_pixel8.json",
+  "sha256": "01c601997e85a0541eb6b5b79f331c13f7f278eabfa2d664728a53b8c59f9e50"
+ },
+ "files": [
+  {
+   "file": "tools/data/human/splits/v1/tap_tsi.tune.jsonl.gz",
+   "items": 3321,
+   "participants": 8,
+   "committed": true,
+   "sha256": "fe49e752d8b48c30948e9dbc95e19518fa1bef33a2231a61e52c5b75fa6387b0",
+   "sources": {
+    "tsi": "CC BY 4.0 (Google TSI, Lertvittayakumjorn et al. UIST 2024)"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/splits/v1/tap_tsi.test.jsonl.gz",
+   "items": 3344,
+   "participants": 8,
+   "committed": true,
+   "sha256": "441e36166a8c980bfcbd98d3b2540183c7884b34e5d44a4d19b96dce6a31d819",
+   "sources": {
+    "tsi": "CC BY 4.0 (Google TSI, Lertvittayakumjorn et al. UIST 2024)"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/splits/v1/tap_vtap.tune.jsonl.gz",
+   "items": 4442,
+   "participants": 18,
+   "committed": true,
+   "sha256": "5e1106de17982252fb06ed60be753fe108e95689cbc483283d88c4228aa2d9df",
+   "sources": {
+    "vtap": "CC BY 4.0 (Vertanen & Kristensson IUI 2023, OSF 5xwng)"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/splits/v1/tap_vtap.test.jsonl.gz",
+   "items": 3818,
+   "participants": 18,
+   "committed": true,
+   "sha256": "4c16fe6f7caac4289fc5346372b424cb2504d4265866a0b00365115cb838b71f",
+   "sources": {
+    "vtap": "CC BY 4.0 (Vertanen & Kristensson IUI 2023, OSF 5xwng)"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/out/v1/swipe_futo_full.tune.jsonl.gz",
+   "items": 50979,
+   "participants": 650,
+   "committed": false,
+   "sha256": "00fa226be64cefaf536e20b542098ee5d4708a858ba6e4500ecfacd655e69143",
+   "sources": {
+    "futo": "MIT (swipe.futo.org, FUTO)"
+   },
+   "note": "full split, rebuild locally"
+  },
+  {
+   "file": "tools/data/human/splits/v1/swipe_futo.tune.jsonl.gz",
+   "items": 3000,
+   "participants": 601,
+   "committed": true,
+   "sha256": "25639cd541cfb2fdb92f745061ef739cbc409d714ce05ca22d76ec74af526104",
+   "sources": {
+    "futo": "MIT (swipe.futo.org, FUTO)"
+   },
+   "note": "core subset: 3000 swipes, <= 6 per participant"
+  },
+  {
+   "file": "tools/data/human/out/v1/swipe_futo_full.test.jsonl.gz",
+   "items": 46810,
+   "participants": 653,
+   "committed": false,
+   "sha256": "f4adc94c66863d374ee3cfa7474fe9c99e13b41b319ca68c0a32a0a38345c71b",
+   "sources": {
+    "futo": "MIT (swipe.futo.org, FUTO)"
+   },
+   "note": "full split, rebuild locally"
+  },
+  {
+   "file": "tools/data/human/splits/v1/swipe_futo.test.jsonl.gz",
+   "items": 3000,
+   "participants": 613,
+   "committed": true,
+   "sha256": "cf901aabd3d3f0b245f42332ce3220300de5774befe9ec576ab1a7649990f97d",
+   "sources": {
+    "futo": "MIT (swipe.futo.org, FUTO)"
+   },
+   "note": "core subset: 3000 swipes, <= 6 per participant"
+  },
+  {
+   "file": "tools/data/human/out/v1/swipe_hws_full.tune.jsonl.gz",
+   "items": 40436,
+   "participants": 650,
+   "committed": false,
+   "sha256": "cbecce0f72bf8127a86fa09b716781d7ccd289c48bc1ce3e3be8ed7152455b30",
+   "sources": {
+    "hws": "MIT (How We Swipe, Leiva et al. 2021, OSF sj67f)"
+   },
+   "note": "full split, rebuild locally"
+  },
+  {
+   "file": "tools/data/human/splits/v1/swipe_hws.tune.jsonl.gz",
+   "items": 3000,
+   "participants": 618,
+   "committed": true,
+   "sha256": "21042589b4c6ad84bf3fb678973eab6ec373908dd256f1f7aea2b39409442208",
+   "sources": {
+    "hws": "MIT (How We Swipe, Leiva et al. 2021, OSF sj67f)"
+   },
+   "note": "core subset: 3000 swipes, <= 6 per participant"
+  },
+  {
+   "file": "tools/data/human/out/v1/swipe_hws_full.test.jsonl.gz",
+   "items": 41698,
+   "participants": 656,
+   "committed": false,
+   "sha256": "bbb0998c35edb08b470aa3e56dcdb4c47100784fa31e86796982e78c6ea82935",
+   "sources": {
+    "hws": "MIT (How We Swipe, Leiva et al. 2021, OSF sj67f)"
+   },
+   "note": "full split, rebuild locally"
+  },
+  {
+   "file": "tools/data/human/splits/v1/swipe_hws.test.jsonl.gz",
+   "items": 3000,
+   "participants": 606,
+   "committed": true,
+   "sha256": "ade3e6efa43b5b63a804a7437a14f440a7722294e37a45f86f54a5ff83d2fc93",
+   "sources": {
+    "hws": "MIT (How We Swipe, Leiva et al. 2021, OSF sj67f)"
+   },
+   "note": "core subset: 3000 swipes, <= 6 per participant"
+  },
+  {
+   "file": "tools/data/human/splits/v1/text_typos.tune.jsonl.gz",
+   "items": 7689,
+   "participants": 26,
+   "committed": true,
+   "sha256": "183246f4b1677ceb04b1f971c311d4dc0fd2813a5d60ff0ed97904043ac1f614",
+   "sources": {
+    "tsi": "CC BY 4.0 (Google TSI, Lertvittayakumjorn et al. UIST 2024)",
+    "vtap": "CC BY 4.0 (Vertanen & Kristensson IUI 2023, OSF 5xwng)"
+   },
+   "note": "letters actually touched, decoded on the participant's own keyboard (errors and clean words, with context)"
+  },
+  {
+   "file": "tools/data/human/splits/v1/text_wikipedia.tune.jsonl.gz",
+   "items": 2105,
+   "participants": 1,
+   "committed": true,
+   "sha256": "582adcd9f01ebf487407c89c8d72f14124de1062bc366050f6f0d278501ba54d",
+   "sources": {
+    "wikipedia": "CC BY-SA 4.0 (Wikipedia:Lists of common misspellings/For machines)"
+   },
+   "note": "word-level misspellings, no context; split by correct word; CC BY-SA file"
+  },
+  {
+   "file": "tools/data/human/splits/v1/text_typos.test.jsonl.gz",
+   "items": 7053,
+   "participants": 26,
+   "committed": true,
+   "sha256": "fbf1de7d6eddf283d042dd2105d5e7eb8f3b10a2fc0b577aa08d8e74d8e169ed",
+   "sources": {
+    "tsi": "CC BY 4.0 (Google TSI, Lertvittayakumjorn et al. UIST 2024)",
+    "vtap": "CC BY 4.0 (Vertanen & Kristensson IUI 2023, OSF 5xwng)"
+   },
+   "note": "letters actually touched, decoded on the participant's own keyboard (errors and clean words, with context)"
+  },
+  {
+   "file": "tools/data/human/splits/v1/text_wikipedia.test.jsonl.gz",
+   "items": 2161,
+   "participants": 1,
+   "committed": true,
+   "sha256": "1cfad62436d8df80bf0dcb22679700c9c29a6435a273ec133ff7b74020824881",
+   "sources": {
+    "wikipedia": "CC BY-SA 4.0 (Wikipedia:Lists of common misspellings/For machines)"
+   },
+   "note": "word-level misspellings, no context; split by correct word; CC BY-SA file"
+  },
+  {
+   "file": "tools/data/human/out/v1/text_enron_typos.tune.jsonl.gz",
+   "items": 80,
+   "participants": 16,
+   "committed": false,
+   "sha256": "9e07d801ece22f2ff0923daab91440193ebbc3147c86cd382b113d2bf620f092",
+   "sources": {
+    "enron": "no explicit licence (EnronMobile, Vertanen & Kristensson 2011) - local use only"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/out/v1/sentences_enronmobile.tune.jsonl.gz",
+   "items": 1093,
+   "participants": 43,
+   "committed": false,
+   "sha256": "a5b2b5d003f6e9f05fbcb7bfcb4846ee00845b68758359c216fcefa7659b645f",
+   "sources": {
+    "enronmobile": "no explicit licence (EnronMobile, Vertanen & Kristensson 2011) - local use only"
+   },
+   "note": "split by sender"
+  },
+  {
+   "file": "tools/data/human/out/v1/text_enron_typos.test.jsonl.gz",
+   "items": 113,
+   "participants": 21,
+   "committed": false,
+   "sha256": "83ce152d1a5fa85a0bda13cbba8f33d364f1b485bee6aeaf700e661c47f6635b",
+   "sources": {
+    "enron": "no explicit licence (EnronMobile, Vertanen & Kristensson 2011) - local use only"
+   },
+   "note": ""
+  },
+  {
+   "file": "tools/data/human/out/v1/sentences_enronmobile.test.jsonl.gz",
+   "items": 1146,
+   "participants": 45,
+   "committed": false,
+   "sha256": "b7283af72103a742b93d1413b44743ed3aaa0a5e26113895c03f286073c0955f",
+   "sources": {
+    "enronmobile": "no explicit licence (EnronMobile, Vertanen & Kristensson 2011) - local use only"
+   },
+   "note": "split by sender"
+  }
+ ],
+ "converterStats": {
+  "tsi": {
+   "trials": 1277,
+   "words": 6665,
+   "skipped_no_taps": 12,
+   "skipped_no_term": 155,
+   "corrected_in_word": 538
+  },
+  "vtap": {
+   "sentences": 1391,
+   "words": 8260,
+   "aligned_1to1": 7827,
+   "skipped_empty": 0,
+   "skipped_misaligned_sentence": 1
+  },
+  "futo_tune": {
+   "records": 54269,
+   "words": 50979,
+   "skipped_orientation": 1831,
+   "skipped_word": 1349,
+   "skipped_short": 110,
+   "skipped_dual": 0,
+   "invalid_sentence_flag": 175
+  },
+  "futo_test": {
+   "records": 49970,
+   "words": 46810,
+   "skipped_orientation": 1919,
+   "skipped_word": 1195,
+   "skipped_short": 46,
+   "skipped_dual": 0,
+   "invalid_sentence_flag": 277
+  },
+  "hws": {
+   "users": 1338,
+   "gestures": 103700,
+   "accepted": 85417,
+   "failed_attempts": 18283,
+   "words": 82134,
+   "skipped_word": 2646,
+   "skipped_short": 218,
+   "skipped_context": 419,
+   "duplicate_gestures": 5638
+  }
+ },
+ "rule": "split by participant/session/sender; 'test' files are held out and must never be used for tuning"
+}

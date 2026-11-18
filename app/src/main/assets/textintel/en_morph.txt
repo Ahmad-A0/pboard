@@ -1,0 +1,2032 @@
+# pboard English morphology for the grammar checker. Derived from AGID 2016.01.19
+# (c) 2000-2014 Kevin Atkinson, with WordNet 1.6 (c) 1997 Princeton University; see NOTICE.
+# V base past participle ing 3sg [n = base or 3sg is also a noun]; A base comparative superlative
+V have had had having has n
+V do did done doing does n
+V know knew known knowing knows n
+V time timed timed timing times n
+V want wanted wanted wanting wants n
+V think thought thought thinking thinks n
+V get got got getting gets n
+V need needed needed needing needs n
+V help helped helped helping helps n
+V go went gone going goes n
+V see saw seen seeing sees n
+V make made made making makes n
+V work worked worked working works n
+V find found found finding finds n
+V take took taken taking takes n
+V tell told told telling tells n
+V love loved loved loving loves n
+V use used used using uses n
+V last lasted lasted lasting lasts n
+V number numbered numbered numbering numbers n
+V book booked booked booking books n
+V long longed longed longing longs n
+V place placed placed placing places n
+V found founded founded founding founds n
+V give gave given giving gives n
+V home homed homed homing homes n
+V say said said saying says n
+V march marched marched marching marches n
+V look looked looked looking looks n
+V let let let letting lets n
+V come came come coming comes
+V play played played playing plays n
+V order ordered ordered ordering orders n
+V game gamed gamed gaming games n
+V free freed freed freeing frees n
+V own owned owned owning owns
+V name named named naming names n
+V try tried tried trying tries n
+V feel felt felt feeling feels n
+V part parted parted parting parts n
+V put put put putting puts n
+V leave left left leaving leaves n
+V house housed housed housing houses n
+V show showed shown showing shows n
+V enjoy enjoyed enjoyed enjoying enjoys
+V phone phoned phoned phoning phones n
+V school schooled schooled schooling schools n
+V keep kept kept keeping keeps n
+V check checked checked checking checks n
+V live lived lived living lives n
+V stay stayed stayed staying stays n
+V set set set setting sets n
+V man manned manned manning mans n
+V watch watched watched watching watches n
+V read read read reading reads n
+V buy bought bought buying buys n
+V eat ate eaten eating eats
+V start started started starting starts n
+V believe believed believed believing believes
+V hope hoped hoped hoping hopes n
+V water watered watered watering waters n
+V end ended ended ending ends n
+V correct corrected corrected correcting corrects
+V team teamed teamed teaming teams n
+V write wrote written writing writes
+V call called called calling calls n
+V wonder wondered wondered wondering wonders n
+V price priced priced pricing prices n
+V change changed changed changing changes n
+V address addressed addressed addressing addresses n
+V hear heard heard hearing hears
+V type typed typed typing types n
+V perfect perfected perfected perfecting perfects n
+V saw sawed sawed sawing saws n
+V care cared cared caring cares n
+V confirm confirmed confirmed confirming confirms
+V stop stopped stopped stopping stops n
+V talk talked talked talking talks n
+V cool cooled cooled cooling cools n
+V mind minded minded minding minds n
+V cost cost cost costing costs n
+V understand understood understood understanding understands
+V open opened opened opening opens n
+V ticket ticketed ticketed ticketing tickets n
+V visit visited visited visiting visits n
+V guess guessed guessed guessing guesses n
+V hit hit hit hitting hits n
+V remember remembered remembered remembering remembers
+V welcome welcomed welcomed welcoming welcomes n
+V top topped topped topping tops n
+V ask asked asked asking asks
+V side sided sided siding sides n
+V service serviced serviced servicing services n
+V pick picked picked picking picks n
+V range ranged ranged ranging ranges n
+V point pointed pointed pointing points n
+V mean meant meant meaning means n
+V become became become becoming becomes
+V learn learned learned learning learns
+V state stated stated stating states n
+V date dated dated dating dates n
+V run ran run running runs n
+V wish wished wished wishing wishes n
+V support supported supported supporting supports n
+V case cased cased casing cases n
+V list listed listed listing lists n
+V provide provided provided providing provides
+V return returned returned returning returns n
+V win won won winning wins n
+V prefer preferred preferred preferring prefers
+V trip tripped tripped tripping trips n
+V hand handed handed handing hands n
+V ride rode ridden riding rides n
+V wait waited waited waiting waits n
+V pay paid paid paying pays n
+V experience experienced experienced experiencing experiences n
+V train trained trained training trains n
+V party partied partied partying parties n
+V speak spoke spoken speaking speaks
+V plan planned planned planning plans n
+V close closed closed closing closes n
+V total totaled totaled totaling totals n
+V line lined lined lining lines n
+V power powered powered powering powers n
+V group grouped grouped grouping groups n
+V sound sounded sounded sounding sounds n
+V question questioned questioned questioning questions n
+V head headed headed heading heads n
+V light lighted lighted lighting lights n
+V add added added adding adds
+V face faced faced facing faces n
+V search searched searched searching searches n
+V seem seemed seemed seeming seems
+V contact contacted contacted contacting contacts n
+V meet met met meeting meets n
+V form formed formed forming forms n
+V agree agreed agreed agreeing agrees
+V happen happened happened happening happens
+V offer offered offered offering offers n
+V study studied studied studying studies n
+V process processed processed processing processes n
+V move moved moved moving moves n
+V jack jacked jacked jacking jacks n
+V reason reasoned reasoned reasoning reasons n
+V include included included including includes
+V season seasoned seasoned seasoning seasons n
+V turn turned turned turning turns n
+V film filmed filmed filming films n
+V level leveled leveled leveling levels n
+V star starred starred starring stars n
+V bring brought brought bringing brings
+V drink drank drunk drinking drinks n
+V sense sensed sensed sensing senses n
+V size sized sized sizing sizes n
+V travel traveled traveled traveling travels n
+V drive drove driven driving drives n
+V bob bobbed bobbed bobbing bobs n
+V word worded worded wording words n
+V answer answered answered answering answers n
+V age aged aged aging ages n
+V space spaced spaced spacing spaces n
+V bed bedded bedded bedding beds n
+V park parked parked parking parks n
+V account accounted accounted accounting accounts n
+V send sent sent sending sends n
+V create created created creating creates
+V hold held held holding holds n
+V control controlled controlled controlling controls n
+V listen listened listened listening listens
+V email emailed emailed emailing emails n
+V research researched researched researching researches n
+V market marketed marketed marketing markets n
+V arrive arrived arrived arriving arrives
+V rest rested rested resting rests n
+V couple coupled coupled coupling couples n
+V post posted posted posting posts n
+V deal dealt dealt dealing deals n
+V reference referenced referenced referencing references n
+V major majored majored majoring majors n
+V style styled styled styling styles n
+V air aired aired airing airs n
+V purchase purchased purchased purchasing purchases n
+V police policed policed policing polices n
+V choose chose chosen choosing chooses
+V walk walked walked walking walks n
+V fast fasted fasted fasting fasts n
+V milk milked milked milking milks n
+V project projected projected projecting projects n
+V stuff stuffed stuffed stuffing stuffs n
+V clear cleared cleared clearing clears n
+V record recorded recorded recording records n
+V view viewed viewed viewing views n
+V field fielded fielded fielding fields n
+V design designed designed designing designs n
+V cut cut cut cutting cuts n
+V present presented presented presenting presents n
+V store stored stored storing stores n
+V interest interested interested interesting interests n
+V follow followed followed following follows n
+V cause caused caused causing causes n
+V sleep slept slept sleeping sleeps n
+V access accessed accessed accessing accesses n
+V complete completed completed completing completes
+V average averaged averaged averaging averages n
+V forward forwarded forwarded forwarding forwards n
+V report reported reported reporting reports n
+V recommend recommended recommended recommending recommends
+V test tested tested testing tests n
+V round rounded rounded rounding rounds n
+V code coded coded coding codes n
+V share shared shared sharing shares n
+V fire fired fired firing fires n
+V mark marked marked marking marks n
+V explain explained explained explaining explains
+V land landed landed landing lands n
+V lead led led leading leads n
+V spend spent spent spending spends
+V program programmed programmed programming programs n
+V weather weathered weathered weathering weathers n
+V model modeled modeled modeling models n
+V value valued valued valuing values n
+V bar barred barred barring bars n
+V continue continued continued continuing continues
+V issue issued issued issuing issues n
+V war warred warred warring wars n
+V result resulted resulted resulting results n
+V amount amounted amounted amounting amounts n
+V fish fished fished fishing fishes n
+V imagine imagined imagined imagining imagines
+V bet bet bet betting bets n
+V break broke broken breaking breaks n
+V position positioned positioned positioning positions n
+V allow allowed allowed allowing allows
+V hate hated hated hating hates n
+V die died died dying dies n
+V clean cleaned cleaned cleaning cleans n
+V practice practiced practiced practicing practices n
+V consider considered considered considering considers
+V step stepped stepped stepping steps n
+V color colored colored coloring colors n
+V match matched matched matching matches n
+V picture pictured pictured picturing pictures n
+V stand stood stood standing stands n
+V forget forgot forgotten forgetting forgets
+V build built built building builds n
+V wear wore worn wearing wears n
+V serve served served serving serves n
+V mine mined mined mining mines n
+V shop shopped shopped shopping shops n
+V ground grounded grounded grounding grounds n
+V hurt hurt hurt hurting hurts n
+V letter lettered lettered lettering letters n
+V pool pooled pooled pooling pools n
+V rate rated rated rating rates n
+V save saved saved saving saves n
+V sit sat sat sitting sits
+V risk risked risked risking risks n
+V fight fought fought fighting fights n
+V box boxed boxed boxing boxes n
+V staff staffed staffed staffing staffs n
+V fall fell fallen falling falls n
+V kid kidded kidded kidding kids n
+V expect expected expected expecting expects
+V lose lost lost losing loses
+V voice voiced voiced voicing voices n
+V ice iced iced icing ices n
+V weight weighted weighted weighting weights n
+V reach reached reached reaching reaches n
+V fit fitted fitted fitting fits n
+V sell sold sold selling sells n
+V file filed filed filing files n
+V increase increased increased increasing increases n
+V rain rained rained raining rains n
+V score scored scored scoring scores n
+V note noted noted noting notes n
+V floor floored floored flooring floors n
+V cover covered covered covering covers n
+V assist assisted assisted assisting assists n
+V source sourced sourced sourcing sources n
+V charge charged charged charging charges n
+V suggest suggested suggested suggesting suggests
+V trouble troubled troubled troubling troubles n
+V finish finished finished finishing finishes n
+V sort sorted sorted sorting sorts n
+V grow grew grown growing grows
+V rock rocked rocked rocking rocks n
+V schedule scheduled scheduled scheduling schedules n
+V pass passed passed passing passes n
+V center centered centered centering centers n
+V sign signed signed signing signs n
+V focus focused focused focusing focuses n
+V effect effected effected effecting effects n
+V appreciate appreciated appreciated appreciating appreciates
+V avoid avoided avoided avoiding avoids
+V speed sped sped speeding speeds n
+V figure figured figured figuring figures n
+V fly flew flown flying flies n
+V track tracked tracked tracking tracks n
+V dance danced danced dancing dances n
+V eye eyed eyed eyeing eyes n
+V garden gardened gardened gardening gardens n
+V review reviewed reviewed reviewing reviews n
+V catch caught caught catching catches n
+V ensure ensured ensured ensuring ensures
+V receive received received receiving receives
+V court courted courted courting courts n
+V race raced raced racing races n
+V link linked linked linking links n
+V seat seated seated seating seats n
+V doubt doubted doubted doubting doubts n
+V miss missed missed missing misses n
+V drop dropped dropped dropping drops n
+V improve improved improved improving improves
+V join joined joined joining joins n
+V release released released releasing releases n
+V kill killed killed killing kills n
+V lower lowered lowered lowering lowers n
+V screen screened screened screening screens n
+V click clicked clicked clicking clicks n
+V traffic trafficked trafficked trafficking traffics n
+V stage staged staged staging stages n
+V approach approached approached approaching approaches n
+V trust trusted trusted trusting trusts n
+V tax taxed taxed taxing taxes n
+V double doubled doubled doubling doubles n
+V board boarded boarded boarding boards n
+V web webbed webbed webbing webs n
+V reserve reserved reserved reserving reserves n
+V dress dressed dressed dressing dresses n
+V image imaged imaged imaging images n
+V machine machined machined machining machines n
+V respect respected respected respecting respects n
+V impact impacted impacted impacting impacts n
+V vote voted voted voting votes n
+V beat beat beaten beating beats n
+V attack attacked attacked attacking attacks n
+V club clubbed clubbed clubbing clubs n
+V touch touched touched touching touches n
+V balance balanced balanced balancing balances n
+V brand branded branded branding brands n
+V protect protected protected protecting protects
+V worry worried worried worrying worries n
+V begin began begun beginning begins
+V act acted acted acting acts n
+V force forced forced forcing forces n
+V base based based basing bases n
+V fear feared feared fearing fears n
+V carry carried carried carrying carries n
+V request requested requested requesting requests n
+V require required required requiring requires
+V teach taught taught teaching teaches n
+V pressure pressured pressured pressuring pressures n
+V spot spotted spotted spotting spots n
+V trade traded traded trading trades n
+V develop developed developed developing develops
+V network networked networked networking networks n
+V distance distanced distanced distancing distances n
+V sentence sentenced sentenced sentencing sentences n
+V pop popped popped popping pops n
+V coach coached coached coaching coaches n
+V warm warmed warmed warming warms n
+V rent rented rented renting rents n
+V realize realized realized realizing realizes
+V script scripted scripted scripting scripts n
+V heat heated heated heating heats n
+V cross crossed crossed crossing crosses n
+V shit shit shit shitting shits n
+V apply applied applied applying applies
+V dream dreamed dreamed dreaming dreams n
+V produce produced produced producing produces n
+V conference conferenced conferenced conferencing conferences n
+V function functioned functioned functioning functions n
+V notice noticed noticed noticing notices n
+V decide decided decided deciding decides
+V cook cooked cooked cooking cooks n
+V fix fixed fixed fixing fixes n
+V author authored authored authoring authors n
+V wind winded winded winding winds n
+V mistake mistook mistaken mistaking mistakes n
+V damage damaged damaged damaging damages n
+V taste tasted tasted tasting tastes n
+V gift gifted gifted gifting gifts n
+V appear appeared appeared appearing appears
+V accept accepted accepted accepting accepts
+V lack lacked lacked lacking lacks n
+V plant planted planted planting plants n
+V transfer transferred transferred transferring transfers n
+V sing sang sung singing sings n
+V feature featured featured featuring features n
+V prevent prevented prevented preventing prevents
+V exercise exercised exercised exercising exercises n
+V direct directed directed directing directs
+V bank banked banked banking banks n
+V surface surfaced surfaced surfacing surfaces n
+V mail mailed mailed mailing mails n
+V describe described described describing describes
+V diet dieted dieted dieting diets n
+V foot footed footed footing foots n
+V enter entered entered entering enters
+V snow snowed snowed snowing snows n
+V rule ruled ruled ruling rules n
+V condition conditioned conditioned conditioning conditions n
+V host hosted hosted hosting hosts n
+V swim swam swum swimming swims n
+V dry dried dried drying dries n
+V surprise surprised surprised surprising surprises n
+V cash cashed cashed cashing cashes n
+V contract contracted contracted contracting contracts n
+V claim claimed claimed claiming claims n
+V spring sprang sprung springing springs n
+V remain remained remained remaining remains
+V upset upset upset upsetting upsets n
+V vacation vacationed vacationed vacationing vacations n
+V bag bagged bagged bagging bags n
+V bill billed billed billing bills n
+V ship shipped shipped shipping ships n
+V handle handled handled handling handles n
+V slow slowed slowed slowing slows
+V copy copied copied copying copies n
+V structure structured structured structuring structures n
+V stock stocked stocked stocking stocks n
+V spread spread spread spreading spreads n
+V sport sported sported sporting sports n
+V draw drew drawn drawing draws n
+V truck trucked trucked trucking trucks n
+V campaign campaigned campaigned campaigning campaigns n
+V reduce reduced reduced reducing reduces
+V separate separated separated separating separates n
+V exist existed existed existing exists
+V lie lied lain lying lies n
+V shape shaped shaped shaping shapes n
+V chat chatted chatted chatting chats n
+V depart departed departed departing departs
+V waste wasted wasted wasting wastes n
+V benefit benefited benefited benefiting benefits n
+V limit limited limited limiting limits n
+V treat treated treated treating treats n
+V supply supplied supplied supplying supplies n
+V tour toured toured touring tours n
+V raise raised raised raising raises n
+V press pressed pressed pressing presses n
+V remove removed removed removing removes n
+V partner partnered partnered partnering partners n
+V pull pulled pulled pulling pulls n
+V attend attended attended attending attends
+V demand demanded demanded demanding demands n
+V throw threw thrown throwing throws n
+V progress progressed progressed progressing progresses n
+V discuss discussed discussed discussing discusses
+V rise rose risen rising rises n
+V detail detailed detailed detailing details n
+V boat boated boated boating boats n
+V interview interviewed interviewed interviewing interviews n
+V plane planed planed planing planes n
+V influence influenced influenced influencing influences n
+V target targeted targeted targeting targets n
+V pair paired paired pairing pairs n
+V challenge challenged challenged challenging challenges n
+V thin thinned thinned thinning thins
+V pet petted petted petting pets n
+V budget budgeted budgeted budgeting budgets n
+V fuck fucked fucked fucking fucks n
+V mention mentioned mentioned mentioning mentions n
+V display displayed displayed displaying displays n
+V empty emptied emptied emptying empties n
+V battle battled battled battling battles n
+V scale scaled scaled scaling scales n
+V ring ringed rung ringing rings n
+V repeat repeated repeated repeating repeats n
+V suppose supposed supposed supposing supposes
+V guide guided guided guiding guides n
+V shut shut shut shutting shuts n
+V achieve achieved achieved achieving achieves
+V stick stuck stuck sticking sticks n
+V gain gained gained gaining gains n
+V storm stormed stormed storming storms n
+V quit quit quit quitting quits
+V mix mixed mixed mixing mixes n
+V colour coloured coloured colouring colours n
+V download downloaded downloaded downloading downloads
+V stress stressed stressed stressing stresses n
+V count counted counted counting counts n
+V laugh laughed laughed laughing laughs n
+V promise promised promised promising promises n
+V suspect suspected suspected suspecting suspects n
+V dish dished dished dishing dishes n
+V cast cast cast casting casts n
+V perform performed performed performing performs
+V manage managed managed managing manages
+V bike biked biked biking bikes n
+V birth birthed birthed birthing births n
+V attempt attempted attempted attempting attempts n
+V cry cried cried crying cries n
+V block blocked blocked blocking blocks n
+V edge edged edged edging edges n
+V tend tended tended tending tends
+V smell smelled smelled smelling smells n
+V fill filled filled filling fills n
+V judge judged judged judging judges n
+V repair repaired repaired repairing repairs n
+V map mapped mapped mapping maps n
+V paint painted painted painting paints n
+V select selected selected selecting selects
+V comment commented commented commenting comments n
+V task tasked tasked tasking tasks n
+V prepare prepared prepared preparing prepares
+V arm armed armed arming arms n
+V smile smiled smiled smiling smiles n
+V maintain maintained maintained maintaining maintains
+V feed fed fed feeding feeds n
+V programme programmed programmed programming programmes n
+V proceed proceeded proceeded proceeding proceeds
+V print printed printed printing prints n
+V bottle bottled bottled bottling bottles n
+V tool tooled tooled tooling tools n
+V format formatted formatted formatting formats n
+V identify identified identified identifying identifies
+V solve solved solved solving solves
+V award awarded awarded awarding awards n
+V farm farmed farmed farming farms n
+V escape escaped escaped escaping escapes n
+V smoke smoked smoked smoking smokes n
+V brown browned browned browning browns n
+V admit admitted admitted admitting admits
+V prove proved proved proving proves
+V push pushed pushed pushing pushes n
+V bear bore borne bearing bears n
+V bridge bridged bridged bridging bridges n
+V replace replaced replaced replacing replaces
+V wash washed washed washing washes n
+V crowd crowded crowded crowding crowds n
+V hang hung hung hanging hangs n
+V murder murdered murdered murdering murders n
+V assume assumed assumed assuming assumes
+V route routed routed routing routes n
+V explore explored explored exploring explores
+V deliver delivered delivered delivering delivers
+V measure measured measured measuring measures n
+V grade graded graded grading grades n
+V blame blamed blamed blaming blames n
+V affect affected affected affecting affects n
+V determine determined determined determining determines
+V package packaged packaged packaging packages n
+V calm calmed calmed calming calms n
+V wake woke waked waking wakes n
+V update updated updated updating updates n
+V secure secured secured securing secures
+V exchange exchanged exchanged exchanging exchanges n
+V narrow narrowed narrowed narrowing narrows n
+V joke joked joked joking jokes n
+V lay laid laid laying lays n
+V border bordered bordered bordering borders n
+V seek sought sought seeking seeks n
+V contain contained contained containing contains
+V channel channeled channeled channeling channels n
+V switch switched switched switching switches n
+V shoot shot shot shooting shoots n
+V concern concerned concerned concerning concerns n
+V roll rolled rolled rolling rolls n
+V net netted netted netting nets n
+V fuel fueled fueled fueling fuels n
+V advance advanced advanced advancing advances n
+V document documented documented documenting documents n
+V hide hid hidden hiding hides n
+V sight sighted sighted sighting sights n
+V flow flowed flowed flowing flows n
+V roof roofed roofed roofing roofs n
+V golf golfed golfed golfing golfs n
+V profile profiled profiled profiling profiles n
+V desire desired desired desiring desires n
+V shower showered showered showering showers n
+V master mastered mastered mastering masters n
+V exact exacted exacted exacting exacts
+V aid aided aided aiding aids n
+V camp camped camped camping camps n
+V comfort comforted comforted comforting comforts n
+V counter countered countered countering counters n
+V translate translated translated translating translates
+V jump jumped jumped jumping jumps n
+V mess messed messed messing messes n
+V aim aimed aimed aiming aims n
+V kiss kissed kissed kissing kisses n
+V launch launched launched launching launches n
+V wet wet wet wetting wets n
+V coat coated coated coating coats n
+V bicycle bicycled bicycled bicycling bicycles n
+V generate generated generated generating generates
+V express expressed expressed expressing expresses n
+V promote promoted promoted promoting promotes
+V split split split splitting splits n
+V encourage encouraged encouraged encouraging encourages
+V profit profited profited profiting profits n
+V tie tied tied tying ties n
+V row rowed rowed rowing rows n
+V collect collected collected collecting collects n
+V survive survived survived surviving survives
+V plot plotted plotted plotting plots n
+V debate debated debated debating debates n
+V hurry hurried hurried hurrying hurries n
+V pack packed packed packing packs n
+V command commanded commanded commanding commands n
+V convince convinced convinced convincing convinces
+V transport transported transported transporting transports n
+V factor factored factored factoring factors n
+V tip tipped tipped tipping tips n
+V fail failed failed failing fails n
+V frame framed framed framing frames n
+V recognize recognized recognized recognizing recognizes
+V occur occurred occurred occurring occurs
+V parent parented parented parenting parents n
+V brief briefed briefed briefing briefs n
+V represent represented represented representing represents
+V damn damned damned damning damns n
+V bath bathed bathed bathing baths n
+V iron ironed ironed ironing irons n
+V scheme schemed schemed scheming schemes n
+V respond responded responded responding responds n
+V lift lifted lifted lifting lifts n
+V plate plated plated plating plates n
+V commission commissioned commissioned commissioning commissions n
+V license licensed licensed licensing licenses n
+V proof proofed proofed proofing proofs n
+V celebrate celebrated celebrated celebrating celebrates
+V cable cabled cabled cabling cables n
+V earn earned earned earning earns
+V matt matted matted matting matts n
+V blind blinded blinded blinding blinds n
+V rap rapped rapped rapping raps n
+V shift shifted shifted shifting shifts n
+V kick kicked kicked kicking kicks n
+V marry married married marrying marries
+V relax relaxed relaxed relaxing relaxes
+V compare compared compared comparing compares n
+V deserve deserved deserved deserving deserves
+V appeal appealed appealed appealing appeals n
+V fake faked faked faking fakes n
+V survey surveyed surveyed surveying surveys n
+V conflict conflicted conflicted conflicting conflicts n
+V guard guarded guarded guarding guards n
+V abuse abused abused abusing abuses n
+V discover discovered discovered discovering discovers
+V hire hired hired hiring hires n
+V sample sampled sampled sampling samples n
+V bowl bowled bowled bowling bowls n
+V cycle cycled cycled cycling cycles n
+V favor favored favored favoring favors n
+V struggle struggled struggled struggling struggles n
+V regret regretted regretted regretting regrets n
+V apologize apologized apologized apologizing apologizes
+V participate participated participated participating participates
+V load loaded loaded loading loads n
+V shame shamed shamed shaming shames n
+V connect connected connected connecting connects
+V burn burned burned burning burns n
+V reply replied replied replying replies n
+V signal signaled signaled signaling signals n
+V grab grabbed grabbed grabbing grabs n
+V gear geared geared gearing gears n
+V intend intended intended intending intends
+V refer referred referred referring refers
+V rear reared reared rearing rears n
+V neighbor neighbored neighbored neighboring neighbors n
+V breed bred bred breeding breeds n
+V stream streamed streamed streaming streams n
+V divorce divorced divorced divorcing divorces n
+V strike struck struck striking strikes n
+V phase phased phased phasing phases n
+V wave waved waved waving waves n
+V borrow borrowed borrowed borrowing borrows
+V vary varied varied varying varies
+V operate operated operated operating operates
+V suffer suffered suffered suffering suffers
+V register registered registered registering registers n
+V harm harmed harmed harming harms n
+V estimate estimated estimated estimating estimates n
+V smooth smoothed smoothed smoothing smooths n
+V contest contested contested contesting contests n
+V pilot piloted piloted piloting pilots n
+V enable enabled enabled enabling enables
+V fund funded funded funding funds n
+V resort resorted resorted resorting resorts n
+V sand sanded sanded sanding sands n
+V expand expanded expanded expanding expands
+V conduct conducted conducted conducting conducts n
+V bother bothered bothered bothering bothers n
+V introduce introduced introduced introducing introduces
+V obtain obtained obtained obtaining obtains
+V bound bounded bounded bounding bounds n
+V pitch pitched pitched pitching pitches n
+V string strung strung stringing strings n
+V graduate graduated graduated graduating graduates n
+V draft drafted drafted drafting drafts n
+V trail trailed trailed trailing trails n
+V label labeled labeled labeling labels n
+V honor honored honored honoring honors n
+V silence silenced silenced silencing silences n
+V tone toned toned toning tones n
+V flower flowered flowered flowering flowers n
+V succeed succeeded succeeded succeeding succeeds
+V crash crashed crashed crashing crashes n
+V lock locked locked locking locks n
+V contribute contributed contributed contributing contributes
+V destroy destroyed destroyed destroying destroys
+V belong belonged belonged belonging belongs
+V zone zoned zoned zoning zones n
+V invite invited invited inviting invites n
+V peak peaked peaked peaking peaks n
+V branch branched branched branching branches n
+V spare spared spared sparing spares n
+V flavor flavored flavored flavoring flavors n
+V retail retailed retailed retailing retails n
+V communicate communicated communicated communicating communicates
+V tune tuned tuned tuning tunes n
+V shock shocked shocked shocking shocks n
+V install installed installed installing installs
+V cancel canceled canceled canceling cancels n
+V reflect reflected reflected reflecting reflects
+V contrast contrasted contrasted contrasting contrasts n
+V argue argued argued arguing argues
+V layer layered layered layering layers n
+V ease eased eased easing eases n
+V establish established established establishing establishes
+V blow blew blown blowing blows n
+V loose loosed loosed loosing looses
+V journal journaled journaled journaling journals n
+V forgive forgave forgiven forgiving forgives
+V spell spelled spelled spelling spells n
+V guarantee guaranteed guaranteed guaranteeing guarantees n
+V steal stole stolen stealing steals n
+V root rooted rooted rooting roots n
+V defeat defeated defeated defeating defeats n
+V pace paced paced pacing paces n
+V circle circled circled circling circles n
+V dust dusted dusted dusting dusts n
+V trend trended trended trending trends n
+V quote quoted quoted quoting quotes n
+V rely relied relied relying relies
+V ignore ignored ignored ignoring ignores
+V finance financed financed financing finances n
+V motor motored motored motoring motors n
+V capture captured captured capturing captures n
+V mirror mirrored mirrored mirroring mirrors n
+V rewrite rewrote rewritten rewriting rewrites n
+V refuse refused refused refusing refuses n
+V bite bit bitten biting bites n
+V climb climbed climbed climbing climbs n
+V combat combated combated combating combats n
+V regard regarded regarded regarding regards n
+V remind reminded reminded reminding reminds
+V grant granted granted granting grants n
+V gross grossed grossed grossing grosses n
+V defend defended defended defending defends
+V experiment experimented experimented experimenting experiments n
+V landscape landscaped landscaped landscaping landscapes n
+V monitor monitored monitored monitoring monitors n
+V implement implemented implemented implementing implements n
+V engineer engineered engineered engineering engineers n
+V overcome overcame overcome overcoming overcomes
+V sequence sequenced sequenced sequencing sequences n
+V rescue rescued rescued rescuing rescues n
+V log logged logged logging logs n
+V recall recalled recalled recalling recalls n
+V submit submitted submitted submitting submits
+V engage engaged engaged engaging engages
+V premier premiered premiered premiering premiers n
+V pray prayed prayed praying prays
+V phrase phrased phrased phrasing phrases n
+V compete competed competed competing competes
+V sum summed summed summing sums n
+V pursue pursued pursued pursuing pursues
+V transition transitioned transitioned transitioning transitions n
+V involve involved involved involving involves
+V tape taped taped taping tapes n
+V bond bonded bonded bonding bonds n
+V arrest arrested arrested arresting arrests n
+V craft crafted crafted crafting crafts n
+V rush rushed rushed rushing rushes n
+V lend lent lent lending lends
+V invest invested invested investing invests
+V define defined defined defining defines
+V witness witnessed witnessed witnessing witnesses n
+V grill grilled grilled grilling grills n
+V delay delayed delayed delaying delays n
+V decline declined declined declining declines n
+V complain complained complained complaining complains
+V indicate indicated indicated indicating indicates
+V seed seeded seeded seeding seeds n
+V broadcast broadcast broadcast broadcasting broadcasts n
+V depend depended depended depending depends
+V boost boosted boosted boosting boosts n
+V bomb bombed bombed bombing bombs n
+V nurse nursed nursed nursing nurses n
+V extend extended extended extending extends
+V ban banned banned banning bans n
+V convert converted converted converting converts n
+V attract attracted attracted attracting attracts
+V enhance enhanced enhanced enhancing enhances
+V angle angled angled angling angles n
+V rail railed railed railing rails n
+V volunteer volunteered volunteered volunteering volunteers n
+V reveal revealed revealed revealing reveals n
+V index indexed indexed indexing indexes n
+V tower towered towered towering towers n
+V tag tagged tagged tagging tags n
+V advise advised advised advising advises
+V recover recovered recovered recovering recovers
+V scratch scratched scratched scratching scratches n
+V permit permitted permitted permitting permits n
+V arrange arranged arranged arranging arranges
+V pretend pretended pretended pretending pretends
+V swear swore sworn swearing swears
+V ski skied skied skiing skis n
+V hop hopped hopped hopping hops n
+V settle settled settled settling settles n
+V panic panicked panicked panicking panics n
+V brush brushed brushed brushing brushes n
+V tap tapped tapped tapping taps n
+V wire wired wired wiring wires n
+V fence fenced fenced fencing fences n
+V stretch stretched stretched stretching stretches n
+V consent consented consented consenting consents n
+V cruise cruised cruised cruising cruises n
+V react reacted reacted reacting reacts
+V mask masked masked masking masks n
+V relate related related relating relates
+V alarm alarmed alarmed alarming alarms n
+V hunt hunted hunted hunting hunts n
+V dine dined dined dining dines
+V deck decked decked decking decks n
+V tube tubed tubed tubing tubes n
+V inform informed informed informing informs
+V filter filtered filtered filtering filters n
+V locate located located locating locates
+V lodge lodged lodged lodging lodges n
+V hike hiked hiked hiking hikes n
+V sink sank sunk sinking sinks n
+V owe owed owed owing owes
+V chip chipped chipped chipping chips n
+V knock knocked knocked knocking knocks n
+V adopt adopted adopted adopting adopts
+V deposit deposited deposited depositing deposits n
+V crack cracked cracked cracking cracks n
+V preserve preserved preserved preserving preserves n
+V champion championed championed championing champions n
+V steam steamed steamed steaming steams n
+V accommodate accommodated accommodated accommodating accommodates
+V exit exited exited exiting exits n
+V combine combined combined combining combines n
+V gather gathered gathered gathering gathers n
+V chart charted charted charting charts n
+V wage waged waged waging wages n
+V reverse reversed reversed reversing reverses n
+V commit committed committed committing commits
+V fool fooled fooled fooling fools n
+V forecast forecast forecast forecasting forecasts n
+V cure cured cured curing cures n
+V donate donated donated donating donates
+V reform reformed reformed reforming reforms n
+V rank ranked ranked ranking ranks n
+V verify verified verified verifying verifies
+V stroke stroked stroked stroking strokes n
+V upgrade upgraded upgraded upgrading upgrades n
+V slice sliced sliced slicing slices n
+V spin spun spun spinning spins n
+V retire retired retired retiring retires
+V calculate calculated calculated calculating calculates
+V jam jammed jammed jamming jams n
+V shell shelled shelled shelling shells n
+V tire tired tired tiring tires n
+V bid bid bidden bidding bids n
+V prompt prompted prompted prompting prompts n
+V protest protested protested protesting protests n
+V deny denied denied denying denies
+V thread threaded threaded threading threads n
+V slide slid slid sliding slides n
+V investigate investigated investigated investigating investigates
+V demonstrate demonstrated demonstrated demonstrating demonstrates
+V rob robbed robbed robbing robs
+V dare dared dared daring dares n
+V shake shook shaken shaking shakes n
+V assault assaulted assaulted assaulting assaults n
+V pound pounded pounded pounding pounds n
+V scare scared scared scaring scares n
+V wound wounded wounded wounding wounds n
+V adjust adjusted adjusted adjusting adjusts
+V reward rewarded rewarded rewarding rewards n
+V burst burst burst bursting bursts n
+V encounter encountered encountered encountering encounters n
+V flame flamed flamed flaming flames n
+V photograph photographed photographed photographing photographs n
+V mature matured matured maturing matures
+V highlight highlighted highlighted highlighting highlights n
+V carpet carpeted carpeted carpeting carpets n
+V pump pumped pumped pumping pumps n
+V admire admired admired admiring admires
+V cave caved caved caving caves n
+V pipe piped piped piping pipes n
+V substitute substituted substituted substituting substitutes n
+V breathe breathed breathed breathing breathes
+V bat batted batted batting bats n
+V hook hooked hooked hooking hooks n
+V pit pitted pitted pitting pits n
+V tear teared torn tearing tears n
+V resume resumed resumed resuming resumes n
+V mount mounted mounted mounting mounts n
+V examine examined examined examining examines
+V trap trapped trapped trapping traps n
+V shed shed shed shedding sheds n
+V flash flashed flashed flashing flashes n
+V polish polished polished polishing polishes n
+V slip slipped slipped slipping slips n
+V loop looped looped looping loops n
+V resolve resolved resolved resolving resolves n
+V ruin ruined ruined ruining ruins n
+V resist resisted resisted resisting resists n
+V bake baked baked baking bakes n
+V disagree disagreed disagreed disagreeing disagrees
+V publish published published publishing publishes
+V shade shaded shaded shading shades n
+V dose dosed dosed dosing doses n
+V blend blended blended blending blends n
+V flood flooded flooded flooding floods n
+V fleet fleeted fleeted fleeting fleets n
+V accomplish accomplished accomplished accomplishing accomplishes
+V strip stripped stripped stripping strips n
+V spray sprayed sprayed spraying sprays n
+V tackle tackled tackled tackling tackles n
+V skip skipped skipped skipping skips n
+V bug bugged bugged bugging bugs n
+V praise praised praised praising praises n
+V drag dragged dragged dragging drags n
+V venture ventured ventured venturing ventures n
+V decrease decreased decreased decreasing decreases n
+V crush crushed crushed crushing crushes n
+V edit edited edited editing edits n
+V collapse collapsed collapsed collapsing collapses n
+V predict predicted predicted predicting predicts
+V mate mated mated mating mates n
+V swing swung swung swinging swings n
+V wrap wrapped wrapped wrapping wraps n
+V differ differed differed differing differs
+V dial dialed dialed dialing dials n
+V tattoo tattooed tattooed tattooing tattoos n
+V trigger triggered triggered triggering triggers n
+V assess assessed assessed assessing assesses
+V concentrate concentrated concentrated concentrating concentrates n
+V retain retained retained retaining retains
+V hug hugged hugged hugging hugs n
+V alert alerted alerted alerting alerts n
+V observe observed observed observing observes
+V plug plugged plugged plugging plugs n
+V interact interacted interacted interacting interacts
+V sacrifice sacrificed sacrificed sacrificing sacrifices n
+V massage massaged massaged massaging massages n
+V persuade persuaded persuaded persuading persuades
+V export exported exported exporting exports n
+V bow bowed bowed bowing bows n
+V orbit orbited orbited orbiting orbits n
+V lightning lightninged lightninged lightning lightnings n
+V lounge lounged lounged lounging lounges n
+V qualify qualified qualified qualifying qualifies
+V detect detected detected detecting detects
+V associate associated associated associating associates n
+V cope coped coped coping copes n
+V behave behaved behaved behaving behaves
+V lean leaned leaned leaning leans n
+V delete deleted deleted deleting deletes
+V evaluate evaluated evaluated evaluating evaluates
+V adapt adapted adapted adapting adapts
+V fold folded folded folding folds n
+V restore restored restored restoring restores
+V acquire acquired acquired acquiring acquires
+V patch patched patched patching patches n
+V crop cropped cropped cropping crops n
+V blast blasted blasted blasting blasts n
+V meter metered metered metering meters n
+V sweat sweat sweat sweating sweats n
+V eliminate eliminated eliminated eliminating eliminates
+V announce announced announced announcing announces
+V weed weeded weeded weeding weeds n
+V snack snacked snacked snacking snacks n
+V embrace embraced embraced embracing embraces n
+V lecture lectured lectured lecturing lectures n
+V vacuum vacuumed vacuumed vacuuming vacuums n
+V pin pinned pinned pinning pins n
+V dig dug dug digging digs n
+V consult consulted consulted consulting consults
+V compromise compromised compromised compromising compromises n
+V warn warned warned warning warns
+V pour poured poured pouring pours n
+V chase chased chased chasing chases n
+V rape raped raped raping rapes n
+V mill milled milled milling mills n
+V twist twisted twisted twisting twists n
+V upload uploaded uploaded uploading uploads
+V outline outlined outlined outlining outlines n
+V subscribe subscribed subscribed subscribing subscribes
+V yield yielded yielded yielding yields n
+V summarize summarized summarized summarizing summarizes
+V acknowledge acknowledged acknowledged acknowledging acknowledges
+V approve approved approved approving approves
+V dive dived dived diving dives n
+V shine shone shone shining shines n
+V crown crowned crowned crowning crowns n
+V divide divided divided dividing divides n
+V transform transformed transformed transforming transforms n
+V bulk bulked bulked bulking bulks n
+V pile piled piled piling piles n
+V drain drained drained draining drains n
+V heal healed healed healing heals
+V clip clipped clipped clipping clips n
+V seal sealed sealed sealing seals n
+V strengthen strengthened strengthened strengthening strengthens
+V curse cursed cursed cursing curses n
+V punch punched punched punching punches n
+V exhibit exhibited exhibited exhibiting exhibits n
+V incorporate incorporated incorporated incorporating incorporates
+V foster fostered fostered fostering fosters
+V extract extracted extracted extracting extracts n
+V import imported imported importing imports n
+V trace traced traced tracing traces n
+V modify modified modified modifying modifies
+V strain strained strained straining strains n
+V stem stemmed stemmed stemming stems n
+V organize organized organized organizing organizes
+V inspire inspired inspired inspiring inspires
+V hint hinted hinted hinting hints n
+V hesitate hesitated hesitated hesitating hesitates
+V stir stirred stirred stirring stirs n
+V consume consumed consumed consuming consumes
+V weigh weighed weighed weighing weighs n
+V curve curved curved curving curves n
+V rage raged raged raging rages n
+V nap napped napped napping naps n
+V specify specified specified specifying specifies
+V suck sucked sucked sucking sucks n
+V skirt skirted skirted skirting skirts n
+V compound compounded compounded compounding compounds n
+V scream screamed screamed screaming screams n
+V poll polled polled polling polls n
+V consist consisted consisted consisting consists
+V charm charmed charmed charming charms n
+V puzzle puzzled puzzled puzzling puzzles n
+V vet vetted vetted vetting vets n
+V cheer cheered cheered cheering cheers n
+V lease leased leased leasing leases n
+V disappear disappeared disappeared disappearing disappears
+V warehouse warehoused warehoused warehousing warehouses n
+V arise arose arisen arising arises
+V leak leaked leaked leaking leaks n
+V satisfy satisfied satisfied satisfying satisfies
+V propose proposed proposed proposing proposes
+V scan scanned scanned scanning scans n
+V possess possessed possessed possessing possesses
+V chill chilled chilled chilling chills n
+V flip flipped flipped flipping flips n
+V drum drummed drummed drumming drums n
+V grip gripped gripped gripping grips n
+V urge urged urged urging urges n
+V comply complied complied complying complies
+V alternate alternated alternated alternating alternates n
+V analyze analyzed analyzed analyzing analyzes
+V surf surfed surfed surfing surfs n
+V peer peered peered peering peers n
+V spy spied spied spying spies n
+V facilitate facilitated facilitated facilitating facilitates
+V paste pasted pasted pasting pastes n
+V stamp stamped stamped stamping stamps n
+V harvest harvested harvested harvesting harvests n
+V humble humbled humbled humbling humbles
+V lobby lobbied lobbied lobbying lobbies n
+V manufacture manufactured manufactured manufacturing manufactures n
+V alter altered altered altering alters
+V boil boiled boiled boiling boils n
+V sue sued sued suing sues
+V nest nested nested nesting nests n
+V span spanned spanned spanning spans n
+V melt melted melted melting melts n
+V cheat cheated cheated cheating cheats n
+V bubble bubbled bubbled bubbling bubbles n
+V freeze froze frozen freezing freezes n
+V obey obeyed obeyed obeying obeys
+V employ employed employed employing employs n
+V rally rallied rallied rallying rallies n
+V browse browsed browsed browsing browses n
+V pose posed posed posing poses n
+V stack stacked stacked stacking stacks n
+V poison poisoned poisoned poisoning poisons n
+V screw screwed screwed screwing screws n
+V justify justified justified justifying justifies
+V snap snapped snapped snapping snaps n
+V construct constructed constructed constructing constructs n
+V rack racked racked racking racks n
+V advocate advocated advocated advocating advocates n
+V boom boomed boomed booming booms n
+V distinguish distinguished distinguished distinguishing distinguishes
+V clarify clarified clarified clarifying clarifies
+V navigate navigated navigated navigating navigates
+V pad padded padded padding pads n
+V whip whipped whipped whipping whips n
+V breach breached breached breaching breaches n
+V reign reigned reigned reigning reigns n
+V brake braked braked braking brakes n
+V beam beamed beamed beaming beams n
+V hammer hammered hammered hammering hammers n
+V accord accorded accorded according accords n
+V dump dumped dumped dumping dumps n
+V corrupt corrupted corrupted corrupting corrupts
+V opt opted opted opting opts
+V resign resigned resigned resigning resigns
+V dip dipped dipped dipping dips n
+V herd herded herded herding herds n
+V torture tortured tortured torturing tortures n
+V bark barked barked barking barks n
+V bend bent bent bending bends n
+V sail sailed sailed sailing sails n
+V declare declared declared declaring declares
+V insert inserted inserted inserting inserts n
+V strive strove striven striving strives
+V retreat retreated retreated retreating retreats n
+V wipe wiped wiped wiping wipes n
+V abandon abandoned abandoned abandoning abandons n
+V shield shielded shielded shielding shields n
+V utilize utilized utilized utilizing utilizes
+V neighbour neighboured neighboured neighbouring neighbours n
+V jar jarred jarred jarring jars n
+V assure assured assured assuring assures
+V trim trimmed trimmed trimming trims n
+V commute commuted commuted commuting commutes
+V undertake undertook undertaken undertaking undertakes
+V rip ripped ripped ripping rips n
+V foul fouled fouled fouling fouls n
+V evolve evolved evolved evolving evolves
+V cough coughed coughed coughing coughs n
+V audit audited audited auditing audits n
+V roast roasted roasted roasting roasts n
+V grasp grasped grasped grasping grasps n
+V showcase showcased showcased showcasing showcases n
+V insult insulted insulted insulting insults n
+V fry fried fried frying fries n
+V accompany accompanied accompanied accompanying accompanies
+V float floated floated floating floats n
+V insist insisted insisted insisting insists
+V glance glanced glanced glancing glances n
+V backpack backpacked backpacked backpacking backpacks n
+V reject rejected rejected rejecting rejects n
+V exceed exceeded exceeded exceeding exceeds
+V educate educated educated educating educates
+V queue queued queued queuing queues n
+V drill drilled drilled drilling drills n
+V archive archived archived archiving archives n
+V wreck wrecked wrecked wrecking wrecks n
+V bore bored bored boring bores n
+V wax waxed waxed waxing waxes n
+V withdraw withdrew withdrawn withdrawing withdraws
+V sustain sustained sustained sustaining sustains
+V integrate integrated integrated integrating integrates
+V shout shouted shouted shouting shouts n
+V surrender surrendered surrendered surrendering surrenders n
+V bargain bargained bargained bargaining bargains n
+V mold molded molded molding molds n
+V counsel counseled counseled counseling counsels n
+V negotiate negotiated negotiated negotiating negotiates
+V relieve relieved relieved relieving relieves
+V jerk jerked jerked jerking jerks n
+V bless blessed blessed blessing blesses
+V fulfill fulfilled fulfilled fulfilling fulfills
+V pee peed peed peeing pees n
+V sponsor sponsored sponsored sponsoring sponsors n
+V bang banged banged banging bangs n
+V interpret interpreted interpreted interpreting interprets
+V sketch sketched sketched sketching sketches n
+V notify notified notified notifying notifies
+V squeeze squeezed squeezed squeezing squeezes n
+V execute executed executed executing executes
+V faint fainted fainted fainting faints n
+V absorb absorbed absorbed absorbing absorbs
+V dye dyed dyed dyeing dyes n
+V poop pooped pooped pooping poops n
+V whale whaled whaled whaling whales n
+V freak freaked freaked freaking freaks n
+V cluster clustered clustered clustering clusters n
+V smash smashed smashed smashing smashes n
+V interfere interfered interfered interfering interferes
+V originate originated originated originating originates
+V merchandise merchandised merchandised merchandising merchandises n
+V convey conveyed conveyed conveying conveys
+V toss tossed tossed tossing tosses n
+V conclude concluded concluded concluding concludes
+V constitute constituted constituted constituting constitutes
+V anchor anchored anchored anchoring anchors n
+V thrive thrived thrived thriving thrives
+V stain stained stained staining stains n
+V confront confronted confronted confronting confronts
+V bald balded balded balding balds
+V decay decayed decayed decaying decays n
+V distress distressed distressed distressing distresses n
+V attach attached attached attaching attaches
+V headline headlined headlined headlining headlines n
+V trek trekked trekked trekking treks n
+V leap leaped leaped leaping leaps n
+V unlock unlocked unlocked unlocking unlocks
+V emerge emerged emerged emerging emerges
+V mentor mentored mentored mentoring mentors n
+V tweet tweeted tweeted tweeting tweets n
+V litter littered littered littering litters n
+V pause paused paused pausing pauses n
+V impose imposed imposed imposing imposes
+V knit knitted knitted knitting knits n
+V chop chopped chopped chopping chops n
+V distribute distributed distributed distributing distributes
+V enforce enforced enforced enforcing enforces
+V threaten threatened threatened threatening threatens
+V confess confessed confessed confessing confesses
+V probe probed probed probing probes n
+V slope sloped sloped sloping slopes n
+V minimize minimized minimized minimizing minimizes
+V oppose opposed opposed opposing opposes
+V entertain entertained entertained entertaining entertains
+V tailor tailored tailored tailoring tailors n
+V regulate regulated regulated regulating regulates
+V swallow swallowed swallowed swallowing swallows n
+V dash dashed dashed dashing dashes n
+V premiere premiered premiered premiering premieres n
+V bounce bounced bounced bouncing bounces n
+V dominate dominated dominated dominating dominates
+V sneak sneaked sneaked sneaking sneaks n
+V expose exposed exposed exposing exposes n
+V thunder thundered thundered thundering thunders n
+V interrupt interrupted interrupted interrupting interrupts n
+V glow glowed glowed glowing glows n
+V leverage leveraged leveraged leveraging leverages n
+V dunk dunked dunked dunking dunks n
+V punish punished punished punishing punishes
+V tutor tutored tutored tutoring tutors n
+V anticipate anticipated anticipated anticipating anticipates
+V spark sparked sparked sparking sparks n
+V sweep swept swept sweeping sweeps n
+V pronounce pronounced pronounced pronouncing pronounces
+V rebuild rebuilt rebuilt rebuilding rebuilds
+V rub rubbed rubbed rubbing rubs n
+V invent invented invented inventing invents
+V shave shaved shaved shaving shaves n
+V align aligned aligned aligning aligns
+V buzz buzzed buzzed buzzing buzzes n
+V undergo underwent undergone undergoing undergoes
+V tow towed towed towing tows n
+V confuse confused confused confusing confuses
+V flush flushed flushed flushing flushes n
+V spoil spoiled spoiled spoiling spoils n
+V gaze gazed gazed gazing gazes n
+V raid raided raided raiding raids n
+V beg begged begged begging begs n
+V illustrate illustrated illustrated illustrating illustrates
+V testify testified testified testifying testifies
+V clash clashed clashed clashing clashes n
+V decorate decorated decorated decorating decorates
+V spit spitted spitted spitting spits n
+V compile compiled compiled compiling compiles
+V swap swapped swapped swapping swaps n
+V scroll scrolled scrolled scrolling scrolls n
+V skate skated skated skating skates n
+V perceive perceived perceived perceiving perceives
+V imply implied implied implying implies
+V sew sewed sewn sewing sews
+V practise practised practised practising practises n
+V sigh sighed sighed sighing sighs n
+V fetch fetched fetched fetching fetches n
+V elect elected elected electing elects n
+V surround surrounded surrounded surrounding surrounds n
+V exploit exploited exploited exploiting exploits n
+V yell yelled yelled yelling yells n
+V damp damped damped damping damps n
+V brew brewed brewed brewing brews n
+V cater catered catered catering caters
+V reset reset reset resetting resets n
+V prototype prototyped prototyped prototyping prototypes n
+V halt halted halted halting halts n
+V bump bumped bumped bumping bumps n
+V stare stared stared staring stares n
+V endure endured endured enduring endures
+V tidy tidied tidied tidying tidies n
+V whistle whistled whistled whistling whistles n
+V organise organised organised organising organises
+V wander wandered wandered wandering wanders n
+V surge surged surged surging surges n
+V peel peeled peeled peeling peels n
+V tile tiled tiled tiling tiles n
+V disclose disclosed disclosed disclosing discloses
+V neglect neglected neglected neglecting neglects n
+V gossip gossiped gossiped gossiping gossips n
+V flee fled fled fleeing flees
+V resemble resembled resembled resembling resembles
+V cooperate cooperated cooperated cooperating cooperates
+V bust busted busted busting busts n
+V stimulate stimulated stimulated stimulating stimulates
+V recruit recruited recruited recruiting recruits n
+V idle idled idled idling idles
+V retrieve retrieved retrieved retrieving retrieves n
+V inspect inspected inspected inspecting inspects
+V spill spilled spilled spilling spills n
+V equip equipped equipped equipping equips
+V echo echoed echoed echoing echoes n
+V render rendered rendered rendering renders n
+V greet greeted greeted greeting greets
+V coordinate coordinated coordinated coordinating coordinates n
+V hack hacked hacked hacking hacks n
+V compose composed composed composing composes
+V splash splashed splashed splashing splashes n
+V tick ticked ticked ticking ticks n
+V skim skimmed skimmed skimming skims n
+V specialize specialized specialized specializing specializes
+V restrict restricted restricted restricting restricts
+V piss pissed pissed pissing pisses n
+V analyse analysed analysed analysing analyses n
+V rhyme rhymed rhymed rhyming rhymes n
+V stall stalled stalled stalling stalls n
+V scrap scrapped scrapped scrapping scraps n
+V mat matted matted matting mats n
+V explode exploded exploded exploding explodes
+V reproduce reproduced reproduced reproducing reproduces
+V wade waded waded wading wades n
+V flock flocked flocked flocking flocks n
+V renew renewed renewed renewing renews
+V slap slapped slapped slapping slaps n
+V patrol patrolled patrolled patrolling patrols n
+V grind ground ground grinding grinds n
+V activate activated activated activating activates
+V fade faded faded fading fades n
+V conquer conquered conquered conquering conquers
+V overlap overlapped overlapped overlapping overlaps n
+V exhaust exhausted exhausted exhausting exhausts n
+V zoom zoomed zoomed zooming zooms n
+V buffer buffered buffered buffering buffers n
+V crawl crawled crawled crawling crawls n
+V diagnose diagnosed diagnosed diagnosing diagnoses n
+V advertise advertised advertised advertising advertises
+V assign assigned assigned assigning assigns n
+V scout scouted scouted scouting scouts n
+V occupy occupied occupied occupying occupies
+V manipulate manipulated manipulated manipulating manipulates
+V collaborate collaborated collaborated collaborating collaborates
+V exclude excluded excluded excluding excludes
+V haul hauled hauled hauling hauls n
+V maximize maximized maximized maximizing maximizes
+V restart restarted restarted restarting restarts n
+V dodge dodged dodged dodging dodges n
+V mock mocked mocked mocking mocks n
+V riot rioted rioted rioting riots n
+V emphasize emphasized emphasized emphasizing emphasizes
+V merge merged merged merging merges
+V distract distracted distracted distracting distracts
+V parody parodied parodied parodying parodies n
+V pioneer pioneered pioneered pioneering pioneers n
+V tan tanned tanned tanning tans n
+V hail hailed hailed hailing hails n
+V bind bound bound binding binds n
+V bully bullied bullied bullying bullies n
+V frost frosted frosted frosting frosts n
+V sync synced synced syncing syncs n
+V disappoint disappointed disappointed disappointing disappoints
+V hedge hedged hedged hedging hedges n
+V pinch pinched pinched pinching pinches n
+V appoint appointed appointed appointing appoints
+V bloom bloomed bloomed blooming blooms n
+V soak soaked soaked soaking soaks n
+V waterproof waterproofed waterproofed waterproofing waterproofs n
+V dock docked docked docking docks n
+V initiate initiated initiated initiating initiates n
+V transmit transmitted transmitted transmitting transmits
+V thrill thrilled thrilled thrilling thrills n
+V accelerate accelerated accelerated accelerating accelerates
+V flick flicked flicked flicking flicks n
+V creep crept crept creeping creeps n
+V simplify simplified simplified simplifying simplifies
+V harness harnessed harnessed harnessing harnesses n
+V disturb disturbed disturbed disturbing disturbs
+V refresh refreshed refreshed refreshing refreshes
+V criticize criticized criticized criticizing criticizes
+V seize seized seized seizing seizes
+V reel reeled reeled reeling reels n
+V clutch clutched clutched clutching clutches n
+V compensate compensated compensated compensating compensates
+V audition auditioned auditioned auditioning auditions n
+V paddle paddled paddled paddling paddles n
+V cite cited cited citing cites n
+V motivate motivated motivated motivating motivates
+V regain regained regained regaining regains
+V unite united united uniting unites n
+V stroll strolled strolled strolling strolls n
+V deploy deployed deployed deploying deploys
+V reside resided resided residing resides
+V drift drifted drifted drifting drifts n
+V derive derived derived deriving derives
+V manifest manifested manifested manifesting manifests n
+V rotate rotated rotated rotating rotates
+V recycle recycled recycled recycling recycles n
+V stitch stitched stitched stitching stitches n
+V slam slammed slammed slamming slams n
+V pierce pierced pierced piercing pierces
+V prep prepped prepped prepping preps n
+V scar scarred scarred scarring scars n
+V optimize optimized optimized optimizing optimizes
+V dismiss dismissed dismissed dismissing dismisses
+V differentiate differentiated differentiated differentiating differentiates
+V govern governed governed governing governs
+V dispose disposed disposed disposing disposes n
+V fulfil fulfilled fulfilled fulfilling fulfils
+V fuse fused fused fusing fuses n
+V bypass bypassed bypassed bypassing bypasses n
+V shrink shrank shrunk shrinking shrinks n
+V comprise comprised comprised comprising comprises
+V assemble assembled assembled assembling assembles
+V chew chewed chewed chewing chews n
+V adhere adhered adhered adhering adheres
+V gamble gambled gambled gambling gambles n
+V attain attained attained attaining attains
+V wed wedded wedded wedding weds
+V suppress suppressed suppressed suppressing suppresses
+V vent vented vented venting vents n
+V sip sipped sipped sipping sips n
+V cache cached cached caching caches n
+V dwell dwelt dwelt dwelling dwells n
+V nod nodded nodded nodding nods n
+V violate violated violated violating violates
+V steer steered steered steering steers n
+V tilt tilted tilted tilting tilts n
+V sting stung stung stinging stings n
+V multiply multiplied multiplied multiplying multiplies
+V reinforce reinforced reinforced reinforcing reinforces
+V curl curled curled curling curls n
+V flutter fluttered fluttered fluttering flutters n
+V slaughter slaughtered slaughtered slaughtering slaughters n
+V commence commenced commenced commencing commences
+V addict addicted addicted addicting addicts n
+V poke poked poked poking pokes n
+V offend offended offended offending offends
+V mimic mimicked mimicked mimicking mimics n
+V betray betrayed betrayed betraying betrays
+V brace braced braced bracing braces n
+V abide abode abode abiding abides
+V reckon reckoned reckoned reckoning reckons
+V quilt quilted quilted quilting quilts n
+V assert asserted asserted asserting asserts
+V mow mowed mowed mowing mows n
+V babysit babysit babysat babysitting babysits
+V intervene intervened intervened intervening intervenes
+V endorse endorsed endorsed endorsing endorses
+V portray portrayed portrayed portraying portrays
+V memorize memorized memorized memorizing memorizes
+V alleviate alleviated alleviated alleviating alleviates
+V shovel shoveled shoveled shoveling shovels n
+V clone cloned cloned cloning clones n
+V indulge indulged indulged indulging indulges
+V undermine undermined undermined undermining undermines
+V disable disabled disabled disabling disables
+V correspond corresponded corresponded corresponding corresponds
+V invade invaded invaded invading invades
+V rig rigged rigged rigging rigs n
+V crochet crocheted crocheted crocheting crochets n
+V disregard disregarded disregarded disregarding disregards n
+V revise revised revised revising revises n
+V rinse rinsed rinsed rinsing rinses n
+V bury buried buried burying buries
+V drown drowned drowned drowning drowns
+V conform conformed conformed conforming conforms
+V mitigate mitigated mitigated mitigating mitigates
+V sprinkle sprinkled sprinkled sprinkling sprinkles n
+V await awaited awaited awaiting awaits
+V blossom blossomed blossomed blossoming blossoms n
+V shorten shortened shortened shortening shortens
+V postpone postponed postponed postponing postpones
+V discourage discouraged discouraged discouraging discourages
+V induce induced induced inducing induces
+V raft rafted rafted rafting rafts n
+V terminate terminated terminated terminating terminates
+V uncover uncovered uncovered uncovering uncovers
+V preach preached preached preaching preaches
+V cultivate cultivated cultivated cultivating cultivates
+V migrate migrated migrated migrating migrates
+V cushion cushioned cushioned cushioning cushions n
+V benchmark benchmarked benchmarked benchmarking benchmarks n
+V kayak kayaked kayaked kayaking kayaks n
+V tease teased teased teasing teases n
+V conceal concealed concealed concealing conceals
+V ache ached ached aching aches n
+V peek peeked peeked peeking peeks n
+V boast boasted boasted boasting boasts n
+V roam roamed roamed roaming roams n
+V quarrel quarreled quarreled quarreling quarrels n
+V replicate replicated replicated replicating replicates
+V empower empowered empowered empowering empowers
+V isolate isolated isolated isolating isolates
+V hatch hatched hatched hatching hatches n
+V sprint sprinted sprinted sprinting sprints n
+V scrub scrubbed scrubbed scrubbing scrubs n
+V annoy annoyed annoyed annoying annoys
+V dread dreaded dreaded dreading dreads n
+V prioritize prioritized prioritized prioritizing prioritizes
+V simulate simulated simulated simulating simulates
+V crunch crunched crunched crunching crunches n
+V numb numbed numbed numbing numbs
+V rot rotted rotted rotting rots n
+V bleed bled bled bleeding bleeds n
+V blink blinked blinked blinking blinks n
+V lag lagged lagged lagging lags n
+V recreate recreated recreated recreating recreates
+V weave wove woven weaving weaves n
+V revolt revolted revolted revolting revolts n
+V hawk hawked hawked hawking hawks n
+V amend amended amended amending amends
+V grin grinned grinned grinning grins n
+V stab stabbed stabbed stabbing stabs n
+V accuse accused accused accusing accuses
+V imitate imitated imitated imitating imitates
+V disgust disgusted disgusted disgusting disgusts n
+V mould moulded moulded moulding moulds n
+V condemn condemned condemned condemning condemns
+V bleach bleached bleached bleaching bleaches n
+V configure configured configured configuring configures
+V safeguard safeguarded safeguarded safeguarding safeguards n
+V suspend suspended suspended suspending suspends
+V revive revived revived reviving revives
+V administer administered administered administering administers
+V disrupt disrupted disrupted disrupting disrupts
+V flourish flourished flourished flourishing flourishes n
+V accumulate accumulated accumulated accumulating accumulates
+V dedicate dedicated dedicated dedicating dedicates
+V overlook overlooked overlooked overlooking overlooks n
+V devote devoted devoted devoting devotes
+V stink stank stunk stinking stinks n
+V compost composted composted composting composts n
+V conserve conserved conserved conserving conserves n
+V comb combed combed combing combs n
+V sway swayed swayed swaying sways n
+V whisper whispered whispered whispering whispers n
+V deceive deceived deceived deceiving deceives
+V erase erased erased erasing erases
+V lick licked licked licking licks n
+V bud budded budded budding buds n
+V compute computed computed computing computes n
+V roar roared roared roaring roars n
+V tighten tightened tightened tightening tightens
+V validate validated validated validating validates
+V vomit vomited vomited vomiting vomits n
+V prevail prevailed prevailed prevailing prevails
+V parachute parachuted parachuted parachuting parachutes n
+V clad clad clad cladding clads
+V classify classified classified classifying classifies
+V fart farted farted farting farts n
+V dissolve dissolved dissolved dissolving dissolves n
+V swell swelled swollen swelling swells n
+V skateboard skateboarded skateboarded skateboarding skateboards n
+V groom groomed groomed grooming grooms n
+V choke choked choked choking chokes n
+V depict depicted depicted depicting depicts
+V drip dripped dripped dripping drips n
+V fiddle fiddled fiddled fiddling fiddles n
+V reap reaped reaped reaping reaps
+V provoke provoked provoked provoking provokes
+V descend descended descended descending descends
+V embark embarked embarked embarking embarks
+V starve starved starved starving starves
+V rebound rebounded rebounded rebounding rebounds n
+V tread trod trodden treading treads n
+V enroll enrolled enrolled enrolling enrolls
+V haunt haunted haunted haunting haunts n
+V crave craved craved craving craves
+V blackmail blackmailed blackmailed blackmailing blackmails n
+V meditate meditated meditated meditating meditates
+V commemorate commemorated commemorated commemorating commemorates
+V blush blushed blushed blushing blushes n
+V oversee oversaw overseen overseeing oversees
+V bash bashed bashed bashing bashes n
+V embarrass embarrassed embarrassed embarrassing embarrasses
+V forbid forbade forbidden forbidding forbids
+V inquire inquired inquired inquiring inquires
+V relocate relocated relocated relocating relocates
+V slack slacked slacked slacking slacks n
+V dope doped doped doping dopes n
+V unfold unfolded unfolded unfolding unfolds
+V recite recited recited reciting recites
+V simmer simmered simmered simmering simmers n
+V refine refined refined refining refines
+V loosen loosened loosened loosening loosens
+V scrape scraped scraped scraping scrapes n
+V straighten straightened straightened straightening straightens
+V forge forged forged forging forges n
+V plunge plunged plunged plunging plunges n
+V penetrate penetrated penetrated penetrating penetrates
+V contradict contradicted contradicted contradicting contradicts
+V redeem redeemed redeemed redeeming redeems
+V inject injected injected injecting injects
+V contend contended contended contending contends
+V warp warped warped warping warps n
+V brag bragged bragged bragging brags n
+V nurture nurtured nurtured nurturing nurtures n
+V rethink rethought rethought rethinking rethinks n
+V prohibit prohibited prohibited prohibiting prohibits
+V diminish diminished diminished diminishing diminishes
+V stabilize stabilized stabilized stabilizing stabilizes
+V prescribe prescribed prescribed prescribing prescribes
+V bathe bathed bathed bathing bathes n
+V nominate nominated nominated nominating nominates
+V broaden broadened broadened broadening broadens
+V soften softened softened softening softens
+V slash slashed slashed slashing slashes n
+V hinder hindered hindered hindering hinders
+V rave raved raved raving raves n
+V wrestle wrestled wrestled wrestling wrestles n
+V sow sowed sown sowing sows n
+V reopen reopened reopened reopening reopens
+V blaze blazed blazed blazing blazes n
+V consolidate consolidated consolidated consolidating consolidates
+V sharpen sharpened sharpened sharpening sharpens
+V aspire aspired aspired aspiring aspires
+V uphold upheld upheld upholding upholds
+V moor moored moored mooring moors n
+V elevate elevated elevated elevating elevates
+V rant ranted ranted ranting rants n
+V glare glared glared glaring glares n
+V shove shoved shoved shoving shoves n
+V abstain abstained abstained abstaining abstains
+V plead pleaded pleaded pleading pleads
+V flap flapped flapped flapping flaps n
+V blur blurred blurred blurring blurs n
+V cuddle cuddled cuddled cuddling cuddles n
+V flirt flirted flirted flirting flirts n
+V cascade cascaded cascaded cascading cascades n
+V mend mended mended mending mends n
+V speculate speculated speculated speculating speculates
+V pickle pickled pickled pickling pickles n
+V discriminate discriminated discriminated discriminating discriminates
+V squat squatted squatted squatting squats n
+V restrain restrained restrained restraining restrains
+V enrich enriched enriched enriching enriches
+V jog jogged jogged jogging jogs n
+V glitter glittered glittered glittering glitters n
+V abolish abolished abolished abolishing abolishes
+V socialize socialized socialized socializing socializes
+V traverse traversed traversed traversing traverses n
+V rejoice rejoiced rejoiced rejoicing rejoices
+V surpass surpassed surpassed surpassing surpasses
+V allocate allocated allocated allocating allocates
+V contemplate contemplated contemplated contemplating contemplates
+V troll trolled trolled trolling trolls n
+V sabotage sabotaged sabotaged sabotaging sabotages n
+V soothe soothed soothed soothing soothes
+V carve carved carved carving carves
+V juggle juggled juggled juggling juggles n
+V evoke evoked evoked evoking evokes
+V cling clung clung clinging clings n
+V snoop snooped snooped snooping snoops n
+V instruct instructed instructed instructing instructs
+V lighten lightened lightened lightening lightens
+V overflow overflowed overflowed overflowing overflows n
+V undo undid undone undoing undoes
+V discard discarded discarded discarding discards n
+V incur incurred incurred incurring incurs
+V tumble tumbled tumbled tumbling tumbles n
+V encompass encompassed encompassed encompassing encompasses
+V automate automated automated automating automates
+V weaken weakened weakened weakening weakens
+V converse conversed conversed conversing converses n
+V sneeze sneezed sneezed sneezing sneezes n
+V formulate formulated formulated formulating formulates
+V inhibit inhibited inhibited inhibiting inhibits
+V limp limped limped limping limps n
+V rename renamed renamed renaming renames
+V fasten fastened fastened fastening fastens
+V flex flexed flexed flexing flexes n
+V cleanse cleansed cleansed cleansing cleanses
+V itch itched itched itching itches n
+V utilise utilised utilised utilising utilises
+V emit emitted emitted emitting emits
+V stumble stumbled stumbled stumbling stumbles n
+V revisit revisited revisited revisiting revisits
+V spawn spawned spawned spawning spawns n
+V supervise supervised supervised supervising supervises
+V diversify diversified diversified diversifying diversifies
+V kidnap kidnapped kidnapped kidnapping kidnaps
+V finalize finalized finalized finalizing finalizes
+V matte matted matted matting mattes n
+V snore snored snored snoring snores n
+V wager wagered wagered wagering wagers n
+V wrench wrenched wrenched wrenching wrenches n
+V override overrode overridden overriding overrides n
+V intimidate intimidated intimidated intimidating intimidates
+V reassure reassured reassured reassuring reassures
+V overtake overtook overtaken overtaking overtakes
+V bruise bruised bruised bruising bruises n
+V defy defied defied defying defies
+V frighten frightened frightened frightening frightens
+V concede conceded conceded conceding concedes
+V hum hummed hummed humming hums n
+V omit omitted omitted omitting omits
+V scatter scattered scattered scattering scatters n
+V mop mopped mopped mopping mops n
+V intrigue intrigued intrigued intriguing intrigues n
+V dissent dissented dissented dissenting dissents n
+V sparkle sparkled sparkled sparkling sparkles n
+V chant chanted chanted chanting chants n
+V tug tugged tugged tugging tugs n
+V tailgate tailgated tailgated tailgating tailgates n
+V prosecute prosecuted prosecuted prosecuting prosecutes
+V malfunction malfunctioned malfunctioned malfunctioning malfunctions n
+V evade evaded evaded evading evades
+V delve delved delved delving delves
+V weep wept wept weeping weeps n
+V illuminate illuminated illuminated illuminating illuminates n
+V censor censored censored censoring censors n
+V ponder pondered pondered pondering ponders
+V injure injured injured injuring injures
+V emphasise emphasised emphasised emphasising emphasises
+V streamline streamlined streamlined streamlining streamlines n
+V stalk stalked stalked stalking stalks n
+V exaggerate exaggerated exaggerated exaggerating exaggerates
+V devise devised devised devising devises n
+V collide collided collided colliding collides
+V rake raked raked raking rakes n
+V divert diverted diverted diverting diverts
+V invoke invoked invoked invoking invokes
+V deepen deepened deepened deepening deepens
+V awaken awakened awakened awakening awakens
+V shuffle shuffled shuffled shuffling shuffles n
+V chatter chattered chattered chattering chatters n
+V relive relived relived reliving relives
+V affirm affirmed affirmed affirming affirms
+V mourn mourned mourned mourning mourns
+V discern discerned discerned discerning discerns
+V embed embedded embedded embedding embeds
+V flatter flattered flattered flattering flatters
+V linger lingered lingered lingering lingers
+V clap clapped clapped clapping claps n
+V menace menaced menaced menacing menaces n
+V unleash unleashed unleashed unleashing unleashes
+V crumble crumbled crumbled crumbling crumbles n
+V widen widened widened widening widens
+V proclaim proclaimed proclaimed proclaiming proclaims
+V loot looted looted looting loots n
+V brim brimmed brimmed brimming brims n
+V tweak tweaked tweaked tweaking tweaks n
+V rattle rattled rattled rattling rattles n
+V signify signified signified signifying signifies
+V irritate irritated irritated irritating irritates
+V amaze amazed amazed amazing amazes n
+V glide glided glided gliding glides n
+V twitch twitched twitched twitching twitches n
+V hover hovered hovered hovering hovers n
+V glaze glazed glazed glazing glazes n
+V dispense dispensed dispensed dispensing dispenses
+V moan moaned moaned moaning moans n
+V grate grated grated grating grates n
+V graze grazed grazed grazing grazes n
+V bustle bustled bustled bustling bustles n
+V worsen worsened worsened worsening worsens
+V snowboard snowboarded snowboarded snowboarding snowboards n
+V dub dubbed dubbed dubbing dubs n
+V giggle giggled giggled giggling giggles n
+V scramble scrambled scrambled scrambling scrambles n
+V devour devoured devoured devouring devours
+V authorize authorized authorized authorizing authorizes
+V gasp gasped gasped gasping gasps n
+V hone honed honed honing hones n
+V deteriorate deteriorated deteriorated deteriorating deteriorates
+V escalate escalated escalated escalating escalates
+V enact enacted enacted enacting enacts
+V sniff sniffed sniffed sniffing sniffs n
+V harden hardened hardened hardening hardens
+V unpack unpacked unpacked unpacking unpacks
+V vanish vanished vanished vanishing vanishes n
+V narrate narrated narrated narrating narrates
+V shatter shattered shattered shattering shatters n
+V floss flossed flossed flossing flosses n
+V revolve revolved revolved revolving revolves
+V swarm swarmed swarmed swarming swarms n
+V soar soared soared soaring soars n
+V enlighten enlightened enlightened enlightening enlightens
+V tempt tempted tempted tempting tempts
+V shred shredded shredded shredding shreds n
+V circulate circulated circulated circulating circulates
+V loom loomed loomed looming looms n
+V beep beeped beeped beeping beeps n
+V prune pruned pruned pruning prunes n
+V remodel remodeled remodeled remodeling remodels
+V complicate complicated complicated complicating complicates
+V fumble fumbled fumbled fumbling fumbles n
+V renovate renovated renovated renovating renovates
+V proofread proofread proofread proofreading proofreads
+V grieve grieved grieved grieving grieves
+V plow plowed plowed plowing plows n
+V enlist enlisted enlisted enlisting enlists
+V entice enticed enticed enticing entices
+V furnish furnished furnished furnishing furnishes
+V inflict inflicted inflicted inflicting inflicts
+V punt punted punted punting punts n
+V growl growled growled growling growls n
+V yawn yawned yawned yawning yawns n
+V excite excited excited exciting excites
+V compel compelled compelled compelling compels
+V pluck plucked plucked plucking plucks n
+V criticise criticised criticised criticising criticises
+V withhold withheld withheld withholding withholds
+V tickle tickled tickled tickling tickles n
+V denounce denounced denounced denouncing denounces
+V unload unloaded unloaded unloading unloads
+V scold scolded scolded scolding scolds n
+V tremble trembled trembled trembling trembles n
+V deprive deprived deprived depriving deprives
+V encode encoded encoded encoding encodes
+V churn churned churned churning churns n
+V slay slew slain slaying slays
+V harass harassed harassed harassing harasses
+V braid braided braided braiding braids n
+V forage foraged foraged foraging forages n
+V uplift uplifted uplifted uplifting uplifts n
+V vibrate vibrated vibrated vibrating vibrates
+V decode decoded decoded decoding decodes
+V hoard hoarded hoarded hoarding hoards n
+V parse parsed parsed parsing parses
+V overwhelm overwhelmed overwhelmed overwhelming overwhelms
+V mislead misled misled misleading misleads
+V bulge bulged bulged bulging bulges n
+V amuse amused amused amusing amuses
+V degrade degraded degraded degrading degrades
+V lash lashed lashed lashing lashes n
+V recount recounted recounted recounting recounts n
+V swirl swirled swirled swirling swirls n
+V humiliate humiliated humiliated humiliating humiliates
+V peck pecked pecked pecking pecks n
+V peep peeped peeped peeping peeps n
+V refinance refinanced refinanced refinancing refinances
+V inhale inhaled inhaled inhaling inhales
+V ascend ascended ascended ascending ascends
+V dismantle dismantled dismantled dismantling dismantles
+V clog clogged clogged clogging clogs n
+V disseminate disseminated disseminated disseminating disseminates
+V lament lamented lamented lamenting laments n
+V frown frowned frowned frowning frowns n
+V pave paved paved paving paves
+V meow meowed meowed meowing meows n
+V shiver shivered shivered shivering shivers n
+V weld welded welded welding welds n
+V harrow harrowed harrowed harrowing harrows n
+V liberate liberated liberated liberating liberates
+V misunderstand misunderstood misunderstood misunderstanding misunderstands
+V snorkel snorkeled snorkeled snorkeling snorkels n
+V unveil unveiled unveiled unveiling unveils
+V thrash thrashed thrashed thrashing thrashes n
+V brood brooded brooded brooding broods n
+V endanger endangered endangered endangering endangers
+V yearn yearned yearned yearning yearns
+V whine whined whined whining whines n
+V cram crammed crammed cramming crams n
+V taper tapered tapered tapering tapers n
+V brainstorm brainstormed brainstormed brainstorming brainstorms n
+V enclose enclosed enclosed enclosing encloses
+V outsource outsourced outsourced outsourcing outsources
+V debug debugged debugged debugging debugs
+V howl howled howled howling howls n
+V nourish nourished nourished nourishing nourishes
+V scaffold scaffolded scaffolded scaffolding scaffolds n
+V ration rationed rationed rationing rations n
+V wield wielded wielded wielding wields
+V flicker flickered flickered flickering flickers n
+V fluctuate fluctuated fluctuated fluctuating fluctuates
+V twinkle twinkled twinkled twinkling twinkles n
+V ferment fermented fermented fermenting ferments n
+V blister blistered blistered blistering blisters n
+V rumble rumbled rumbled rumbling rumbles n
+V reminisce reminisced reminisced reminiscing reminisces
+V bluff bluffed bluffed bluffing bluffs n
+V solder soldered soldered soldering solders n
+V putt putted putted putting putts n
+V loathe loathed loathed loathing loathes
+V perpetuate perpetuated perpetuated perpetuating perpetuates
+V unify unified unified unifying unifies
+V distort distorted distorted distorting distorts
+V clot clotted clotted clotting clots n
+V rehearse rehearsed rehearsed rehearsing rehearses
+V enrol enrolled enrolled enrolling enrols
+V sprout sprouted sprouted sprouting sprouts n
+V groan groaned groaned groaning groans n
+V urinate urinated urinated urinating urinates
+V trot trotted trotted trotting trots n
+V purr purred purred purring purrs n
+V stun stunned stunned stunning stuns n
+V conjure conjured conjured conjuring conjures
+V solicit solicited solicited soliciting solicits
+V restructure restructured restructured restructuring restructures
+V pant panted panted panting pants n
+V pollute polluted polluted polluting pollutes
+V stutter stuttered stuttered stuttering stutters n
+V infringe infringed infringed infringing infringes
+V cripple crippled crippled crippling cripples n
+V vie vied vied vying vies
+V obstruct obstructed obstructed obstructing obstructs
+V radiate radiated radiated radiating radiates
+V incite incited incited inciting incites
+V kneel knelt knelt kneeling kneels n
+V undress undressed undressed undressing undresses n
+V allure allured allured alluring allures n
+V allege alleged alleged alleging alleges
+V dribble dribbled dribbled dribbling dribbles n
+V fascinate fascinated fascinated fascinating fascinates
+V meddle meddled meddled meddling meddles
+V scour scoured scoured scouring scours n
+V grapple grappled grappled grappling grapples n
+V trespass trespassed trespassed trespassing trespasses n
+V gallop galloped galloped galloping gallops n
+V grunt grunted grunted grunting grunts n
+V sprawl sprawled sprawled sprawling sprawls n
+V grumble grumbled grumbled grumbling grumbles n
+V tamper tampered tampered tampering tampers n
+V insulate insulated insulated insulating insulates
+V pertain pertained pertained pertaining pertains
+V sculpt sculpted sculpted sculpting sculpts
+V stifle stifled stifled stifling stifles n
+V stomp stomped stomped stomping stomps n
+V thicken thickened thickened thickening thickens
+V underpin underpinned underpinned underpinning underpins
+V masturbate masturbated masturbated masturbating masturbates
+V sag sagged sagged sagging sags n
+V precede preceded preceded preceding precedes
+V cull culled culled culling culls n
+V quiver quivered quivered quivering quivers n
+V bask basked basked basking basks
+V shimmer shimmered shimmered shimmering shimmers n
+V impersonate impersonated impersonated impersonating impersonates
+V ensue ensued ensued ensuing ensues
+V hijack hijacked hijacked hijacking hijacks n
+V goof goofed goofed goofing goofs n
+V drool drooled drooled drooling drools n
+V frustrate frustrated frustrated frustrating frustrates
+V sob sobbed sobbed sobbing sobs n
+V rout routed routed routing routs n
+V terrify terrified terrified terrifying terrifies
+V mumble mumbled mumbled mumbling mumbles n
+V procrastinate procrastinated procrastinated procrastinating procrastinates
+V pamper pampered pampered pampering pampers
+V overheat overheated overheated overheating overheats n
+V startle startled startled startling startles n
+V thump thumped thumped thumping thumps n
+V gleam gleamed gleamed gleaming gleams n
+V honk honked honked honking honks n
+A good better best
+A great greater greatest
+A much more most
+A well better best
+A many more most
+A new newer newest
+A long longer longest
+A nice nicer nicest
+A old older oldest
+A kind kinder kindest
+A few fewer fewest
+A pretty prettier prettiest
+A high higher highest
+A hard harder hardest
+A big bigger biggest
+A bad worse worst
+A small smaller smallest
+A large larger largest
+A full fuller fullest
+A cool cooler coolest
+A happy happier happiest
+A far farther farthest
+A soon sooner soonest
+A fine finer finest
+A early earlier earliest
+A less lesser least
+A late later latest
+A near nearer nearest
+A easy easier easiest
+A close closer closest
+A young younger youngest
+A light lighter lightest
+A short shorter shortest
+A crazy crazier craziest
+A hot hotter hottest
+A low lower lowest
+A funny funnier funniest
+A strong stronger strongest
+A fast faster fastest
+A cold colder coldest
+A clear clearer clearest
+A cut cutter cutest
+A simple simpler simplest
+A safe safer safest
+A busy busier busiest
+A clean cleaner cleanest
+A sad sadder saddest
+A dark darker darkest
+A poor poorer poorest
+A fit fitter fittest
+A wide wider widest
+A deep deeper deepest
+A cheap cheaper cheapest
+A rich richer richest
+A heavy heavier heaviest
+A healthy healthier healthiest
+A fresh fresher freshest
+A sweet sweeter sweetest
+A weird weirder weirdest
+A strange stranger strangest
+A quick quicker quickest
+A warm warmer warmest
+A smart smarter smartest
+A tough tougher toughest
+A fair fairer fairest
+A dry drier driest
+A scary scarier scariest
+A slow slower slowest
+A wild wilder wildest
+A cute cuter cutest
+A tall taller tallest
+A ill worse worst
+A rare rarer rarest
+A bright brighter brightest
+A loud louder loudest
+A weak weaker weakest
+A wise wiser wisest
+A broad broader broadest
+A sharp sharper sharpest
+A dear dearer dearest
+A strict stricter strictest
+A wealthy wealthier wealthiest
+A brave braver bravest
+A dumb dumber dumbest

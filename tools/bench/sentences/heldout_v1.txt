@@ -1,0 +1,82 @@
+# pboard benchmark held-out sentences v1. Written from scratch for this benchmark (not drawn from any
+# corpus), so no language model can have trained on them. Lines starting with # are ignored.
+# Typing targets are the words as written; scoring is case-insensitive.
+# --- section: tap
+I think we should leave a little earlier tomorrow morning
+can you send me the address of the restaurant
+the meeting was moved to Thursday because half the team is away
+she said the train was delayed again so she will be late
+we need to buy milk eggs and some bread on the way home
+don't forget to water the plants while I'm gone
+my brother finally fixed the heating in the kitchen
+let me know when you get there safely
+the weather looks great for a walk this afternoon
+I can't believe how quickly this year has gone by
+please remind me to call the dentist on Monday
+he left his keys at the office and had to go back
+we watched a really strange documentary about deep sea fish
+are you still coming to the party on Saturday night
+the kids want pizza but I would rather cook something healthy
+thanks for helping me move all those heavy boxes
+the library closes early during the summer holidays
+I'll pick you up from the station around six
+our flight leaves at seven so we should get some sleep
+did you see the message I sent you yesterday
+there is a small problem with the printer upstairs
+could you check whether the parcel has arrived
+my phone battery always dies at the worst possible moment
+the new bakery around the corner makes amazing cinnamon rolls
+we should probably book the tickets before they sell out
+it took me forever to find a parking space downtown
+I'm sorry I missed your call this morning
+the garden looks wonderful after all that rain
+she is learning to play the violin and practices every evening
+what time does the concert start
+my grandmother tells the best stories about her childhood
+the doctor said I need to drink more water
+we ran out of coffee so I am going to the shop
+honestly the second season was much better than the first
+remember to bring a jacket because it gets cold at night
+the project deadline has been pushed back by two weeks
+I found an old photograph of us at the beach
+they are planning a surprise birthday dinner for Priya
+he has been working from home since the spring
+could we talk about the budget after lunch
+the cat knocked a glass of water off the table
+I'll be there in ten minutes
+nobody told me the shop was closed on Sundays
+the hotel room had a beautiful view of the mountains
+we need someone to look after the dog next weekend
+# --- section: swipe
+I hope you have a lovely weekend with your family
+the bus was completely full this morning
+we are going to try the new Italian place tonight
+please let me know if anything changes
+my laptop keeps freezing whenever I open the browser
+she bought a bicycle so she can ride to work
+the museum has a special exhibition about ancient maps
+I will call you back after the meeting
+there was a long queue outside the post office
+we should paint the bedroom a lighter colour
+the river was frozen for almost the whole month
+could you recommend a good book for the holiday
+the children were playing football in the park
+I forgot my umbrella and got completely soaked
+he always orders the same thing at that cafe
+let us meet at the entrance of the station
+the soup needs a bit more salt and pepper
+my neighbour plays the piano every Sunday afternoon
+we finally finished painting the fence
+the internet has been really slow all day
+I need to renew my passport before the trip
+she wrote a lovely letter to her old teacher
+the market sells fresh vegetables every morning
+can you turn the music down a little
+our team won the match in the last minute
+I am thinking about taking a cooking class
+the lights in the hallway keep flickering
+they moved to a small village near the coast
+it was the best holiday we have had in years
+please bring your own plate and cup
+the cake is in the fridge if you want some
+we got lost on the way to the wedding

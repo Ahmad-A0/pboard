@@ -1,0 +1,10 @@
+sherpa-onnx==2.0.1
+moonshine-voice==0.1.6
+vosk==0.3.45
+jiwer==4.0.0
+whisper-normalizer==1.0.0
+soundfile
+pyarrow
+numpy
+onnxruntime==1.28.0
+onnx

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <!-- Debug-only fields with various input types for side-by-side comparison with Gboard. -->
+        <activity android:name="dev.pboard.debug.FieldsActivity" android:exported="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <!-- Debug builds: device tests start Scan text directly with a test image (extra test_image). -->
+        <activity android:name="dev.pboard.ime.scan.ScanTextActivity" android:exported="true"
+            tools:replace="android:exported" />
+        <!-- Debug builds: device checks change settings in-process while the keyboard is shown. -->
+        <receiver android:name="dev.pboard.debug.PrefsReceiver" android:exported="true" />
+    </application>
+</manifest>

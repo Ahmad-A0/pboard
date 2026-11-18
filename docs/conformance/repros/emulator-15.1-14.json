@@ -1,0 +1,19 @@
+{
+ "id": "repro/13",
+ "src": "qol",
+ "field": {
+  "variant": "nocap",
+  "text": "abcdefghijklmnopqrst"
+ },
+ "steps": [
+  {
+   "op": "fieldtap",
+   "offset": 5,
+   "m": {
+    "k": "fieldtap",
+    "offset": 5
+   }
+  }
+ ],
+ "item": "ED-01"
+}

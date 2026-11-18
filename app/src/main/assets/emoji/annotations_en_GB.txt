@@ -1,0 +1,369 @@
+😘	face blowing a kiss	adorbs|bae|blowing|face|flirt|heart|ily|kiss|love|lover|miss|muah|mwah|romantic|smooch|xoxo|you
+😋	face savouring food	delicious|face|face savouring food|savouring|smile|yum
+🤭	face with hand over mouth	embarrassed|face|giggle|giggling|hand|mouth|oops|realisation|secret|shock|sudden|surprise|whoops
+🤐	zip-mouth face	face|keep|mouth|quiet|secret|shut|zip
+🤨	face with raised eyebrow	disapproval|disbelief|distrust|emoji|eyebrow|face|hmm|mild|raised|sceptic|sceptical|scepticism|surprise|what
+😶‍🌫️	face in clouds	absent-minded|face in clouds|face in the fog|head in clouds
+😷	face with medical mask	cold|dentist|dermatologist|doctor|dr|face|germs|mask|medical|medicine|poorly|sick
+😵‍💫	face with spiral eyes	confused|dizzy|eyes|face|hypnotised|omg|smiley|spiral|trouble|whoa|woah|woozy
+🫤	face with diagonal mouth	disappointed|face with diagonal mouth|meh|sceptical|unsure
+😮	face with open mouth	believe|face|forgot|mouth|omg|open|shocked|surprised|sympathy|unbelievable|unreal|whoa|woah|wow|you
+😤	face with steam from nose	anger|angry|face|feels|frustration|fume|fuming|furious|fury|mad|nose|steam|triumph|unhappy|won
+🙈	see-no-evil monkey	embarrassed|evil|face|forbidden|forgot|gesture|hide|monkey|no|omg|prohibited|scared|secret|see|smh|watch
+💗	growing heart	143|emotion|excited|growing|heart|heartpulse|ily|kisses|muah|mwah|nervous|pulse|xoxo
+🩶	grey heart	grey|heart|silver|slate
+💯	hundred points	100|a+|agree|clearly|definitely|faithful|fleek|full|keep|perfect|point|score|TRUE|truth|yup
+💬	speech balloon	balloon|bubble|comic|dialogue|message|sms|speech|talk|text|typing
+🗨️	left speech bubble	balloon|bubble|dialogue|left speech bubble|speech
+💭	thought balloon	balloon|bubble|cartoon|cloud|comic|daydream|decisions|dream|idea|invent|invention|realise|think|wonder
+🙌	raising hands	celebration|gesture|hand|hooray|raising hands|woo hoo|yay
+👃	nose	body|nose|noses|nosey|odour|smell|smells
+🫀	anatomical heart	anatomical|beat|cardiology|heart|heartbeat|organ|pulse|red
+🙇	person bowing	apology|ask|beg|bow|bowing|favour|forgive|gesture|meditate|meditation|person|pity|regret|sorry
+🙇‍♂️	man bowing	apology|ask|beg|bow|bowing|favour|forgive|gesture|man|meditate|meditation|pity|regret|sorry
+🙇‍♀️	woman bowing	apology|ask|beg|bow|bowing|favour|forgive|gesture|meditate|meditation|pity|regret|sorry|woman
+🧑‍⚖️	judge	judge|law
+👨‍⚖️	man judge	judge|justice|law|man
+👩‍⚖️	woman judge	judge|justice|law|woman
+🧑‍🌾	farmer	farmer|gardener
+👨‍🌾	man farmer	farmer|gardener|man
+👩‍🌾	woman farmer	farmer|gardener|woman
+🧑‍🚒	firefighter	fire engine|fire truck|firefighter
+👨‍🚒	man firefighter	fire truck|firefighter|man
+👩‍🚒	woman firefighter	fire truck|firefighter|woman
+👷	construction worker	build|construction|fix|hard hat|hat|man|person|rebuild|remodel|repair|work|worker
+👷‍♂️	man construction worker	build|construction|fix|hard hat|hat|man|rebuild|remodel|repair|work|worker
+👷‍♀️	woman construction worker	build|construction|fix|hard hat|hat|man|rebuild|remodel|repair|woman|work|worker
+🤵	person in tuxedo	groom|person|person in tux|person in tuxedo|tuxedo
+🤵‍♂️	man in tuxedo	man|man in tux|man in tuxedo|tuxedo
+🤵‍♀️	woman in tuxedo	tuxedo|woman|woman in tux|woman in tuxedo
+🤶	Mrs Claus	celebration|Christmas|claus|mother|Mrs
+💇	person getting haircut	barber|beauty|chop|cosmetology|cut|groom|hair|haircut|parlour|person|shears|style
+💇‍♂️	man getting haircut	barber|beauty|chop|cosmetology|cut|groom|hair|haircut|man|parlour|person|shears|style
+💇‍♀️	woman getting haircut	barber|beauty|chop|cosmetology|cut|groom|hair|haircut|parlour|person|shears|style|woman
+🧑‍🦯	person with guide cane	accessibility|blind|person with guide cane|person with white cane
+🧑‍🦯‍➡️	person with guide cane: facing right	accessibility|blind|facing|person with guide cane|person with white cane|right
+👨‍🦯	man with guide cane	accessibility|blind|man|man with guide cane
+👨‍🦯‍➡️	man with guide cane: facing right	accessibility|blind|facing|man|man with guide cane|right
+👩‍🦯	woman with guide cane	accessibility|blind|woman|woman with guide cane
+👩‍🦯‍➡️	woman with guide cane: facing right	accessibility|blind|facing|right|woman|woman with guide cane
+🧑‍🦼	person in powered wheelchair	accessibility|person in motorised wheelchair|person in powered wheelchair|wheelchair
+🧑‍🦼‍➡️	person in powered wheelchair: facing right	accessibility|facing|person in motorised wheelchair|person in powered wheelchair|right|wheelchair
+👨‍🦼	man in powered wheelchair	accessibility|man|man in powered wheelchair|wheelchair
+👨‍🦼‍➡️	man in powered wheelchair: facing right	accessibility|facing|man|man in powered wheelchair|right|wheelchair
+👩‍🦼	woman in powered wheelchair	accessibility|wheelchair|woman|woman in powered wheelchair
+👩‍🦼‍➡️	woman in powered wheelchair: facing right	accessibility|facing|right|wheelchair|woman|woman in powered wheelchair
+🕺	man dancing	dance|dancer|dancing|disco|elegant|festive|flair|flamenco|groove|let’s|man|salsa|tango
+🧖	person in steamy room	day|luxurious|pamper|person|relax|room|sauna|spa|steam|steam bath|unwind
+🧖‍♂️	man in steamy room	day|luxurious|man|pamper|relax|room|sauna|spa|steam|steam bath|unwind
+🧖‍♀️	woman in steamy room	day|luxurious|pamper|relax|room|sauna|spa|steam|steam bath|unwind|woman
+🏌️	person golfing	ball|birdie|caddy|driving|golf|golfing|green|person|putt|range|tee
+🏌️‍♂️	man golfing	ball|birdie|caddy|driving|golf|golfing|green|man|putt|range|tee
+🏌️‍♀️	woman golfing	ball|birdie|caddy|driving|golf|golfing|green|putt|range|tee|woman
+👬	men holding hands	couple|Gemini|holding hands|man|men holding hands|twins|zodiac
+👨🏻‍🤝‍👨🏼	men holding hands: light skin tone, medium-light skin tone	couple|Gemini|holding hands|light skin tone|man|medium-light skin tone|men holding hands|twins|zodiac
+👨🏻‍🤝‍👨🏽	men holding hands: light skin tone, medium skin tone	couple|Gemini|holding hands|light skin tone|man|medium skin tone|men holding hands|twins|zodiac
+👨🏻‍🤝‍👨🏾	men holding hands: light skin tone, medium-dark skin tone	couple|Gemini|holding hands|light skin tone|man|medium-dark skin tone|men holding hands|twins|zodiac
+👨🏻‍🤝‍👨🏿	men holding hands: light skin tone, dark skin tone	couple|dark skin tone|Gemini|holding hands|light skin tone|man|men holding hands|twins|zodiac
+👨🏼‍🤝‍👨🏻	men holding hands: medium-light skin tone, light skin tone	couple|Gemini|holding hands|light skin tone|man|medium-light skin tone|men holding hands|twins|zodiac
+👨🏼‍🤝‍👨🏽	men holding hands: medium-light skin tone, medium skin tone	couple|Gemini|holding hands|man|medium skin tone|medium-light skin tone|men holding hands|twins|zodiac
+👨🏼‍🤝‍👨🏾	men holding hands: medium-light skin tone, medium-dark skin tone	couple|Gemini|holding hands|man|medium-dark skin tone|medium-light skin tone|men holding hands|twins|zodiac
+👨🏼‍🤝‍👨🏿	men holding hands: medium-light skin tone, dark skin tone	couple|dark skin tone|Gemini|holding hands|man|medium-light skin tone|men holding hands|twins|zodiac
+👨🏽‍🤝‍👨🏻	men holding hands: medium skin tone, light skin tone	couple|Gemini|holding hands|light skin tone|man|medium skin tone|men holding hands|twins|zodiac
+👨🏽‍🤝‍👨🏼	men holding hands: medium skin tone, medium-light skin tone	couple|Gemini|holding hands|man|medium skin tone|medium-light skin tone|men holding hands|twins|zodiac
+👨🏽‍🤝‍👨🏾	men holding hands: medium skin tone, medium-dark skin tone	couple|Gemini|holding hands|man|medium skin tone|medium-dark skin tone|men holding hands|twins|zodiac
+👨🏽‍🤝‍👨🏿	men holding hands: medium skin tone, dark skin tone	couple|dark skin tone|Gemini|holding hands|man|medium skin tone|men holding hands|twins|zodiac
+👨🏾‍🤝‍👨🏻	men holding hands: medium-dark skin tone, light skin tone	couple|Gemini|holding hands|light skin tone|man|medium-dark skin tone|men holding hands|twins|zodiac
+👨🏾‍🤝‍👨🏼	men holding hands: medium-dark skin tone, medium-light skin tone	couple|Gemini|holding hands|man|medium-dark skin tone|medium-light skin tone|men holding hands|twins|zodiac
+👨🏾‍🤝‍👨🏽	men holding hands: medium-dark skin tone, medium skin tone	couple|Gemini|holding hands|man|medium skin tone|medium-dark skin tone|men holding hands|twins|zodiac
+👨🏾‍🤝‍👨🏿	men holding hands: medium-dark skin tone, dark skin tone	couple|dark skin tone|Gemini|holding hands|man|medium-dark skin tone|men holding hands|twins|zodiac
+👨🏿‍🤝‍👨🏻	men holding hands: dark skin tone, light skin tone	couple|dark skin tone|Gemini|holding hands|light skin tone|man|men holding hands|twins|zodiac
+👨🏿‍🤝‍👨🏼	men holding hands: dark skin tone, medium-light skin tone	couple|dark skin tone|Gemini|holding hands|man|medium-light skin tone|men holding hands|twins|zodiac
+👨🏿‍🤝‍👨🏽	men holding hands: dark skin tone, medium skin tone	couple|dark skin tone|Gemini|holding hands|man|medium skin tone|men holding hands|twins|zodiac
+👨🏿‍🤝‍👨🏾	men holding hands: dark skin tone, medium-dark skin tone	couple|dark skin tone|Gemini|holding hands|man|medium-dark skin tone|men holding hands|twins|zodiac
+💏	kiss	anniversary|babe|bae|couple|date|dating|heart|kiss|love|muah|mwah|person|romance|together|xoxo
+🧑🏻‍❤️‍💋‍🧑🏼	kiss: person, person, light skin tone, medium-light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏻‍❤️‍💋‍🧑🏽	kiss: person, person, light skin tone, medium skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏻‍❤️‍💋‍🧑🏾	kiss: person, person, light skin tone, medium-dark skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏻‍❤️‍💋‍🧑🏿	kiss: person, person, light skin tone, dark skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|light skin tone|love|muah|mwah|person|romance|together|xoxo
+🧑🏼‍❤️‍💋‍🧑🏻	kiss: person, person, medium-light skin tone, light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏼‍❤️‍💋‍🧑🏽	kiss: person, person, medium-light skin tone, medium skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium skin tone|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏼‍❤️‍💋‍🧑🏾	kiss: person, person, medium-light skin tone, medium-dark skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium-dark skin tone|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏼‍❤️‍💋‍🧑🏿	kiss: person, person, medium-light skin tone, dark skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏽‍❤️‍💋‍🧑🏻	kiss: person, person, medium skin tone, light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏽‍❤️‍💋‍🧑🏼	kiss: person, person, medium skin tone, medium-light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium skin tone|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏽‍❤️‍💋‍🧑🏾	kiss: person, person, medium skin tone, medium-dark skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium skin tone|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏽‍❤️‍💋‍🧑🏿	kiss: person, person, medium skin tone, dark skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏾‍❤️‍💋‍🧑🏻	kiss: person, person, medium-dark skin tone, light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|light skin tone|love|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏾‍❤️‍💋‍🧑🏼	kiss: person, person, medium-dark skin tone, medium-light skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium-dark skin tone|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏾‍❤️‍💋‍🧑🏽	kiss: person, person, medium-dark skin tone, medium skin tone	anniversary|babe|bae|couple|date|dating|heart|kiss|love|medium skin tone|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏾‍❤️‍💋‍🧑🏿	kiss: person, person, medium-dark skin tone, dark skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏿‍❤️‍💋‍🧑🏻	kiss: person, person, dark skin tone, light skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|light skin tone|love|muah|mwah|person|romance|together|xoxo
+🧑🏿‍❤️‍💋‍🧑🏼	kiss: person, person, dark skin tone, medium-light skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium-light skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏿‍❤️‍💋‍🧑🏽	kiss: person, person, dark skin tone, medium skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium skin tone|muah|mwah|person|romance|together|xoxo
+🧑🏿‍❤️‍💋‍🧑🏾	kiss: person, person, dark skin tone, medium-dark skin tone	anniversary|babe|bae|couple|dark skin tone|date|dating|heart|kiss|love|medium-dark skin tone|muah|mwah|person|romance|together|xoxo
+👩‍❤️‍💋‍👨	kiss: woman, man	anniversary|babe|bae|couple|date|dating|heart|kiss|love|man|muah|mwah|person|romance|together|woman|xoxo
+👨‍❤️‍💋‍👨	kiss: man, man	anniversary|babe|bae|couple|date|dating|heart|kiss|love|man|muah|mwah|person|romance|together|xoxo
+👩‍❤️‍💋‍👩	kiss: woman, woman	anniversary|babe|bae|couple|date|dating|heart|kiss|love|muah|mwah|person|romance|together|woman|xoxo
+🫆	fingerprint	clue|crime|detective|fingerprint|forensics|identity|mystery|print|safety|security|trace
+🦣	mammoth	animal|extinction|large|mammoth|tusk|woolly|wooly
+🦚	peacock	animal|bird|colourful|ornithology|ostentatious|peacock|peahen|pretty|proud
+🐦‍⬛	blackbird	animal|beak|bird|black|caw|corvid|crow|ornithology|raven|rook
+🐦‍🔥	phoenix	fantasy|firebird|phoenix|rebirth|reincarnation
+🫍	orca	killer|marine|ocean|orca|whale
+🦑	squid	animal|food|mollusc|squid
+🪴	potted plant	grow|house|nurturing|plant|potted plant
+🍋‍🟩	lime	citrus|cocktail|fruit|garnish|margarita|mojito|refreshing|salsa|sour|tequila|tropical|zest
+🍌	banana	fruit|potassium
+🍍	pineapple	colada|fruit|piña|tropical
+🍆	aubergine	aubergine|eggplant|vegetable
+🌶️	hot pepper	chilli|pepper
+🫑	pepper	bell|capsicum|sweet|vegetable
+🫝	gherkin	brine|condiment|cucumber|ferment|pickle|relish
+🥬	leafy green	bok|cabbage|choi|green|kale|lettuce|pak
+🧄	garlic	flavouring|garlic
+🧅	onion	flavouring|onion
+🫚	root ginger	beer|ginger|health|herb|natural|spice
+🫛	pea pod	beans|beanstalk|edamame|legume|pod|soya|vegetable|veggie
+🫜	root vegetable	beetroot|garden|root|turnip|vegetable
+🫓	flatbread	arepa|bread|food|gordita|lavash|naan|nan|pitta
+🧇	waffle	breakfast|iron|unclear|vague|waffle
+🥩	cut of meat	chop|cut|lamb|meat|pork|red|steak
+🍟	french fries	chips|fast|food|fries
+🍳	cooking	breakfast|easy|egg|fried|fry|frying|over|pan|restaurant|side|sunny|up
+🍿	popcorn	corn|film|movie|pop
+🧂	salt	condiment|flavour|mad|salt|salty|shaker|taste|upset
+🥫	tinned food	can|canned|food|tin
+🍥	fish cake with swirl	cake|fishcake|narutomaki|pastry|swirl
+🥡	takeout box	box|Chinese|chopsticks|delivery|food|oyster|pail|takeaway
+🍪	cookie	biscuit|chip|chocolate|dessert|sweet
+🍬	sweet	candy|cavities|dessert|halloween|restaurant|sweet|tooth|wrapper
+🍮	egg custard	custard|dessert|pudding|sweet
+🫖	teapot	brew|drink|food|pot|tea
+🍶	sake	bar|beverage|bottle|cup|drink
+🥃	tumbler glass	glass|scotch|shot|spirits|whiskey|whisky
+🥤	cup with straw	drink|fizzy|juice|malt|milkshake|pop|soda|soft|straw|water
+🧃	drink carton	beverage|box|carton|juice|straw|sweet
+🧉	maté	drink|maté
+🍴	fork and knife	breakfast|brekkie|cooking|cutlery|delicious|dinner|eat|feed|food|fork|hungry|knife|lunch|restaurant|yum|yummy
+🏺	amphora	amphora|Aquarius|drink|jar|jug|zodiac
+🗻	Mount Fuji	Fuji|Mount Fuji|mountain
+🏕️	camping	tent
+🏜️	desert	cactus
+🏝️	desert island	island|palm|tree
+🏞️	national park	mountain|park|river|tree
+🏛️	classical building	building|column
+🏗️	building construction	construction|crane|site
+🧱	brick	clay|mortar|wall
+🪵	wood	log|lumber|stump|timber
+🏪	convenience store	24|building|hours|shop|store
+🕌	mosque	Islam|mosque|Muslim|religion
+🛕	Hindu temple	Hindu|temple
+🕍	synagogue	Jew|Jewish|Judaism|religion|temple
+⛩️	Shinto shrine	religion|shrine|torii
+🕋	Kaaba	Islam|Kaaba|Muslim|religion
+🌇	sunset	building|cityscape|dusk|sun
+🛝	playground slide	park|play|slide
+🎡	ferris wheel	amusement|park|theme|wheel
+🎢	roller coaster	amusement|coaster|park|theme
+🚃	railway carriage	car|carriage|electric|train|tram|trolleybus
+🚄	high-speed train	railway|shinkansen|speed|TGV|train
+🚇	metro	subway|travel|tube|underground
+🚞	mountain railway	car|carriage|railway|trip
+🚌	bus	coach|school|vehicle
+🚍	oncoming bus	bus|cars|coach
+🚓	police car	car|cops|patrol
+🚖	oncoming taxi	cab|cabbie|car|drive|hail|taxi|yellow
+🚗	car	automobile|car|driving|vehicle
+🚘	oncoming car	car|drive|vehicle
+🚙	sport utility vehicle	4x4|car|drive|off-road|recreational|suv|utility|vehicle
+🚚	delivery truck	drive|lorry|truck|vehicle
+🚛	articulated lorry	drive|lorry|move|truck|vehicle
+🏍️	motorcycle	motorbike|racing
+🦼	powered wheelchair	accessibility|wheelchair
+🛺	auto rickshaw	rickshaw|tuk tuk|tuk-tuk
+🚏	bus stop	stop
+⛽	fuel pump	diesel|petrol|pump|station
+🛞	wheel	circle|turn|tyre|wheel
+🚥	horizontal traffic light	junction|light|signal|traffic
+🚦	vertical traffic light	junction|signal
+🛟	lifebuoy	buoy|float|life|preserver|rescue|ring|safety|save|saver
+⛵	sailing boat	boat|resort|sea|yacht
+🛶	canoe	boat|kayak
+🛳️	passenger ship	cruise|liner|ship
+🛥️	motorboat	boat|motor|motorboat
+✈️	aeroplane	fly|flying|jet|plane|travel
+🛩️	small aeroplane	aeroplane|aircraft|light|plane
+🛫	aeroplane departure	departure|plane|take-off
+🛬	aeroplane arrival	arrival|arriving|landing|plane
+🪂	parachute	hang-glide|parachute|parasail|parascend|skydive
+🚟	suspension railway	monorail|railway
+🚀	rocket	launch|space|travel
+🛸	flying saucer	aliens|extraterrestrial|saucer|UFO
+🛎️	service bell	bell|concierge|hotel|reception|service
+⌚	watch	clock|time|wristwatch
+🕧	twelve-thirty	12:30|12.30|clock|half|past|twelve
+🕜	one-thirty	1:30|1.30|clock|half|one|past
+🕝	two-thirty	2:30|2.30|clock|half|past|two
+🕞	three-thirty	3:30|3.30|clock|half|past|three
+🕟	four-thirty	4:30|4.30|clock|four|half|past
+🕠	five-thirty	5:30|5.30|clock|five|half|past
+🕡	six-thirty	6:30|6.30|clock|half|past|six
+🕖	seven o’clock	7|7:00|clock|o’clock|time
+🕢	seven-thirty	7:30|7.30|clock|half|past|seven
+🕣	eight-thirty	8:30|8.30|clock|eight|half|past
+🕤	nine-thirty	9:30|9.30|clock|half|nine|past
+🕙	ten o’clock	10|10:00|clock|o’clock|time
+🕥	ten-thirty	10:30|10.30|clock|half|past|ten
+🕦	eleven-thirty	11:30|11.30|clock|eleven|half|past
+🌗	last quarter moon	half|last|moon|quarter|space|third
+🌙	crescent moon	moon|Ramadan|space
+🌜	last quarter moon face	dreams|face|moon|quarter
+🌡️	thermometer	temperature|weather
+☀️	sun	bright|rays|space|sunny|sunshine|weather
+🪐	ringed planet	planet|Saturn|saturnine
+⭐	star	astronomy
+☁️	cloud	cloudy|weather
+⛈️	cloud with lightning and rain	lightning|rain|thunder|thunderstorm|weather
+🌂	closed umbrella	rain|umbrella
+☂️	umbrella	open|rain
+☔	umbrella with rain drops	drops|open|rain|raindrops|weather
+⛱️	umbrella on ground	beach|ground|sun|sunshade
+🌊	water wave	nature|ocean|sea|surf
+🎏	carp streamer	celebration|Japanese|koinobori|sock|streamer|wind
+🎗️	reminder ribbon	awareness|celebration|ribbon
+🎖️	military medal	award|celebration
+🏆	trophy	champion|prize|slay|sport|victory|win
+🏅	sports medal	award|gold|winner
+🥇	1st place medal	first|gold|winner
+🥈	2nd place medal	second|silver
+⚽	football	ball|futbol|soccer|sport
+⚾	baseball	ball|sport
+🥎	softball	ball|glove|sports|underarm
+🏀	basketball	ball|hoop|sport
+🏐	volleyball	ball|game
+🏈	american football	ball|bowl|sport|super
+🏉	rugby football	ball|sport
+🎾	tennis	ball|racquet|sport
+🥏	flying disc	catch|throw|ultimate
+🎳	bowling	ball|game|sport|strike
+🏏	cricket match	ball|bat|cricket|game
+🏑	field hockey	ball|game|stick
+🏒	ice hockey	game|puck|stick
+🥍	lacrosse	ball|goal|sports|stick
+🏓	table tennis	ball|bat|game|paddle|ping|pingpong|pong
+🏸	badminton	birdie|game|racquet|shuttlecock
+🥊	boxing glove	bout|match|punch|ring
+🥋	martial arts uniform	judo|karate|taekwondo
+🥅	goal net	football|game|hockey|score|sports
+⛳	flag in hole	golf|sport
+⛸️	ice skate	rink|skating
+🎣	fishing pole	entertainment|fish|rod|sport
+🤿	diving mask	scuba|snorkelling
+🎽	running top	athletics|sash|vest
+🎿	skis	snow|sport
+🛷	sledge	luge|sled|sleigh|snow|toboggan
+🥌	curling stone	game|rock
+🎯	bullseye	bull|dart|direct|entertainment|game|hit|target
+🪀	yo-yo	fluctuate|toy
+🪁	kite	fly|soar
+🔫	water pistol	gun|handgun|revolver|tool|weapon
+🎱	pool 8 ball	8ball|billiard|eight|game
+🔮	crystal ball	fairy|fairytale|fantasy|fortune|future|magic|tale|tool
+🪄	magic wand	magician|witch|wizard
+🎮	video game	controller|entertainment
+🕹️	joystick	game|video
+🎰	slot machine	casino|gamble|game
+🎲	game die	dice|entertainment
+🧩	puzzle piece	clue|interlocking|jigsaw
+🧸	teddy bear	plaything|plush|stuffed|toy
+🪅	piñata	candy|celebrate|cinco|de|festive|mayo|party|pinada|pinata|piñata
+🪩	mirror ball	dance|disco|glitter|party
+🪆	Russian dolls	babushka|matryoshka|nesting
+♠️	spade suit	card|game
+♥️	heart suit	card|emotion|game
+♦️	diamond suit	card|game
+♣️	club suit	card|game
+♟️	chess pawn	dupe|expendable
+🃏	joker	card|game|wildcard
+🀄	mahjong red dragon	game
+🎴	flower playing cards	game|Japanese
+🎭	performing arts	actor|actress|entertainment|mask|theater|theatre|thespian
+🖼️	framed picture	art|museum|painting
+🎨	artist palette	art|colourful|creative|entertainment|museum|painting
+🧵	thread	needle|sewing|spool|string
+🪡	sewing needle	embroidery|sew|stitches|sutures|tailoring|thread
+🧶	yarn	ball|crochet|knit
+🪢	knot	cord|rope|tangled|tie|twine|twist
+🦺	safety vest	emergency|hi-vis|high-vis|jacket|life jacket|safety|vest
+👔	tie	clothing|employed|necktie|serious|shirt|tie
+👕	t-shirt	blue|casual|clothes|clothing|collar|dressed|green|shirt|shopping|t shirt|tshirt|weekend
+🩱	one-piece swimsuit	bathing suit|one-piece swimsuit|swimming costume
+🩲	briefs	bathing suit|briefs|one-piece|pants|swimsuit|underwear
+🩳	shorts	bathing suit|boardshorts|shorts|swim shorts|underwear
+🩴	flip-flop	beach sandals|flip-flop|flipflop|sandals|thong sandals|thongs|zori
+👟	running shoe	athletic|clothes|clothing|fast|kick|running|shoe|shoes|shopping|sneaker|tennis|trainers
+🥿	flat shoe	ballet flat|flat shoe|pump|slip-on|slipper
+📯	post horn	horn|post|postal
+🎺	trumpet	instrument|music
+🪗	accordion	box|concertina|instrument|music|squeeze|squeezebox
+🎸	guitar	instrument|music
+🎹	musical keyboard	instrument|music|piano
+🎻	violin	instrument|music
+🪘	conga drum	beat|conga|drum|instrument|long|rhythm
+💰	money bag	bag|bank|bet|billion|cash|cost|dollar|gold|million|moneybag|paid|paying|pot|rich|win
+🪎	treasure chest	chest|gem|gold|jewels|loot|money|prize|silver|treasure|valuables|wealth
+💷	pound banknote	banknote|bill|currency|money|note|pound|sterling
+📫	closed mailbox with raised flag	closed postbox with raised flag|letterbox|mail|mailbox|post|post box|postbox
+📪	closed mailbox with lowered flag	closed postbox with lowered flag|letterbox|lowered|mail|mailbox|post box|postbox
+📬	open mailbox with raised flag	mail|mailbox|open postbox with raised flag|post|post box|postbox
+📭	open mailbox with lowered flag	lowered|mail|mailbox|open postbox with lowered flag|post|post box|postbox
+🪌	rubber	correction|delete|drawing|erase|error|mistake|remove|undo|writing
+🔒	locked	closed|locked|padlock
+🔓	unlocked	lock|open|padlock|unlock|unlocked
+🦯	guide cane	accessibility|blind|guide cane
+💉	syringe	ill|injection|medicine|needle|syringe
+🩹	plaster	injury|plaster|sticking plaster
+🛗	lift	accessibility|elevator|hoist|lift
+🛁	bath	bath|bathtub
+🪤	mousetrap	bait|cheese|lure|mouse|mousetrap|snare|trap
+🪒	razor	cut-throat|razor|sharp|shave
+🧴	lotion bottle	lotion|lotion bottle|moisturiser|shampoo|sunscreen
+🧷	safety pin	nappy|punk rock|safety pin
+🧻	roll of paper	paper towels|roll of paper|toilet paper|toilet roll
+🧼	soap	bar|bathing|clean|cleaning|lather|soap|soap dish
+🪪	identification card	credentials|driving|ID|identification card|licence|security
+🏧	ATM sign	ATM|automated|bank|cash|cashpoint|money|sign|teller
+🚹	men’s room	bathroom|lavatory|loo|man|men’s|room|toilet|WC
+🚺	women’s room	bathroom|lavatory|loo|room|toilet|WC|woman|women’s
+🚻	toilets	bathroom|lavatory|restroom|toilet|WC
+🚾	water closet	closet|lavatory|restroom|toilet|water|wc
+🔄	anticlockwise arrows button	again|anticlockwise|arrow|arrows|button|counterclockwise|deja|refresh|rewindershins|vu
+✡️	Star of David	David|Jewish|Judaism|religion|star|Star of David
+✝️	Latin cross	Christian|cross|Latin cross|religion
+☦️	Orthodox cross	Christian|cross|Orthodox cross|religion
+☪️	star and crescent	Islam|Muslim|religion|star and crescent
+🛜	wireless	computer|internet|network|wi-fi|wifi|wireless
+⚧️	transgender symbol	trans|transgender|transgender symbol
+✖️	multiply	×|cancel|heavy multiplication sign|multiplication|multiply|sign|x
+➕	plus	+|math|maths|plus|sign
+➖	minus	-|−|heavy minus sign|math|maths|minus|sign
+🟰	heavy equals sign	equality|heavy equals sign|math|maths
+⁉️	exclamation question mark	!|!?|?|exclamation question mark|interrobang|punctuation|question
+✅	tick button	✓|button|mark|tick
+☑️	tick box with tick	✓|box|tick|tick box with tick
+✔️	tick	✓|mark|tick
+®️	registered	r|registered|trademark
+🚩	triangular flag	post|red flag|triangular flag
+🏳️	white flag	surrender|waving|white flag
+🏳️‍🌈	rainbow flag	bisexual|flag|gay|genderqueer|glbt|glbtq|lesbian|lgbt|lgbtq|lgbtq+|lgbtqia|pride|queer|trans|transgender
+🏳️‍⚧️	transgender flag	flag|light blue|pink|trans|transgender|white
+🇧🇱	flag: St Barthélemy	flag
+🇰🇳	flag: St Kitts & Nevis	flag
+🇱🇨	flag: St Lucia	flag
+🇲🇫	flag: St Martin	flag
+🇵🇲	flag: St Pierre & Miquelon	flag
+🇸🇭	flag: St Helena, Ascension & Tristan da Cunha	flag
+🇺🇲	flag: US Outlying Islands	flag
+🇻🇨	flag: St Vincent & the Grenadines	flag
+🇻🇮	flag: US Virgin Islands	flag

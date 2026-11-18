@@ -1,0 +1,92 @@
+{
+ "fastconf-480ms": {
+  "first_ms": 1060.0,
+  "lag50": 620.0,
+  "lag90": 900.0,
+  "final_only": 5.683021531944934,
+  "rev_per_word": 0.16091183372443849,
+  "rev_raw_per_word": 0.16091183372443849,
+  "upd_with_rev": 27.500783944810287,
+  "words": 5666
+ },
+ "kroko-en": {
+  "first_ms": 1260.0,
+  "lag50": 940.0,
+  "lag90": 1520.0,
+  "final_only": 11.707841031149302,
+  "rev_per_word": 0.05943238731218698,
+  "rev_raw_per_word": 0.09482470784641069,
+  "upd_with_rev": 22.432859399684045,
+  "words": 5586
+ },
+ "moonshine-s-tiny": {
+  "first_ms": 720.0,
+  "lag50": 480.0,
+  "lag90": 1180.0,
+  "final_only": 4.389420371412493,
+  "rev_per_word": 0.7800519818063678,
+  "rev_raw_per_word": 1.0873944119558154,
+  "upd_with_rev": 52.74008350730689,
+  "words": 5331
+ },
+ "nemotron35-160ms": {
+  "first_ms": 860.0,
+  "lag50": 320.0,
+  "lag90": 560.0,
+  "final_only": 1.530518163378204,
+  "rev_per_word": 0.4467038373237127,
+  "rev_raw_per_word": 0.5,
+  "upd_with_rev": 34.115247322794495,
+  "words": 5423
+ },
+ "nemotron35-560ms": {
+  "first_ms": 1060.0,
+  "lag50": 440.0,
+  "lag90": 760.0,
+  "final_only": 2.918781725888325,
+  "rev_per_word": 0.1071252262629587,
+  "rev_raw_per_word": 0.14332729965443475,
+  "upd_with_rev": 19.49317738791423,
+  "words": 5516
+ },
+ "vosk-small": {
+  "first_ms": 720.0,
+  "lag50": 280.0,
+  "lag90": 820.0,
+  "final_only": 9.223300970873787,
+  "rev_per_word": 0.3741830065359477,
+  "rev_raw_per_word": 0.3741830065359477,
+  "upd_with_rev": 20.63042657606644,
+  "words": 5150
+ },
+ "xasr-160-punct": {
+  "first_ms": 980.0,
+  "lag50": 580.0,
+  "lag90": 720.0,
+  "final_only": 5.281182408074982,
+  "rev_per_word": 0.520474678255056,
+  "rev_raw_per_word": 0.5761323750626776,
+  "upd_with_rev": 35.507932749230406,
+  "words": 5548
+ },
+ "xasr-480-punct": {
+  "first_ms": 1040.0,
+  "lag50": 700.0,
+  "lag90": 940.0,
+  "final_only": 7.008182141586624,
+  "rev_per_word": 0.18755228375439184,
+  "rev_raw_per_word": 0.2307177513802911,
+  "upd_with_rev": 26.80817610062893,
+  "words": 5622
+ },
+ "zipformer-0626": {
+  "first_ms": 960.0,
+  "lag50": 520.0,
+  "lag90": 720.0,
+  "final_only": 4.551365409622887,
+  "rev_per_word": 0.3082010582010582,
+  "rev_raw_per_word": 0.3082010582010582,
+  "upd_with_rev": 31.74030658250676,
+  "words": 5383
+ }
+}

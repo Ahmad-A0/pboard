@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>appcompat fields</title>
+<style>
+  /* clear of the status bar (the WebView app draws edge to edge) and of Chrome's toolbar */
+  body { font: 18px sans-serif; margin: 16px; padding-top: 120px; }
+  input, textarea, [contenteditable] { font: 20px sans-serif; width: 92%; padding: 8px; border: 1px solid #888; }
+  textarea, [contenteditable] { height: 120px; }
+  #status { font: 13px monospace; color: #555; margin-top: 24px; }
+</style>
+</head>
+<body>
+<!-- One field per page load, chosen by the URL fragment (#text, #password, #number, #numeric, #textarea,
+     #editable, #upper, #chat), always at the same place. The status line below is read through accessibility:
+     STATUS: comp=<1 while a composition is open> starts/ends=<compositionstart/compositionend counts>
+     inputs=<input events> keys=<keydown events> -->
+<div id="host"></div>
+<p id="status">STATUS: comp=0 starts=0 ends=0 inputs=0 keys=0</p>
+<script>
+  const kind = (location.hash || "#text").slice(1);
+  const host = document.getElementById("host");
+  let el;
+  if (kind === "textarea") el = document.createElement("textarea");
+  else if (kind === "editable") { el = document.createElement("div"); el.contentEditable = "true"; el.setAttribute("role", "textbox"); el.setAttribute("aria-multiline", "true"); }
+  else {
+    el = document.createElement("input");
+    el.type = ({password: "password", number: "number"})[kind] || "text";
+    if (kind === "numeric") el.setAttribute("inputmode", "numeric");
+  }
+  el.id = "f";
+  el.setAttribute("aria-label", "field " + kind);
+  host.appendChild(el);
+  const st = {comp: 0, starts: 0, ends: 0, inputs: 0, keys: 0};
+  const log = [];  // the last events, for reading a step's sequence: cs / ce / i:<inputType>:<value>@<caret>
+  const val = () => (el.value !== undefined ? el.value : el.textContent);
+  const note = (s) => { log.push(s); if (log.length > 8) log.shift(); };
+  const show = () => document.getElementById("status").textContent =
+    `STATUS: comp=${st.comp} starts=${st.starts} ends=${st.ends} inputs=${st.inputs} keys=${st.keys} | ${log.join(" ")}`;
+  el.addEventListener("compositionstart", () => { st.comp = 1; st.starts++; note("cs"); show(); });
+  el.addEventListener("compositionend", (e) => { st.comp = 0; st.ends++; note("ce:" + JSON.stringify(e.data)); show(); });
+  el.addEventListener("keydown", (e) => { st.keys++; if (e.key !== "Unidentified" && e.keyCode !== 229) note("k:" + e.key); show(); });
+  el.addEventListener("input", (e) => {
+    st.inputs++;
+    note("i:" + (e.inputType || "?").replace("insert", "+").replace("delete", "-") + ":" +
+         JSON.stringify(String(val()).slice(-16)) + "@" + (el.selectionStart ?? "?"));
+    // "upper": a controlled field that rewrites its value (as React apps that format input do), outside composition
+    if (kind === "upper" && !e.isComposing) {
+      const s = el.selectionStart, v = el.value.toUpperCase();
+      if (v !== el.value) { el.value = v; el.setSelectionRange(s, s); }
+    }
+    show();
+  });
+  // "chat": Enter sends: the app clears the field underneath the keyboard
+  el.addEventListener("keydown", (e) => { if (kind === "chat" && e.key === "Enter") { e.preventDefault(); el.value = ""; show(); } });
+  if (kind === "chat") el.enterKeyHint = "send";
+</script>
+</body>
+</html>

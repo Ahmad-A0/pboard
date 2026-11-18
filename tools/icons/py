@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Runs a tools/icons Python script isolated (-I) in tools/icons/.venv, creating the venv on first use.
+# NixOS: binary wheels (numpy, scipy) need libstdc++ from the flake's nixpkgs on LD_LIBRARY_PATH.
+set -euo pipefail
+here="$(cd "$(dirname "$0")" && pwd)"
+repo="$(cd "$here/../.." && pwd)"
+if [[ ! -x "$here/.venv/bin/python" ]]; then
+  python3 -m venv "$here/.venv"
+  "$here/.venv/bin/pip" install -q -r "$here/requirements.txt"
+fi
+libs="$(nix build --no-link --print-out-paths --inputs-from "$repo" nixpkgs#stdenv.cc.cc.lib nixpkgs#zlib.out nixpkgs#libglvnd nixpkgs#expat nixpkgs#fontconfig.lib nixpkgs#freetype 2>/dev/null | sed "s,$,/lib," | paste -sd:)"
+export LD_LIBRARY_PATH="$libs${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+exec "$here/.venv/bin/python" -I "$@"

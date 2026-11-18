@@ -1,0 +1,36 @@
+# Intentional differences between pboard and Gboard. A divergence matching an entry (all given fields
+# must match; values are regular expressions) is listed in the report as allowlisted instead of ranked.
+# Everything else counts as a bug until justified here. Keep entries narrow and give the reason.
+#
+# Fields: id (shown in the report), kind (exact: text, cursor, composing, editor-events, strip-layout, strip-content,
+# keyboard, timing, focus), subkind, signature, scenario, reason.
+
+- id: corrects-teh-helo
+  kind: text
+  signature: "space tap: P autocorrects the word, G keeps it"
+  scenario: "^qol/CO-01/(teh|helo)$"
+  reason: >
+    Deliberate improvement: Gboard 15.1 leaves "teh" and "helo" alone (they look like vocabulary to it);
+    pboard corrects them to "the" / "hello".
+
+- id: toolbar-contents
+  kind: strip-layout
+  subkind: "toolbar-items"
+  reason: >
+    Different default toolbar (privacy: no GIF/sticker search, no Google services). Only whether the strip
+    shows the toolbar or suggestions is compared, never the toolbar's buttons.
+
+- id: farm-shift-key-events
+  kind: editor-events
+  signature: "^[^:]+: SHIFT key events on G only$"
+  reason: >
+    Emulator artifact, emulator farm only: Gboard 18.6 on the farm instance (gb18-1) sends KEYCODE_SHIFT_LEFT key
+    events to the app on shift taps; Gboard 18.6 on the phone does not (likely the emulator's hardware-keyboard
+    config). Shift key events are compared separately from DEL/ENTER, so this entry hides nothing else.
+
+# Not compared at all, so no entry is needed (listed so nobody adds a check by mistake):
+#  - fonts and exact glyph shapes (Google Sans is not available to pboard; the strip is read by OCR and
+#    keyboard states are classified against each keyboard's own references);
+#  - GIF / sticker / Bitmoji search, Emoji Kitchen, voice typing, translate (omitted for privacy: they need
+#    Google servers); the scenarios never open them;
+#  - the emoji panel's own buttons and categories (only opening it and inserting two emoji is compared).

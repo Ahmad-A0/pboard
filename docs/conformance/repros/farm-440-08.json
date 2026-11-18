@@ -1,0 +1,36 @@
+{
+ "id": "repro/7",
+ "src": "fuzz",
+ "field": {
+  "variant": "nosuggest",
+  "text": ""
+ },
+ "steps": [
+  {
+   "op": "gesture",
+   "strokes": [
+    [
+     [
+      796.8,
+      1707.5,
+      0
+     ],
+     [
+      796.8,
+      1707.5,
+      91
+     ]
+    ]
+   ],
+   "m": {
+    "k": "tap",
+    "key": "i",
+    "depth": 0.4,
+    "nb": "u",
+    "x": 796.8,
+    "y": 1707.5,
+    "intended": "i"
+   }
+  }
+ ]
+}

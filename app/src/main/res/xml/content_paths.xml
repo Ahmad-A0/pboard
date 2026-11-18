@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Files pboard hands to other apps through dev.pboard.content (FileProvider): the user's stickers (sent as rich
+     content, read grant) and the Scan-text photo the camera app writes (write grant, deleted after the scan). -->
+<paths>
+    <files-path name="stickers" path="stickers/" />
+    <cache-path name="scan" path="scan/" />
+</paths>

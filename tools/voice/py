@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Run the voice-eval venv's python (tools/voice/work/venv) in isolated mode. On NixOS the manylinux wheels
+# (sherpa-onnx, pyarrow, vosk) need the nix-ld library set for libstdc++.
+#   setup:  python3 -m venv tools/voice/work/venv && tools/voice/work/venv/bin/pip install -r tools/voice/requirements.txt
+here="$(cd "$(dirname "$0")" && pwd)"
+[[ -d /run/current-system/sw/share/nix-ld/lib ]] && export LD_LIBRARY_PATH="/run/current-system/sw/share/nix-ld/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+exec "$here/work/venv/bin/python" -I "$@"

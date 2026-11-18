@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.pboard.webfield">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="36" />
+    <!-- No permissions: the page comes from the APK's assets (WebView) or this app's provider (Chrome). -->
+    <application android:label="WebField" android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <!-- Handles rotation itself, as browsers do (a recreated WebView would reload the page). -->
+        <activity android:name=".WebFieldActivity" android:exported="true" android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard|uiMode"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".PageProvider" android:authorities="dev.pboard.webfield" android:exported="true" />
+    </application>
+</manifest>

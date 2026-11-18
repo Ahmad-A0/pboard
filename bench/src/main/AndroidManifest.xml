@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="pboard bench" android:allowBackup="false" />
+    <!-- am instrument -w -e mode replay -e trace /data/local/tmp/bench/x.jsonl dev.pboard.bench/.Replay
+         See tools/bench/README.md for all arguments. -->
+    <instrumentation
+        android:name=".Replay"
+        android:targetPackage="dev.pboard.bench"
+        android:label="pboard IME benchmark replay" />
+    <!-- am instrument -w -e scenarios /data/local/tmp/conform/s.jsonl dev.pboard.bench/.Conform
+         Keystroke-level conformance runner, see tools/conformance/README.md. -->
+    <instrumentation
+        android:name=".Conform"
+        android:targetPackage="dev.pboard.bench"
+        android:label="pboard IME conformance runner" />
+    <!-- am instrument -w -e scenarios /data/local/tmp/appcompat/s.jsonl dev.pboard.bench/.AppCompat
+         App-compatibility runner (other apps' text fields), see tools/appcompat/README.md. -->
+    <instrumentation
+        android:name=".AppCompat"
+        android:targetPackage="dev.pboard.bench"
+        android:label="pboard app-compatibility runner" />
+</manifest>

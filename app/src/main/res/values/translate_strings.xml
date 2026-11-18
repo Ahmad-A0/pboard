@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translate bar (dev.pboard.ime.translate) and Settings › Translate. -->
+<resources>
+    <string name="translate_hint">Type here to translate</string>
+    <string name="translate_bar_description">Translate from %1$s to %2$s</string>
+    <string name="translate_from">Translate from</string>
+    <string name="translate_to">Translate to</string>
+    <string name="translate_more_languages">Get more languages</string>
+    <string name="translate_no_packs">Add a translation language</string>
+    <string name="translate_failed">Translation unavailable</string>
+    <string name="translate_language_none">Add language</string>
+    <string name="translate_no_reverse">No %1$s → %2$s model installed</string>
+    <string name="translate_hide">Hide Translate</string>
+    <string name="translate_swap">Swap languages</string>
+    <string name="translate_from_desc">Translate text from %1$s</string>
+    <string name="translate_to_desc">Translate text to %1$s</string>
+
+    <string name="header_translate">Translate</string>
+    <string name="translate_settings_intro">Translation runs on this device. pboard has no internet access, so translation languages come as separately installed language packs: install a pack app, or import a pack file (.zip).</string>
+    <string name="translate_installed_header">Installed languages</string>
+    <string name="translate_none_installed">No translation languages installed yet.</string>
+    <string name="translate_import">Import a language pack file</string>
+    <string name="translate_import_summary">Choose a pboard translation pack (.zip) with the system file picker</string>
+    <string name="translate_importing">Checking and installing the pack…</string>
+    <string name="translate_imported">Installed %1$s</string>
+    <string name="translate_import_failed">Could not install this pack: %1$s</string>
+    <string name="translate_pack_summary">%1$s · %2$s · %3$s</string>
+    <string name="translate_source_apk">pack app</string>
+    <string name="translate_source_file">imported file</string>
+    <string name="translate_delete">Remove</string>
+    <string name="translate_licence">Models: %1$s</string>
+</resources>

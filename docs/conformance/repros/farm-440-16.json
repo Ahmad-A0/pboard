@@ -1,0 +1,32 @@
+{
+ "id": "repro/16",
+ "src": "qol",
+ "field": {
+  "variant": "nocap",
+  "text": "i am "
+ },
+ "steps": [
+  {
+   "op": "gesture",
+   "strokes": [
+    [
+     [
+      538.0,
+      1577.8,
+      0
+     ],
+     [
+      538.0,
+      1577.8,
+      60
+     ]
+    ]
+   ],
+   "m": {
+    "k": "slot",
+    "slot": "centre"
+   }
+  }
+ ],
+ "item": "TP-02"
+}

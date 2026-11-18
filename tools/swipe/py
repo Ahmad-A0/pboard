@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Python for the swipe-model tools: the shared tools/.venv (numpy; torch CPU for local training/export), isolated
+# mode. Create it once with:
+#   python3 -I -m venv tools/.venv && tools/.venv/bin/pip install numpy==2.5.4 &&
+#   tools/.venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+# On NixOS the manylinux wheels need libstdc++/zlib: tools/.venv/.ld_library_path (written by tools/lm/env.sh).
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV="$HERE/../.venv"
+if [ -s "$VENV/.ld_library_path" ]; then
+  export LD_LIBRARY_PATH="$(cat "$VENV/.ld_library_path")${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+fi
+export PYTHONHASHSEED=0
+exec "$VENV/bin/python" -I "$@"

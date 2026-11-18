@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings UI strings (owned by dev.pboard.settings / dev.pboard.prefs). Summaries are pboard's own wording. -->
+<resources>
+    <string name="settings_title">pboard settings</string>
+    <string name="navigate_up">Navigate up</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Default</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="more_options">More options</string>
+    <string name="system_default">System default</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="value_ms">%1$d ms</string>
+    <string name="value_percent">%1$d%%</string>
+
+    <!-- Home -->
+    <string name="header_languages">Languages</string>
+    <string name="header_preferences">Preferences</string>
+    <string name="header_theme">Theme</string>
+    <string name="header_text_correction">Corrections &amp; suggestions</string>
+    <string name="header_glide_typing">Glide typing</string>
+    <string name="header_voice_typing">Voice typing</string>
+    <string name="header_stylus">Write in text fields</string>
+    <string name="header_physical_keyboard">Physical keyboard</string>
+    <string name="header_clipboard">Clipboard</string>
+    <string name="header_dictionary">Dictionary</string>
+    <string name="header_emoji">Emojis, stickers &amp; GIFs</string>
+    <string name="header_privacy">Privacy</string>
+    <string name="header_about">About</string>
+
+    <!-- Languages -->
+    <string name="languages_category">Your keyboard languages and layouts</string>
+    <string name="add_keyboard">Add keyboard</string>
+    <string name="search_language">Search language</string>
+    <string name="suggested_languages">Suggested languages</string>
+    <string name="all_languages">All languages</string>
+    <string name="language_settings">Language settings</string>
+    <string name="multilingual_typing">Multilingual typing</string>
+    <string name="multilingual_typing_summary">Suggest and correct words from these languages too, without switching:</string>
+    <string name="multilingual_typing_single">Needs at least two keyboard languages</string>
+    <string name="n_selected">%1$d selected</string>
+    <string name="edit_languages">Edit</string>
+    <string name="remove_languages">Remove</string>
+    <string name="layout_qwerty">QWERTY</string>
+    <string name="layout_qwertz">QWERTZ</string>
+    <string name="layout_azerty">AZERTY</string>
+    <string name="layout_dvorak">Dvorak</string>
+    <string name="layout_colemak">Colemak</string>
+    <string name="layout_pc">PC</string>
+
+    <!-- Preferences -->
+    <string name="cat_keys">Keys</string>
+    <string name="number_row">Number row</string>
+    <string name="number_row_summary">Always show on QWERTY, QWERTZ and AZERTY layouts</string>
+    <string name="emoji_switch_key">Emoji key</string>
+    <string name="emoji_switch_key_summary">A dedicated key for emoji. Hides the language switch key</string>
+    <string name="language_switch_key">Language switch key</string>
+    <string name="language_switch_key_summary">A dedicated key to change languages. Hides the emoji key</string>
+    <string name="cat_toolbar">Toolbar</string>
+    <string name="customize_toolbar">Customize toolbar</string>
+    <string name="customize_toolbar_summary">Choose and arrange the shortcuts on the keyboard toolbar</string>
+    <string name="cat_appearance">Appearance</string>
+    <string name="font">Font</string>
+    <string name="font_pboard">pboard default</string>
+    <string name="dark_in_battery_saver">Switch to dark theme in battery saver</string>
+    <string name="dark_in_battery_saver_summary">Use a dark keyboard to save power on OLED screens</string>
+    <string name="cat_layout">Layout</string>
+    <string name="one_handed_mode">One-handed keyboard</string>
+    <string name="one_handed_right">Right-handed</string>
+    <string name="one_handed_left">Left-handed</string>
+    <string name="split_duplicate">Split layout to include duplicated keys</string>
+    <string name="split_duplicate_summary">Repeat the middle keys on both halves of a split keyboard</string>
+    <string name="cat_key_press">Key tap</string>
+    <string name="sound_on_keypress">Sound</string>
+    <string name="volume_on_keypress">Volume</string>
+    <string name="haptic_on_keypress">Keyboard vibration</string>
+    <string name="vibrate_on_keypress">Vibrate on keypress</string>
+    <string name="vibration_strength">Vibration strength on keypress</string>
+    <string name="popup_on_keypress">Key pop-up</string>
+    <string name="long_press_numbers">Touch &amp; hold keys for numbers</string>
+    <string name="long_press_numbers_summary">Hold a top-row key to type the digit shown on it</string>
+    <string name="long_press_symbols">Touch &amp; hold keys for symbols</string>
+    <string name="long_press_symbols_summary">Hold a key to type the symbol shown on it</string>
+    <string name="long_press_delay">Touch &amp; hold duration</string>
+    <string name="long_press_delay_a11y">Touch &amp; hold duration for accessibility</string>
+    <string name="flick_sensitivity">Flick input sensitivity</string>
+    <string name="flick_sensitivity_summary">How far you slide before a flick registers: %1$s</string>
+    <string name="flick_low">Low</string>
+    <string name="flick_mid_low">Mid-low</string>
+    <string name="flick_normal">Normal</string>
+    <string name="flick_mid_high">Mid-high</string>
+    <string name="flick_high">High</string>
+    <string name="show_app_icon">App icon</string>
+    <string name="show_app_icon_summary">Show in the app list</string>
+    <string name="settings_gear">Settings</string>
+
+    <!-- Theme -->
+    <string name="my_themes">My themes</string>
+    <string name="create_theme">Create keyboard theme with my image</string>
+    <string name="theme_section_default">Default</string>
+    <string name="theme_section_colors">Colors</string>
+    <string name="theme_section_light_gradient">Light gradient</string>
+    <string name="theme_section_dark_gradient">Dark gradient</string>
+    <string name="show_more">Show more %1$s</string>
+    <string name="show_less">Show less %1$s</string>
+    <string name="theme_dynamic">Dynamic Color</string>
+    <string name="theme_system_auto">System Auto</string>
+    <string name="theme_default_light">Default</string>
+    <string name="theme_default_dark">Default Dark</string>
+    <string name="theme_material_light">Material Light</string>
+    <string name="theme_material_dark">Material Dark</string>
+    <string name="theme_google_light">Light Grey</string>
+    <string name="theme_google_dark">Dark Grey</string>
+    <string name="theme_red">Red</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_teal">Teal</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_cyan">Cyan</string>
+    <string name="theme_deep_purple">Deep Purple</string>
+    <string name="theme_pink">Pink</string>
+    <string name="theme_light_pink">Light Pink</string>
+    <string name="theme_sand">Sand</string>
+    <string name="theme_brown">Brown</string>
+    <string name="theme_blue_grey">Blue Grey</string>
+    <string name="theme_black">Black</string>
+    <string name="theme_holo_blue">Holo Blue</string>
+    <string name="theme_holo_white">Holo White</string>
+    <string name="theme_light_gradient_n">Light gradient %1$d</string>
+    <string name="theme_dark_gradient_n">Dark gradient %1$d</string>
+    <string name="theme_custom">My theme</string>
+    <string name="key_borders">Key borders</string>
+    <string name="brightness">Brightness</string>
+    <string name="delete_theme">Delete theme</string>
+    <string name="selected">Selected</string>
+
+    <!-- Text correction -->
+    <string name="cat_suggestions">Suggestions</string>
+    <string name="show_suggestion_strip">Word suggestions</string>
+    <string name="show_suggestion_strip_summary">Show words in the suggestion strip</string>
+    <string name="next_word">Next-word suggestions</string>
+    <string name="next_word_summary">Predict the next word from context</string>
+    <string name="block_offensive">Don\'t suggest offensive words</string>
+    <string name="block_offensive_summary">Keep offensive words out of suggestions</string>
+    <string name="suggest_contacts">Suggest contact names</string>
+    <string name="suggest_contacts_summary">Use the names in your contacts for suggestions and corrections. They are read on this device only and never stored or sent.</string>
+    <string name="suggest_contacts_denied">Contacts access is needed to suggest contact names</string>
+    <string name="smart_compose">Smart Compose</string>
+    <string name="smart_compose_summary">Complete phrases inline, on this device</string>
+    <string name="smart_compose_messages">In messages (on this device)</string>
+    <string name="smart_compose_everywhere">In every text field (on this device)</string>
+    <string name="smart_compose_off">Off</string>
+    <string name="cat_corrections">Automatic corrections</string>
+    <string name="auto_correction">Auto-correction</string>
+    <string name="auto_correction_summary">Fix likely typos as you type</string>
+    <string name="undo_autocorrect">Undo auto-correct on backspace</string>
+    <string name="undo_autocorrect_summary">Backspace right after a correction restores your original word</string>
+    <string name="autospace">Autospace after punctuation</string>
+    <string name="autospace_summary">Add a space after punctuation marks</string>
+    <string name="auto_cap">Auto-capitalization</string>
+    <string name="auto_cap_summary">Start each sentence with a capital letter</string>
+    <string name="double_space_period">Double-space period</string>
+    <string name="double_space_period_summary">Tap space twice to type a period and a space</string>
+    <string name="cat_spelling">Spelling &amp; grammar</string>
+    <string name="spell_check">Spell check</string>
+    <string name="spell_check_summary">Underline unknown words in red</string>
+    <string name="grammar_check">Grammar check</string>
+    <string name="grammar_check_summary">Underline likely grammar mistakes in blue</string>
+    <string name="spell_checker_link">Change default spell checker</string>
+    <string name="spell_checker_link_summary">Use pboard\'s spell checker in other apps</string>
+
+    <!-- Glide typing -->
+    <string name="glide_typing">Glide typing</string>
+    <string name="glide_typing_summary">Slide your finger from letter to letter</string>
+    <string name="gesture_trail">Glide trail</string>
+    <string name="gesture_delete">Glide delete</string>
+    <string name="gesture_delete_summary">Slide left from the delete key to remove whole words</string>
+    <string name="gesture_cursor">Glide cursor control</string>
+    <string name="gesture_cursor_summary">Slide along the space bar to move the cursor</string>
+
+    <!-- Voice typing -->
+    <string name="use_voice_typing">Use voice typing</string>
+    <string name="voice_typing_note">Speech is recognised entirely on this device. The microphone key appears once an on-device speech model is installed.</string>
+    <string name="seamless_voice">Seamless voice typing</string>
+    <string name="seamless_voice_summary">Start dictating as soon as the keyboard opens</string>
+
+    <!-- Stylus -->
+    <string name="stylus_use">Use stylus to write in text fields</string>
+    <string name="stylus_intro">Write with a stylus straight into any text field and pboard turns it into editable text. Recognition runs on this device.</string>
+    <string name="stylus_speed">Handwriting speed</string>
+    <string name="stylus_width">Handwriting stroke width</string>
+    <string name="stylus_show_keyboard">Show on-screen keyboard</string>
+    <string name="stylus_show_keyboard_summary">Keep the full keyboard visible while you write with a stylus</string>
+    <string name="emojis_on_toolbar">Emojis on toolbar</string>
+    <string name="emojis_on_toolbar_summary">Add an emoji button to the compact toolbar</string>
+    <string name="stylus_commit">Commit handwritten text immediately</string>
+    <string name="stylus_commit_summary">Insert each word as soon as it is recognised</string>
+    <string name="speed_very_slow">Very slow</string>
+    <string name="speed_slow">Slow</string>
+    <string name="speed_mid_slow">Mid-slow</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_mid_fast">Mid-fast</string>
+    <string name="speed_fast">Fast</string>
+    <string name="speed_very_fast">Very fast</string>
+    <string name="width_extra_thin">Extra thin</string>
+    <string name="width_thin">Thin</string>
+    <string name="width_mid_thin">Mid-thin</string>
+    <string name="width_normal">Normal</string>
+    <string name="width_mid_thick">Mid-thick</string>
+    <string name="width_thick">Thick</string>
+    <string name="width_extra_thick">Extra thick</string>
+
+    <!-- Physical keyboard -->
+    <string name="cat_general">General</string>
+    <string name="system_pk_settings">System physical keyboard settings</string>
+    <string name="system_pk_settings_summary">Layouts, shortcuts and modifier keys</string>
+    <string name="pk_show_vk">Show on-screen keyboard</string>
+    <string name="pk_show_vk_summary">Keep the on-screen keyboard visible while a physical keyboard is connected</string>
+    <string name="pk_show_toolbar">Show toolbar</string>
+    <string name="pk_show_toolbar_summary">Show a compact toolbar with suggestions while you type</string>
+    <string name="cat_pk_suggestions">Suggestions &amp; corrections</string>
+    <string name="pk_suggestions">Suggestions while typing</string>
+    <string name="pk_suggestions_summary">Show word suggestions next to the cursor</string>
+    <string name="pk_auto_cap_summary">Capitalize the first word of each sentence on the physical keyboard</string>
+    <string name="pk_diacritics">Long press for diacritical marks</string>
+    <string name="pk_diacritics_summary">Hold a letter to pick an accented version</string>
+
+    <!-- Clipboard -->
+    <string name="clip_suggestions">Show recently copied text and images in the suggestion strip</string>
+    <string name="clip_entities">Show items such as addresses and phone numbers within recently copied text</string>
+
+    <!-- Dictionary -->
+    <string name="personal_dictionary">Personal dictionary</string>
+    <string name="dictionary_empty">No words yet. Tap Add (+) to save a word or a shortcut.</string>
+    <string name="type_a_word">Type a word</string>
+    <string name="shortcut">Shortcut:</string>
+    <string name="optional_shortcut">Optional shortcut</string>
+    <string name="import_">Import</string>
+    <string name="export">Export</string>
+    <string name="imported_n">%1$d words imported</string>
+    <string name="cat_import_words">Bring your words</string>
+    <string name="import_gboard">Import from Gboard</string>
+    <string name="import_gboard_summary">In Gboard: Settings › Dictionary › Personal dictionary › ⋮ › Export. Then pick that file here (.zip or .txt)</string>
+    <string name="import_system">Import from Android\'s user dictionary</string>
+    <string name="import_system_summary">Words saved in system settings or by other keyboards</string>
+    <string name="import_result">%1$d words imported, %2$d already in your dictionary</string>
+    <string name="import_result_skipped">%1$d words imported, %2$d already in your dictionary, %3$d lines skipped</string>
+    <string name="import_too_large">That file is too large to be a dictionary export</string>
+    <string name="import_not_dictionary">That file is not a Gboard dictionary export</string>
+    <string name="import_unsupported">This export is from a newer Gboard format pboard does not read yet</string>
+    <string name="import_unreadable">The file could not be read</string>
+    <string name="import_system_none">No words found in Android\'s user dictionary</string>
+    <string name="cat_backup">Backup</string>
+    <string name="backup_learned">Back up learned data</string>
+    <string name="backup_learned_summary">Save your personal dictionary and what pboard has learned from your typing to a file</string>
+    <string name="restore_learned">Restore learned data</string>
+    <string name="restore_learned_summary">From a pboard backup file</string>
+    <string name="backup_note">The backup file contains words you have typed. Keep it somewhere private. pboard never uploads it, and learned data stays out of Android backups.</string>
+    <string name="backup_saved">Backup saved</string>
+    <string name="backup_failed">The backup could not be saved</string>
+    <string name="restore_question">This backup holds %1$d personal dictionary words and %2$s. Merge adds it to what pboard has on this device. Replace discards what is here now.</string>
+    <string name="restore_has_learned">learned typing data</string>
+    <string name="restore_no_learned">no learned typing data</string>
+    <string name="restore_merge">Merge</string>
+    <string name="restore_replace">Replace</string>
+    <string name="restore_done">Learned data restored</string>
+    <string name="restore_failed">Nothing was restored: the data could not be applied</string>
+    <string name="restore_too_large">That file is too large to be a pboard backup</string>
+    <string name="restore_not_backup">That file is not a pboard backup</string>
+    <string name="restore_newer">This backup was made by a newer version of pboard</string>
+    <string name="restore_corrupt">The backup file is damaged. Nothing was restored.</string>
+    <string name="all_languages_dictionary">For all languages</string>
+
+    <!-- Emojis -->
+    <string name="emoji_fast_access">Emoji fast-access row</string>
+    <string name="emoji_fast_access_summary">Show your frequent emojis in a row above the letters</string>
+    <string name="emoji_in_symbols">Emoji in symbols keyboard</string>
+    <string name="emoji_in_symbols_summary">Add a row of recent emoji</string>
+    <string name="emoji_physical">Emoji with the physical keyboard</string>
+    <string name="emoji_physical_summary">The Alt key of a physical keyboard opens the emoji panel</string>
+    <string name="emojify">Text-to-emoji options</string>
+    <string name="emojify_summary">Swap words for matching emoji in one tap</string>
+    <string name="suggestions_while_typing">Suggestion strip</string>
+    <string name="suggestions_while_typing_summary">Show matching content in the suggestion strip</string>
+    <string name="emojis">Show emoji</string>
+
+    <!-- Privacy -->
+    <string name="cat_learning">Learning on this device</string>
+    <string name="personalize">Personalize for you</string>
+    <string name="personalize_summary">Learn new words and your typing habits to improve suggestions. Everything stays on this device and is never backed up or sent anywhere.</string>
+    <string name="delete_learned">Delete learned words and data</string>
+    <string name="delete_learned_summary">Erase everything pboard has learned from your typing on this device</string>
+    <string name="delete_learned_confirm">Delete all learned words and typing data? Your personal dictionary is kept.</string>
+    <string name="deleted">Learned data deleted</string>
+
+    <!-- About -->
+    <string name="current_version">Current version</string>
+    <string name="crash_reports">Crash reports</string>
+    <string name="crash_reports_summary">Kept on this device only, never sent</string>
+    <string name="crash_reports_empty">No crash reports. If pboard crashes or stops responding, a report is kept here, on this device only. Reports contain program state (stack traces), never what you typed, and are never sent anywhere; you can share them yourself.</string>
+    <string name="crash_reports_share">Share all reports</string>
+    <string name="crash_reports_share_summary">Opens the share sheet; nothing is sent unless you choose an app</string>
+    <string name="crash_reports_delete">Delete all reports</string>
+    <string name="crash_reports_delete_confirm">Delete all crash reports?</string>
+    <string name="crash_reports_subject">pboard crash reports</string>
+    <string name="privacy_statement">Privacy</string>
+    <string name="privacy_statement_summary">pboard has no internet access and no analytics. What you type never leaves this device.</string>
+    <string name="licenses">Open source licenses</string>
+    <string name="licenses_summary">Licence details for open source software</string>
+    <string name="licenses_text">pboard is open source software.\n\nIncludes:\n• AndroidX, Jetpack Compose and Kotlin coroutines — Apache License 2.0\n• Material icons — Apache License 2.0\n• Algorithms ported from the Android Open Source Project LatinIME — Apache License 2.0 (see NOTICE)</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_hint">Hold and drag to customize</string>
+    <string name="toolbar_bar">On the toolbar</string>
+    <string name="toolbar_more">More</string>
+    <string name="toolbar_power_key">Right-hand key</string>
+    <string name="toolbar_reset">Reset toolbar</string>
+    <string name="toolbar_drop_replace">Drag here to replace</string>
+    <string name="toolbar_clipboard">Clipboard</string>
+    <string name="toolbar_settings">Settings</string>
+    <string name="toolbar_theme">Theme</string>
+    <string name="toolbar_one_handed">One-handed</string>
+    <string name="toolbar_text_editing">Text editing</string>
+    <string name="toolbar_floating">Floating</string>
+    <string name="toolbar_resize">Resize</string>
+    <string name="toolbar_emoji">Emoji</string>
+    <string name="toolbar_undo">Undo</string>
+    <string name="toolbar_split">Split</string>
+    <string name="toolbar_sticker">Stickers</string>
+    <string name="toolbar_translate">Translate</string>
+    <string name="toolbar_scan_text">Scan text</string>
+    <string name="toolbar_voice">Voice typing</string>
+
+    <!-- Gboard 18.6 additions -->
+    <string name="number_row_password">Number row for passwords</string>
+    <string name="number_row_password_summary">Show digits above the letters in password fields</string>
+    <string name="comma_key">Comma key</string>
+    <string name="comma_key_summary">Show the comma key next to the space bar</string>
+    <string name="period_key">Period key</string>
+    <string name="period_key_summary">Show the period key next to the space bar</string>
+    <string name="font_size">Font size</string>
+    <string name="emoji_size">Emoji size</string>
+    <string name="emoji_size_summary">Bigger emoji, fewer per row</string>
+    <string name="cat_shortcuts">Shortcuts</string>
+    <string name="auto_switch_apostrophe">Auto-switch after apostrophes</string>
+    <string name="auto_switch_apostrophe_summary">Return to the letters after typing an apostrophe</string>
+    <string name="flick_symbols">Flick keys to enter symbols</string>
+    <string name="flick_symbols_summary">Pull a key down to type the symbol shown on it</string>
+    <string name="space_trackpad">Long press spacebar for trackpad</string>
+    <string name="space_trackpad_summary">Swiping along the space bar always moves the cursor</string>
+    <string name="sound_summary">Click when you tap a key</string>
+    <string name="popup_summary">Show the key you\'re touching above your finger</string>
+    <string name="suggestion_strip">Suggestion strip</string>
+    <string name="suggestion_strip_summary">Show suggestions and toolbar shortcuts above the keys</string>
+    <string name="auto_space_suggestions">Auto-space after suggestions</string>
+    <string name="auto_space_suggestions_summary">Add a space after you pick a suggested word</string>
+    <string name="use_auto_correction">Use auto-correction</string>
+    <string name="cat_undo">Undo</string>
+    <string name="clip_retention">Keep clipboard history for</string>
+    <plurals name="hours_n">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <string name="rounded_keys">Rounded keys</string>
+</resources>

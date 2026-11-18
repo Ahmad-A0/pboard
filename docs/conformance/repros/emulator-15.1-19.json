@@ -1,0 +1,33 @@
+{
+ "id": "repro/18",
+ "src": "qol",
+ "field": {
+  "variant": "nocap",
+  "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+ },
+ "steps": [
+  {
+   "op": "gesture",
+   "strokes": [
+    [
+     [
+      994.5,
+      2025.0,
+      0
+     ],
+     [
+      994.5,
+      2025.0,
+      1400
+     ]
+    ]
+   ],
+   "m": {
+    "k": "hold",
+    "key": "delete",
+    "ms": 1400
+   }
+  }
+ ],
+ "item": "TP-16"
+}

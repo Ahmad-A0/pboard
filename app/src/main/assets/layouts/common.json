@@ -1,0 +1,198 @@
+{
+  "_comment": "Locale-independent pages and row templates shared by all layouts. Format documented in ime/layout/Layouts.kt (KeyboardLanguage).",
+  "templates": {
+    "bottom_letters": [
+      {"fn": "symbols", "w": 1.5, "shape": "pill"},
+      {"fn": "comma", "if": "comma"},
+      {"fn": "globe", "if": "multilang"},
+      {"fn": "emoji", "if": "emoji&!multilang"},
+      {"fn": "space", "w": 4, "grow": true},
+      {"fn": "period", "if": "period"},
+      {"fn": "enter", "w": 1.5}
+    ],
+    "bottom_symbols": [
+      {"fn": "alpha", "w": 1.5, "shape": "pill"},
+      {"key": ",", "style": "functional", "size": "punct", "more": ["\u0000settings", "\u0000onehanded"]},
+      {"fn": "numpad"},
+      {"fn": "space", "w": 4, "grow": true},
+      {"key": ".", "style": "functional", "size": "punct", "more": ["…"]},
+      {"fn": "enter", "w": 1.5}
+    ],
+    "bottom_symbols_more": [
+      {"fn": "alpha", "w": 1.5, "shape": "pill"},
+      {"key": ".", "style": "functional", "size": "punct"},
+      {"fn": "numpad"},
+      {"fn": "space", "w": 4, "grow": true},
+      {"key": ".", "style": "functional", "size": "punct"},
+      {"fn": "enter", "w": 1.5}
+    ]
+  },
+  "pages": {
+    "number": {
+      "pad": true,
+      "rows": [
+        {
+          "keys": [
+            {"key": "1", "w": 2.5},
+            {"key": "2", "w": 2.5},
+            {"key": "3", "w": 2.5},
+            {"key": "-", "label": "–", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": "4", "w": 2.5},
+            {"key": "5", "w": 2.5},
+            {"key": "6", "w": 2.5},
+            {"fn": "space", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [{"key": "7", "w": 2.5}, {"key": "8", "w": 2.5}, {"key": "9", "w": 2.5}, {"fn": "delete", "w": 2.5}]
+        },
+        {
+          "keys": [
+            {"key": ",", "w": 2.5, "if": "!datetime&!date&!time"},
+            {"key": "/", "label": "/ :", "more": [":"], "w": 2.5, "if": "datetime"},
+            {"key": "/", "w": 2.5, "if": "date"},
+            {"key": ":", "w": 2.5, "if": "time"},
+            {"key": "0", "w": 2.5},
+            {"key": ".", "w": 2.5},
+            {"fn": "enter", "w": 2.5}
+          ]
+        }
+      ]
+    },
+    "number_password": {
+      "pad": true,
+      "rows": [
+        {
+          "keys": [{"key": "1", "w": 2.5}, {"key": "2", "w": 2.5}, {"key": "3", "w": 2.5}]
+        },
+        {
+          "keys": [{"key": "4", "w": 2.5}, {"key": "5", "w": 2.5}, {"key": "6", "w": 2.5}]
+        },
+        {
+          "keys": [{"key": "7", "w": 2.5}, {"key": "8", "w": 2.5}, {"key": "9", "w": 2.5}]
+        },
+        {
+          "keys": [{"fn": "delete", "w": 2.5}, {"key": "0", "w": 2.5}, {"fn": "enter", "w": 2.5}]
+        }
+      ]
+    },
+    "phone": {
+      "pad": true,
+      "labelOffset": -20,
+      "rows": [
+        {
+          "keys": [
+            {"key": "1", "w": 2.5},
+            {"key": "2", "sub": "ABC", "w": 2.5},
+            {"key": "3", "sub": "DEF", "w": 2.5},
+            {"key": "-", "label": "–", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": "4", "sub": "GHI", "w": 2.5},
+            {"key": "5", "sub": "JKL", "w": 2.5},
+            {"key": "6", "sub": "MNO", "w": 2.5},
+            {"fn": "space", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": "7", "sub": "PQRS", "w": 2.5},
+            {"key": "8", "sub": "TUV", "w": 2.5},
+            {"key": "9", "sub": "WXYZ", "w": 2.5},
+            {"fn": "delete", "w": 2.5}
+          ]
+        },
+        {
+          "keys": [
+            {"fn": "phone_symbols", "label": "* #", "w": 2.5},
+            {"key": "0", "sub": "+", "more": ["+"], "w": 2.5},
+            {"key": ".", "w": 2.5},
+            {"fn": "enter", "w": 2.5}
+          ]
+        }
+      ]
+    },
+    "phone_symbols": {
+      "pad": true,
+      "rows": [
+        {
+          "keys": [
+            {"key": "(", "w": 2.5},
+            {"key": ")", "w": 2.5},
+            {"key": ",", "w": 2.5},
+            {"key": "-", "label": "–", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": "*", "w": 2.5},
+            {"key": "#", "w": 2.5},
+            {"key": "/", "w": 2.5},
+            {"fn": "space", "w": 2.5, "style": "functional"}
+          ]
+        },
+        {
+          "keys": [{"key": "+", "w": 2.5}, {"key": ".", "w": 2.5}, {"key": ";", "w": 2.5}, {"fn": "delete", "w": 2.5}]
+        },
+        {
+          "keys": [
+            {"fn": "phone_back", "label": "123", "w": 2.5},
+            {"key": "N", "w": 2.5},
+            {"key": "P", "w": 2.5},
+            {"fn": "enter", "w": 2.5}
+          ]
+        }
+      ]
+    },
+    "numpad": {
+      "rows": [
+        {
+          "keys": [
+            {"key": ".", "style": "functional", "size": "punct"},
+            {"key": "×", "style": "functional"},
+            {"key": "1", "w": 2, "shape": "pill"},
+            {"key": "2", "w": 2, "shape": "pill"},
+            {"key": "3", "w": 2, "shape": "pill"},
+            {"key": "%", "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": ".", "style": "functional", "size": "punct"},
+            {"key": "=", "style": "functional"},
+            {"key": "4", "w": 2, "shape": "pill"},
+            {"key": "5", "w": 2, "shape": "pill"},
+            {"key": "6", "w": 2, "shape": "pill"},
+            {"key": "-", "style": "functional"}
+          ]
+        },
+        {
+          "keys": [
+            {"key": ".", "style": "functional", "size": "punct"},
+            {"key": ")", "style": "functional"},
+            {"key": "7", "w": 2, "shape": "pill"},
+            {"key": "8", "w": 2, "shape": "pill"},
+            {"key": "9", "w": 2, "shape": "pill"},
+            {"fn": "delete"}
+          ]
+        },
+        {
+          "keys": [
+            {"fn": "symbols", "w": 2, "shape": "pill"},
+            {"key": ",", "style": "functional", "size": "punct"},
+            {"fn": "space", "w": 2},
+            {"key": "0", "w": 2, "shape": "pill"},
+            {"key": ".", "style": "functional", "size": "punct"},
+            {"fn": "enter", "w": 2}
+          ]
+        }
+      ]
+    }
+  }
+}

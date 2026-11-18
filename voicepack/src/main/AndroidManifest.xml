@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- pboard's English voice-typing pack: speech recogniser code and model only; no components, no permissions
+     (the microphone is opened by pboard itself, which hands the audio to this pack's engine). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:label="pboard voice pack (English)" />
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pboard</string>
+    <!-- Spell checker subtypes (Settings › System › Languages › Spell checker). -->
+    <string name="spell_checker_subtype_en_gb">English (UK)</string>
+    <string name="spell_checker_subtype_en_us">English (US)</string>
+    <string name="undo_chip">Undo</string>
+    <string name="redo_chip">Redo</string>
+</resources>

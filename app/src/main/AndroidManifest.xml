@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Privacy: pboard has no network access (no INTERNET, enforced by the build's permission gate). Its only permissions:
+     RECORD_AUDIO for on-device voice typing, requested at runtime only when the user taps the mic key
+     (dev.pboard.ime.voice.VoicePermissionActivity); audio is recognised in-process and never stored or sent.
+     READ_CONTACTS for the opt-in "Suggest contact names" setting (off by default), requested at runtime only when the
+     user turns that switch on in Settings (never from the keyboard); only display names are read, into memory
+     (dev.pboard.ime.contacts), never stored, exported or logged. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <queries>
+        <!-- Importing Android's user dictionary (dev.pboard.prefs.SystemUserDictionary): visibility only, no permission. -->
+        <provider android:authorities="user_dictionary" />
+        <!-- System "keyboard vibration" screen (Android 15+), see dev.pboard.prefs.SystemHaptics. -->
+        <intent>
+            <action android:name="android.settings.KEYBOARD_VIBRATION_SETTINGS" />
+        </intent>
+        <!-- Scan text: whether a camera app can take the photo (dev.pboard.ime.scan.ScanTextActivity). -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Scan-text pack APK (OCR engine and model, see dev.pboard.ime.scan.Ocr). -->
+        <package android:name="dev.pboard.pack.scan" />
+        <!-- Voice pack APK (speech recogniser and model, see dev.pboard.ime.voice.VoicePack). -->
+        <package android:name="dev.pboard.pack.voice.en" />
+        <package android:name="dev.pboard.pack.voice.en.accurate" />
+        <!-- Translation pack APKs (data only, see dev.pboard.ime.translate.TranslatePacks.PACK_IDS). -->
+        <package android:name="dev.pboard.pack.translate.ar" />
+        <package android:name="dev.pboard.pack.translate.az" />
+        <package android:name="dev.pboard.pack.translate.be" />
+        <package android:name="dev.pboard.pack.translate.bg" />
+        <package android:name="dev.pboard.pack.translate.bn" />
+        <package android:name="dev.pboard.pack.translate.bs" />
+        <package android:name="dev.pboard.pack.translate.ca" />
+        <package android:name="dev.pboard.pack.translate.cs" />
+        <package android:name="dev.pboard.pack.translate.da" />
+        <package android:name="dev.pboard.pack.translate.de" />
+        <package android:name="dev.pboard.pack.translate.el" />
+        <package android:name="dev.pboard.pack.translate.es" />
+        <package android:name="dev.pboard.pack.translate.et" />
+        <package android:name="dev.pboard.pack.translate.fa" />
+        <package android:name="dev.pboard.pack.translate.fi" />
+        <package android:name="dev.pboard.pack.translate.fr" />
+        <package android:name="dev.pboard.pack.translate.gu" />
+        <package android:name="dev.pboard.pack.translate.he" />
+        <package android:name="dev.pboard.pack.translate.hi" />
+        <package android:name="dev.pboard.pack.translate.hr" />
+        <package android:name="dev.pboard.pack.translate.hu" />
+        <package android:name="dev.pboard.pack.translate.id" />
+        <package android:name="dev.pboard.pack.translate.is" />
+        <package android:name="dev.pboard.pack.translate.it" />
+        <package android:name="dev.pboard.pack.translate.ja" />
+        <package android:name="dev.pboard.pack.translate.kn" />
+        <package android:name="dev.pboard.pack.translate.ko" />
+        <package android:name="dev.pboard.pack.translate.lt" />
+        <package android:name="dev.pboard.pack.translate.lv" />
+        <package android:name="dev.pboard.pack.translate.ml" />
+        <package android:name="dev.pboard.pack.translate.ms" />
+        <package android:name="dev.pboard.pack.translate.mt" />
+        <package android:name="dev.pboard.pack.translate.nb" />
+        <package android:name="dev.pboard.pack.translate.nl" />
+        <package android:name="dev.pboard.pack.translate.nn" />
+        <package android:name="dev.pboard.pack.translate.pl" />
+        <package android:name="dev.pboard.pack.translate.pt" />
+        <package android:name="dev.pboard.pack.translate.ro" />
+        <package android:name="dev.pboard.pack.translate.ru" />
+        <package android:name="dev.pboard.pack.translate.sk" />
+        <package android:name="dev.pboard.pack.translate.sl" />
+        <package android:name="dev.pboard.pack.translate.sq" />
+        <package android:name="dev.pboard.pack.translate.sr" />
+        <package android:name="dev.pboard.pack.translate.sv" />
+        <package android:name="dev.pboard.pack.translate.ta" />
+        <package android:name="dev.pboard.pack.translate.te" />
+        <package android:name="dev.pboard.pack.translate.th" />
+        <package android:name="dev.pboard.pack.translate.tr" />
+        <package android:name="dev.pboard.pack.translate.uk" />
+        <package android:name="dev.pboard.pack.translate.vi" />
+        <package android:name="dev.pboard.pack.translate.zh" />
+    </queries>
+    <application
+        android:name=".PboardApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault.DayNight">
+        <service
+            android:name=".ime.PboardIme"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <!-- System spell checker: on-device spelling and grammar marks (dev.pboard.ime.textintel). -->
+        <service
+            android:name=".ime.textintel.PboardSpellCheckerService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_TEXT_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+            <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker" />
+        </service>
+        <activity android:name=".SettingsActivity" android:exported="true"
+            android:label="@string/app_name" android:theme="@style/Theme.Pboard.Settings" />
+        <!-- Launcher entry; disabled by Settings › Preferences › Show app icon. -->
+        <activity-alias android:name=".LauncherActivity" android:targetActivity=".SettingsActivity"
+            android:exported="true" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity android:name=".PlaygroundActivity" android:exported="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <!-- Stickers / images sent into apps (commitContent): read-only URIs granted per item, never exported. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="dev.pboard.content"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/content_paths" />
+        </provider>
+        <!-- Toolbar "Scan text": the system camera app or photo picker, on-device OCR; no CAMERA permission. -->
+        <activity android:name=".ime.scan.ScanTextActivity" android:exported="false"
+            android:excludeFromRecents="true" android:taskAffinity="dev.pboard.scan"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Pboard.Settings" />
+        <!-- Voice typing: explains, then asks for the microphone; opened only by a tap on the mic key. -->
+        <activity android:name=".ime.voice.VoicePermissionActivity" android:exported="false"
+            android:excludeFromRecents="true" android:noHistory="true" android:taskAffinity="dev.pboard.voice"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        <!-- Sticker panel "+": the system photo picker, no storage permission. -->
+        <activity android:name=".ime.rich.StickerImportActivity" android:exported="false"
+            android:excludeFromRecents="true" android:noHistory="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

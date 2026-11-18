@@ -1,0 +1,24 @@
+# Hand-written Baseline Profile rules for the on-device translation engine (:translate) and the translate bar. The
+# int8 dot-product loops must be compiled by ART's optimizing compiler (which turns them into SDOT/SMLAL vector code)
+# from the first translation on, not after JIT warm-up. Merged with the generated profile in ../generated/.
+# (Package wildcards are not expanded by AGP: classes are listed, with method wildcards.)
+HPLdev/pboard/translate/nn/Ops;->**(**)**
+HPLdev/pboard/translate/nn/SsruTransformer;->**(**)**
+HPLdev/pboard/translate/nn/SsruTransformer$Work;->**(**)**
+HPLdev/pboard/translate/marian/MarianBinary;->**(**)**
+HPLdev/pboard/translate/marian/QMatrix;->**(**)**
+HPLdev/pboard/translate/marian/Shortlist;->**(**)**
+HPLdev/pboard/translate/spm/SentencePiece;->**(**)**
+HPLdev/pboard/translate/spm/SentencePiece$Reader;->**(**)**
+HPLdev/pboard/translate/spm/SentencePiece$ByteArrayKey;->**(**)**
+HPLdev/pboard/translate/MarianTranslator;->**(**)**
+HPLdev/pboard/translate/SentenceSplitter;->**(**)**
+HPLdev/pboard/translate/LiveTranslation;->**(**)**
+HPLdev/pboard/translate/PackManifest;->**(**)**
+HPLdev/pboard/translate/pack/Json;->**(**)**
+HPLdev/pboard/ime/translate/TranslateMode;->**(**)**
+HPLdev/pboard/ime/translate/TranslateBarView;->**(**)**
+HPLdev/pboard/ime/translate/TranslateInputConnection;->**(**)**
+HPLdev/pboard/ime/translate/TranslatePacks;->**(**)**
+HPLdev/pboard/ime/translate/TranslateLanguages;->**(**)**
+HPLdev/pboard/ime/translate/LanguagePickerView;->**(**)**

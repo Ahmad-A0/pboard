@@ -1,0 +1,37 @@
+The files in this directory are adapted from the following datasets (re-projected onto a Pixel-8 Gboard key
+geometry, segmented into words and split by participant; see docs/eval-data.md). Their licences apply to the
+corresponding files.
+
+swipe_futo.*.jsonl.gz
+  swipe.futo.org dataset, Copyright (c) 2025 FUTO, MIT License.
+  https://huggingface.co/datasets/futo-org/swipe.futo.org  (paper: "FUTO Swipe: Layout-Agnostic Neural Swipe
+  Decoding", arXiv:2606.25247). The MIT permission notice applies to these files:
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+  documentation files (the "Software"), to deal in the Software without restriction, including without
+  limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+  Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+  conditions: The above copyright notice and this permission notice shall be included in all copies or
+  substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+swipe_hws.*.jsonl.gz
+  How-We-Swipe Shape-writing Dataset, Copyright (c) 2021 L. A. Leiva, S. Kim, W. Cui, X. Bi, A. Oulasvirta,
+  MIT License (same permission notice as above). https://osf.io/sj67f/
+  L. A. Leiva et al. "How We Swipe: A Large-scale Shape-writing Dataset and Empirical Findings." MobileHCI 2021.
+
+tap_tsi.*.jsonl.gz, tap-derived items with src "tsi" in text_typos.*.jsonl.gz
+  Tap Typing with Touch Sensing Images (TSI) Dataset, Google, CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/).
+  https://github.com/google-research-datasets/tap-typing-with-touch-sensing-images
+  P. Lertvittayakumjorn, S. Cai, B. Dou, C. Ho, S. Zhai. "Can Capacitive Touch Images Enhance Mobile Keyboard
+  Decoding?" UIST 2024. Changes: word segmentation, first-pass reconstruction, coordinate re-projection,
+  heatmaps/LM scores dropped.
+
+tap_vtap.*.jsonl.gz, tap-derived items with src "vtap" in text_typos.*.jsonl.gz
+  A Dataset of Noisy Typing on QWERTY Keyboards, K. Vertanen and P. O. Kristensson, CC BY 4.0.
+  https://osf.io/5xwng/  (IUI 2023). Data originally from Vertanen et al. "VelociTap", CHI 2015.
+  Changes: phone subset (vt_exp2 space condition, vt_exp3 normal keyboard), touch-down positions re-projected,
+  synthetic word-terminating space tap added.
+
+text_wikipedia.*.jsonl.gz
+  Wikipedia contributors, "Wikipedia:Lists of common misspellings/For machines", CC BY-SA 4.0
+  (https://creativecommons.org/licenses/by-sa/4.0/). These files are distributed under CC BY-SA 4.0.

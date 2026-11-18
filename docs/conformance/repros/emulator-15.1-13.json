@@ -1,0 +1,36 @@
+{
+ "id": "repro/12",
+ "src": "qol",
+ "field": {
+  "variant": "nocap",
+  "text": "hi "
+ },
+ "steps": [
+  {
+   "op": "gesture",
+   "strokes": [
+    [
+     [
+      994.5,
+      2025.0,
+      0
+     ],
+     [
+      994.5,
+      2025.0,
+      60
+     ]
+    ]
+   ],
+   "m": {
+    "k": "tap",
+    "key": "delete",
+    "depth": 0.752,
+    "nb": "m",
+    "x": 994.5,
+    "y": 2025.0
+   }
+  }
+ ],
+ "item": "CO-06"
+}
