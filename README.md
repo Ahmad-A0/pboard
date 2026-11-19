@@ -9,8 +9,9 @@ English (UK/US) only for now.
 
 ## Install
 
-Get the APK from [Releases](https://github.com/Ahmad-A0/pboard/releases), or add this repo to
-[Obtainium](https://obtainium.imranr.dev/) for updates.
+Get the APK from [Releases](https://github.com/Ahmad-A0/pboard/releases), or
+[add it to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22dev.pboard%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FAhmad-A0%2Fpboard%22%2C%22author%22%3A%22Ahmad-A0%22%2C%22name%22%3A%22pboard%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%5Epboard-%5B0-9%5D%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D)
+for updates (open the link on the phone; it picks the keyboard APK, not the add-ons).
 
 Voice typing, translation (de/es/fr) and text scanning are separate APKs on the same release page. The keyboard
 can't download anything, so they are installed by hand.
@@ -21,13 +22,12 @@ Top-1 word accuracy, replaying recorded human typing through each keyboard on a 
 
 | Set | pboard | Gboard 18.6 | FUTO Keyboard 0.1.30 |
 |---|---|---|---|
-| FUTO swipe | 92.8% | 86.0% | **93.0%** |
-| How We Swipe | **79.3%** | 75.8% | **79.3%** |
-| VTAP (taps) | 95.8% | **96.2%** | 93.0% |
-| TSI (taps) | **93.1%** | 92.4% | 79.2% |
+| FUTO swipe | 92.8% | 86.0% | 93.0% |
+| How We Swipe | 79.3% | 75.8% | 79.3% |
+| VTAP (taps) | 95.8% | 96.2% | 93.0% |
+| TSI (taps) | 93.1% | 92.4% | 79.2% |
 
-FUTO Keyboard was measured in a separate run, alongside pboard: [docs/bench/futo-keyboard](docs/bench/futo-keyboard/README.md).
-Harness: `tools/bench`. Method: `docs/bench/README.md`.
+Harness: `tools/bench`. Method: `docs/bench/README.md`. FUTO Keyboard run: `docs/bench/futo-keyboard`.
 
 ## Privacy
 
