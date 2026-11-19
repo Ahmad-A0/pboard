@@ -1,0 +1,1222 @@
+{
+ "label": "tap_vtap.test [pboard 0.1.7-12-ga504a65524, app a504a65, reset/participant] valid groups",
+ "tap": {
+  "items": 3818,
+  "words": 3818,
+  "wer": 0.041644840230487166,
+  "wordAccuracy": 0.9594028287061289,
+  "contextRewritten": 6,
+  "timingDegraded": 0,
+  "retriedItems": 2,
+  "cleanItems": 2586,
+  "falseCorrections": 8,
+  "falseCorrectionRate": 0.0030935808197989174,
+  "noisyItems": 1232,
+  "noisyRecovered": 1085,
+  "noisyRecoveryRate": 0.8806818181818182,
+  "errors": [
+   {
+    "id": "vtap/vt_exp2/p10/mobile781.3/w2",
+    "target": "Tim",
+    "literal": "tim",
+    "got": "tom"
+   },
+   {
+    "id": "vtap/vt_exp2/p11/mobile1523.4/w0",
+    "target": "Has",
+    "literal": "had",
+    "got": "had"
+   },
+   {
+    "id": "vtap/vt_exp2/p11/mobile290.12/w2",
+    "target": "couple",
+    "literal": "cp\boupked",
+    "got": "couples"
+   },
+   {
+    "id": "vtap/vt_exp2/p11/mobile182.16/w3",
+    "target": "were",
+    "literal": "w\b\b\be here",
+    "got": "here"
+   },
+   {
+    "id": "vtap/vt_exp2/p11/mobile182.16/w5",
+    "target": "a",
+    "literal": "the",
+    "got": "the"
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile1554.0/w4",
+    "target": "OK",
+    "literal": "okay",
+    "got": "okay"
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile1554.0/w5",
+    "target": "at",
+    "literal": "\b\b\b at",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile1161.1/w3",
+    "target": "back",
+    "literal": " <shift>ck",
+    "got": "can"
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile831.14/w3",
+    "target": "them",
+    "literal": "then",
+    "got": "then"
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile1641.16/w1",
+    "target": "week",
+    "literal": "wo\neek",
+    "got": "we eek"
+   },
+   {
+    "id": "vtap/vt_exp2/p13/mobile1641.16/w5",
+    "target": "vacation",
+    "literal": "a vscation",
+    "got": "a vacation"
+   },
+   {
+    "id": "vtap/vt_exp2/p16/mobile211.2/w5",
+    "target": "Zainy",
+    "literal": "the zainy",
+    "got": "the zainy"
+   },
+   {
+    "id": "vtap/vt_exp2/p16/mobile1818.16/w6",
+    "target": "week",
+    "literal": "weekenf\bd",
+    "got": "weekend"
+   },
+   {
+    "id": "vtap/vt_exp2/p18/mobile341.5/w7",
+    "target": "some",
+    "literal": "do.e",
+    "got": "do.e"
+   },
+   {
+    "id": "vtap/vt_exp2/p19/mobile1515.12/w3",
+    "target": "are",
+    "literal": "ate",
+    "got": "ate"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile128.4/w0",
+    "target": "I",
+    "literal": "ia<off>\b\b",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile128.4/w5",
+    "target": "until",
+    "literal": "till",
+    "got": "till"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile1389.6/w2",
+    "target": "a",
+    "literal": "<shift>",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile240.8/w4",
+    "target": "maybe",
+    "literal": ".aybe",
+    "got": "aybe"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile1265.10/w3",
+    "target": "carrying",
+    "literal": " ayy\b\bdr\b\brryib\bn g",
+    "got": "carrying g"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile616.11/w1",
+    "target": "home",
+    "literal": "back",
+    "got": "back"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile616.11/w5",
+    "target": "then",
+    "literal": "then\b",
+    "got": "the"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile616.11/w6",
+    "target": "headed",
+    "literal": " headib\bng",
+    "got": "heading"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile131.13/w3",
+    "target": "me",
+    "literal": "\be",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile1550.15/w6",
+    "target": "was",
+    "literal": "t wzd",
+    "got": "t was"
+   },
+   {
+    "id": "vtap/vt_exp2/p1/mobile2060.18/w4",
+    "target": "a",
+    "literal": "<shift>",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp2/p22/mobile56.4/w0",
+    "target": "Thanks",
+    "literal": "thank",
+    "got": "thank"
+   },
+   {
+    "id": "vtap/vt_exp2/p22/mobile56.4/w1",
+    "target": "so",
+    "literal": "you do",
+    "got": "you so"
+   },
+   {
+    "id": "vtap/vt_exp2/p22/mobile56.4/w5",
+    "target": "message",
+    "literal": "message<off>",
+    "got": "messages"
+   },
+   {
+    "id": "vtap/vt_exp2/p22/mobile1131.7/w2",
+    "target": "one",
+    "literal": "on",
+    "got": "on"
+   },
+   {
+    "id": "vtap/vt_exp2/p23/mobile807.6/w4",
+    "target": "discuss",
+    "literal": "discuss",
+    "got": "do is"
+   },
+   {
+    "id": "vtap/vt_exp2/p23/mobile783.13/w5",
+    "target": "Heaven",
+    "literal": "then",
+    "got": "then"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile1638.0/w5",
+    "target": "mood",
+    "literal": "mood<off>",
+    "got": "movie"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile2150.4/w5",
+    "target": "right",
+    "literal": "rite",
+    "got": "tire"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile2150.4/w6",
+    "target": "dates",
+    "literal": "date",
+    "got": "date"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile131.5/w5",
+    "target": "home",
+    "literal": "home<off><off>",
+    "got": "\ud83c\udfe1\ud83c\udfe1"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile1117.6/w6",
+    "target": "us",
+    "literal": "us<off>",
+    "got": "you"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile1318.9/w6",
+    "target": "fine",
+    "literal": "fine<off>",
+    "got": "\ud83d\ude12"
+   },
+   {
+    "id": "vtap/vt_exp2/p5/mobile228.12/w3",
+    "target": "wants",
+    "literal": "wabt",
+    "got": "want"
+   },
+   {
+    "id": "vtap/vt_exp2/p7/mobile193.5/w5",
+    "target": "rocks",
+    "literal": "<off>\brocks",
+    "got": "hisrocks"
+   },
+   {
+    "id": "vtap/vt_exp2/p7/mobile830.15/w1",
+    "target": "you",
+    "literal": "you<off>\b",
+    "got": "yourself"
+   },
+   {
+    "id": "vtap/vt_exp2/p8/mobile193.7/w2",
+    "target": "love",
+    "literal": "love",
+    "got": "live"
+   },
+   {
+    "id": "vtap/vt_exp2/p8/mobile1325.9/w5",
+    "target": "too",
+    "literal": "tii<off>",
+    "got": "to"
+   },
+   {
+    "id": "vtap/vt_exp2/p8/mobile697.16/w4",
+    "target": "Ava",
+    "literal": "ave",
+    "got": "ave"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile683.1/w0",
+    "target": "Met",
+    "literal": "mwt",
+    "got": "mwr"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile590.9/w3",
+    "target": "Jim",
+    "literal": "jim",
+    "got": "him"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile590.9/w6",
+    "target": "me",
+    "literal": "\ne",
+    "got": "e"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile210.10/w1",
+    "target": "bit",
+    "literal": "bot",
+    "got": "bot"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1007.12/w0",
+    "target": "I",
+    "literal": "u",
+    "got": "u"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1268.27/w0",
+    "target": "Email",
+    "literal": "e\baul",
+    "got": "aul"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1268.27/w2",
+    "target": "consent",
+    "literal": "onswbt",
+    "got": "onset"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile201.30/w0",
+    "target": "Thanks",
+    "literal": "thank",
+    "got": "thank"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile201.30/w4",
+    "target": "today",
+    "literal": "odat",
+    "got": "o'day"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile899.31/w0",
+    "target": "Is",
+    "literal": "i",
+    "got": "i"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile899.31/w4",
+    "target": "rate",
+    "literal": "atw",
+    "got": "ate"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1375.36/w5",
+    "target": "meeting",
+    "literal": "\nwetung",
+    "got": "wetumg"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1375.36/w6",
+    "target": "come",
+    "literal": " ome",
+    "got": "one"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1908.37/w6",
+    "target": "up",
+    "literal": "m",
+    "got": "m"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1397.38/w0",
+    "target": "Are",
+    "literal": "ate",
+    "got": "ate"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile553.40/w4",
+    "target": "it",
+    "literal": "iy",
+    "got": "iy"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1125.42/w1",
+    "target": "are",
+    "literal": "ate",
+    "got": "ate"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile2236.43/w2",
+    "target": "come",
+    "literal": "co.e",
+    "got": "co.e"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile2236.43/w3",
+    "target": "get",
+    "literal": "gwr",
+    "got": "here"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile323.46/w3",
+    "target": "neatest",
+    "literal": "neatwat",
+    "got": "nearest"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1923.58/w3",
+    "target": "crew",
+    "literal": "cra",
+    "got": "car"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1946.62/w1",
+    "target": "be",
+    "literal": "ve",
+    "got": "ve"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1946.62/w3",
+    "target": "as",
+    "literal": "<shift>s",
+    "got": "s"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile921.64/w1",
+    "target": "my",
+    "literal": "\by",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1802.70/w4",
+    "target": "Global",
+    "literal": "theglival",
+    "got": "theglival"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1182.72/w1",
+    "target": "agree",
+    "literal": "<shift>hree",
+    "got": "hree"
+   },
+   {
+    "id": "vtap/vt_exp3/p12/mobile1182.72/w3",
+    "target": "Jim",
+    "literal": "jim",
+    "got": "him"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile867.2/w4",
+    "target": "Butler",
+    "literal": "butter",
+    "got": "butter"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile642.4/w1",
+    "target": "unusual",
+    "literal": "usual",
+    "got": "usual"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile753.12/w4",
+    "target": "signing",
+    "literal": "sibging",
+    "got": "singing"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile1587.22/w3",
+    "target": "recently",
+    "literal": "re,cebtly",
+    "got": "re,cently"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile60.33/w5",
+    "target": "can",
+    "literal": " an",
+    "got": "an"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile323.35/w3",
+    "target": "neatest",
+    "literal": "neastest",
+    "got": "nearest"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile1504.65/w0",
+    "target": "I",
+    "literal": "i",
+    "got": "o"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile1504.65/w3",
+    "target": "Lara",
+    "literal": "lata",
+    "got": "laura"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile1504.65/w5",
+    "target": "this",
+    "literal": "thos",
+    "got": "thos"
+   },
+   {
+    "id": "vtap/vt_exp3/p2/mobile976.74/w0",
+    "target": "Weather",
+    "literal": "weater",
+    "got": "water"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile2173.2/w1",
+    "target": "is",
+    "literal": "it",
+    "got": "it"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile2173.2/w2",
+    "target": "it",
+    "literal": "is",
+    "got": "is"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile416.4/w1",
+    "target": "Gilbert",
+    "literal": "gilbert",
+    "got": "hilbert"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile982.5/w1",
+    "target": "am",
+    "literal": "a",
+    "got": "a"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile982.5/w3",
+    "target": "with",
+    "literal": "wh",
+    "got": "wh"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile203.33/w5",
+    "target": "there",
+    "literal": "bere",
+    "got": "here"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile1404.37/w2",
+    "target": "deleted",
+    "literal": "delete",
+    "got": "delete"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile683.41/w2",
+    "target": "partners",
+    "literal": "pare ers",
+    "got": "parents"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile683.41/w4",
+    "target": "San",
+    "literal": "dan",
+    "got": "dan"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile444.59/w0",
+    "target": "Lynn",
+    "literal": "\bynn",
+    "got": "ynn"
+   },
+   {
+    "id": "vtap/vt_exp3/p7/mobile972.60/w3",
+    "target": "bring",
+    "literal": "nring",
+    "got": "being"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile178.4/w2",
+    "target": "or",
+    "literal": "ot",
+    "got": "to"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile134.5/w1",
+    "target": "a",
+    "literal": "s",
+    "got": "s"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1842.7/w2",
+    "target": "Tomy",
+    "literal": "tommy",
+    "got": "tommy"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1313.9/w3",
+    "target": "to",
+    "literal": "no",
+    "got": "no"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile854.10/w5",
+    "target": "might",
+    "literal": "\bight",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile498.13/w1",
+    "target": "we",
+    "literal": "e",
+    "got": "w"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile951.20/w0",
+    "target": "No",
+    "literal": "on",
+    "got": "on"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1453.25/w3",
+    "target": "day",
+    "literal": "fae",
+    "got": "far"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile2217.26/w3",
+    "target": "Morris",
+    "literal": "morros",
+    "got": "morros"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile76.29/w1",
+    "target": "for",
+    "literal": "or",
+    "got": "or"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile76.29/w3",
+    "target": "offer",
+    "literal": "sffer",
+    "got": "sffer"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1663.31/w3",
+    "target": "have",
+    "literal": "ga r",
+    "got": "be r"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1663.31/w5",
+    "target": "honor",
+    "literal": "hibtr",
+    "got": "go to"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1969.32/w3",
+    "target": "them",
+    "literal": "the ",
+    "got": "the"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile415.33/w5",
+    "target": "complicated",
+    "literal": "xl.plixagec",
+    "got": "xl.plicagec"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile435.34/w1",
+    "target": "we",
+    "literal": "eq",
+    "got": "wq"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile93.37/w6",
+    "target": "agreements",
+    "literal": "afree.ents",
+    "got": "agree.ents"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1202.45/w1",
+    "target": "please",
+    "literal": "p\brase",
+    "got": "ease"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1202.45/w4",
+    "target": "my",
+    "literal": "\by",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile2236.46/w4",
+    "target": "me",
+    "literal": "my",
+    "got": "my"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile342.48/w1",
+    "target": "is",
+    "literal": "as",
+    "got": "as"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile342.48/w5",
+    "target": "timing",
+    "literal": "yi\binf",
+    "got": "yinf"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile753.49/w5",
+    "target": "bonus",
+    "literal": "no ys",
+    "got": "boys"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1238.52/w1",
+    "target": "can",
+    "literal": "xan",
+    "got": "dan"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1238.52/w4",
+    "target": "these",
+    "literal": "thwsex",
+    "got": "those"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile553.54/w5",
+    "target": "goes",
+    "literal": "geys",
+    "got": "gets"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1575.60/w3",
+    "target": "Palacios",
+    "literal": "pakcips",
+    "got": "pakcips"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1836.66/w2",
+    "target": "Ellenberg",
+    "literal": "ellengerg",
+    "got": "wklengerg"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile2204.68/w4",
+    "target": "is",
+    "literal": "id",
+    "got": "i'd"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile405.69/w3",
+    "target": "day",
+    "literal": "say",
+    "got": "say"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile68.70/w2",
+    "target": "he",
+    "literal": "be",
+    "got": "be"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile910.72/w4",
+    "target": "I",
+    "literal": "o",
+    "got": "o"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile547.73/w2",
+    "target": "from",
+    "literal": "form",
+    "got": "form"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile658.75/w2",
+    "target": "snowed",
+    "literal": "snoerx",
+    "got": "bored"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile658.75/w5",
+    "target": "out",
+    "literal": "oyt",
+    "got": "our"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1504.77/w3",
+    "target": "Lara",
+    "literal": "lata",
+    "got": "laura"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1504.77/w5",
+    "target": "this",
+    "literal": "tjos",
+    "got": "thos"
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile1504.77/w6",
+    "target": "morning",
+    "literal": "\boeninf",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p8/mobile642.78/w1",
+    "target": "unusual",
+    "literal": "umulsa",
+    "got": "umulsa"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1606.0/w3",
+    "target": "I",
+    "literal": "u",
+    "got": "u"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile2224.3/w3",
+    "target": "a",
+    "literal": "<shift>",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1381.9/w3",
+    "target": "working",
+    "literal": "workingon",
+    "got": "workington"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile867.10/w3",
+    "target": "Pam",
+    "literal": "pa\b",
+    "got": "p"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1880.17/w7",
+    "target": "change",
+    "literal": "chabvd",
+    "got": "chance"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1856.21/w4",
+    "target": "his",
+    "literal": "hid",
+    "got": "hid"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile759.24/w4",
+    "target": "data",
+    "literal": "sata",
+    "got": "sata"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile533.27/w2",
+    "target": "I",
+    "literal": "umi",
+    "got": "you"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile203.28/w7",
+    "target": "good",
+    "literal": "good",
+    "got": "food"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile515.30/w2",
+    "target": "do",
+    "literal": "yk",
+    "got": "yo"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile515.30/w3",
+    "target": "you",
+    "literal": "y ",
+    "got": "yv"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile366.38/w1",
+    "target": "let",
+    "literal": "\bet",
+    "got": ""
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile2118.41/w3",
+    "target": "schedules",
+    "literal": "schefuled",
+    "got": "scheduled"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile210.48/w3",
+    "target": "on",
+    "literal": "in",
+    "got": "in"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile962.50/w0",
+    "target": "Trip",
+    "literal": "trio",
+    "got": "trio"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile962.50/w4",
+    "target": "presume",
+    "literal": "pdomise",
+    "got": "promise"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1226.54/w2",
+    "target": "on",
+    "literal": "in",
+    "got": "in"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile224.58/w0",
+    "target": "I",
+    "literal": "o",
+    "got": "o"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile202.61/w4",
+    "target": "on",
+    "literal": "in",
+    "got": "in"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile426.65/w1",
+    "target": "gave",
+    "literal": "have",
+    "got": "have"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile910.69/w3",
+    "target": "how",
+    "literal": "hkg",
+    "got": "hkg"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile362.70/w0",
+    "target": "I",
+    "literal": "o",
+    "got": "o"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile362.70/w2",
+    "target": "Tim",
+    "literal": "tims",
+    "got": "tim's"
+   },
+   {
+    "id": "vtap/vt_exp3/p9/mobile1404.72/w0",
+    "target": "I",
+    "literal": "a",
+    "got": "a"
+   }
+  ],
+  "byParticipant": {
+   "vt_exp2/p1": {
+    "items": 128,
+    "words": 128,
+    "wer": 0.0859375,
+    "wordAccuracy": 0.9140625,
+    "contextRewritten": 1,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 73,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 55,
+    "noisyRecovered": 44,
+    "noisyRecoveryRate": 0.8
+   },
+   "vt_exp2/p10": {
+    "items": 136,
+    "words": 136,
+    "wer": 0.007352941176470588,
+    "wordAccuracy": 0.9926470588235294,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 121,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.008264462809917356,
+    "noisyItems": 15,
+    "noisyRecovered": 15,
+    "noisyRecoveryRate": 1.0
+   },
+   "vt_exp2/p11": {
+    "items": 136,
+    "words": 136,
+    "wer": 0.029411764705882353,
+    "wordAccuracy": 0.9705882352941176,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 81,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 55,
+    "noisyRecovered": 51,
+    "noisyRecoveryRate": 0.9272727272727272
+   },
+   "vt_exp2/p13": {
+    "items": 132,
+    "words": 132,
+    "wer": 0.05303030303030303,
+    "wordAccuracy": 0.9545454545454546,
+    "contextRewritten": 1,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 78,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 54,
+    "noisyRecovered": 48,
+    "noisyRecoveryRate": 0.8888888888888888
+   },
+   "vt_exp2/p16": {
+    "items": 137,
+    "words": 137,
+    "wer": 0.014598540145985401,
+    "wordAccuracy": 0.9854014598540146,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 114,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 23,
+    "noisyRecovered": 21,
+    "noisyRecoveryRate": 0.9130434782608695
+   },
+   "vt_exp2/p18": {
+    "items": 120,
+    "words": 120,
+    "wer": 0.008333333333333333,
+    "wordAccuracy": 0.9916666666666667,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 86,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 34,
+    "noisyRecovered": 33,
+    "noisyRecoveryRate": 0.9705882352941176
+   },
+   "vt_exp2/p19": {
+    "items": 127,
+    "words": 127,
+    "wer": 0.007874015748031496,
+    "wordAccuracy": 0.9921259842519685,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 108,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 19,
+    "noisyRecovered": 18,
+    "noisyRecoveryRate": 0.9473684210526315
+   },
+   "vt_exp2/p22": {
+    "items": 134,
+    "words": 134,
+    "wer": 0.029850746268656716,
+    "wordAccuracy": 0.9701492537313433,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 110,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 24,
+    "noisyRecovered": 20,
+    "noisyRecoveryRate": 0.8333333333333334
+   },
+   "vt_exp2/p23": {
+    "items": 125,
+    "words": 125,
+    "wer": 0.024,
+    "wordAccuracy": 0.984,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 103,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.009708737864077669,
+    "noisyItems": 22,
+    "noisyRecovered": 21,
+    "noisyRecoveryRate": 0.9545454545454546
+   },
+   "vt_exp2/p5": {
+    "items": 126,
+    "words": 126,
+    "wer": 0.05555555555555555,
+    "wordAccuracy": 0.9444444444444444,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 98,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 28,
+    "noisyRecovered": 21,
+    "noisyRecoveryRate": 0.75
+   },
+   "vt_exp2/p6": {
+    "items": 139,
+    "words": 139,
+    "wer": 0.0,
+    "wordAccuracy": 1.0,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 116,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 23,
+    "noisyRecovered": 23,
+    "noisyRecoveryRate": 1.0
+   },
+   "vt_exp2/p7": {
+    "items": 104,
+    "words": 104,
+    "wer": 0.019230769230769232,
+    "wordAccuracy": 0.9807692307692307,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 91,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 13,
+    "noisyRecovered": 11,
+    "noisyRecoveryRate": 0.8461538461538461
+   },
+   "vt_exp2/p8": {
+    "items": 135,
+    "words": 135,
+    "wer": 0.022222222222222223,
+    "wordAccuracy": 0.9777777777777777,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 113,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.008849557522123894,
+    "noisyItems": 22,
+    "noisyRecovered": 20,
+    "noisyRecoveryRate": 0.9090909090909091
+   },
+   "vt_exp3/p12": {
+    "items": 439,
+    "words": 439,
+    "wer": 0.06150341685649203,
+    "wordAccuracy": 0.9384965831435079,
+    "contextRewritten": 1,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 197,
+    "falseCorrections": 2,
+    "falseCorrectionRate": 0.01015228426395939,
+    "noisyItems": 242,
+    "noisyRecovered": 217,
+    "noisyRecoveryRate": 0.8966942148760331
+   },
+   "vt_exp3/p2": {
+    "items": 447,
+    "words": 447,
+    "wer": 0.02237136465324385,
+    "wordAccuracy": 0.9776286353467561,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 313,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.003194888178913738,
+    "noisyItems": 134,
+    "noisyRecovered": 125,
+    "noisyRecoveryRate": 0.9328358208955224
+   },
+   "vt_exp3/p7": {
+    "items": 444,
+    "words": 444,
+    "wer": 0.024774774774774775,
+    "wordAccuracy": 0.9752252252252253,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 351,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.002849002849002849,
+    "noisyItems": 93,
+    "noisyRecovered": 83,
+    "noisyRecoveryRate": 0.8924731182795699
+   },
+   "vt_exp3/p8": {
+    "items": 410,
+    "words": 410,
+    "wer": 0.1,
+    "wordAccuracy": 0.9048780487804878,
+    "contextRewritten": 2,
+    "timingDegraded": 0,
+    "retriedItems": 2,
+    "cleanItems": 200,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 210,
+    "noisyRecovered": 171,
+    "noisyRecoveryRate": 0.8142857142857143
+   },
+   "vt_exp3/p9": {
+    "items": 399,
+    "words": 399,
+    "wer": 0.06015037593984962,
+    "wordAccuracy": 0.9398496240601504,
+    "contextRewritten": 1,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 233,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.004291845493562232,
+    "noisyItems": 166,
+    "noisyRecovered": 143,
+    "noisyRecoveryRate": 0.8614457831325302
+   }
+  }
+ }
+}

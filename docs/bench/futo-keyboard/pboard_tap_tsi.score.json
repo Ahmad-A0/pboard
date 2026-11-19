@@ -1,0 +1,298 @@
+{
+ "label": "tap_tsi [pboard 0.1.7-12-ga504a65524, app a504a65, reset/participant] valid groups",
+ "tap": {
+  "items": 303,
+  "words": 303,
+  "wer": 0.06930693069306931,
+  "wordAccuracy": 0.9306930693069307,
+  "contextRewritten": 0,
+  "timingDegraded": 0,
+  "retriedItems": 0,
+  "cleanItems": 192,
+  "falseCorrections": 0,
+  "falseCorrectionRate": 0.0,
+  "noisyItems": 111,
+  "noisyRecovered": 90,
+  "noisyRecoveryRate": 0.8108108108108109,
+  "errors": [
+   {
+    "id": "tsi/user04/task3/17/w3",
+    "target": "allotted",
+    "literal": "allotd",
+    "got": "allotd"
+   },
+   {
+    "id": "tsi/user06/task1/0/w1",
+    "target": "hour",
+    "literal": "horu",
+    "got": "horub"
+   },
+   {
+    "id": "tsi/user06/task1/0/w2",
+    "target": "is",
+    "literal": "iw",
+    "got": "isb"
+   },
+   {
+    "id": "tsi/user06/task1/0/w4",
+    "target": "for",
+    "literal": "fo",
+    "got": "to"
+   },
+   {
+    "id": "tsi/user06/task2/23/w2",
+    "target": "out",
+    "literal": "o",
+    "got": "o"
+   },
+   {
+    "id": "tsi/user06/task4/5/w2",
+    "target": "to",
+    "literal": "t<off>",
+    "got": "tob"
+   },
+   {
+    "id": "tsi/user06/task4/24/w0",
+    "target": "You",
+    "literal": "yiu",
+    "got": "yiub"
+   },
+   {
+    "id": "tsi/user06/task4/24/w2",
+    "target": "loose",
+    "literal": "loaw",
+    "got": "lose"
+   },
+   {
+    "id": "tsi/user08/task1/13/w0",
+    "target": "The",
+    "literal": "the",
+    "got": "then"
+   },
+   {
+    "id": "tsi/user08/task1/25/w2",
+    "target": "withdrawal",
+    "literal": "withdrawal",
+    "got": "withdrawaln"
+   },
+   {
+    "id": "tsi/user08/task2/8/w2",
+    "target": "a",
+    "literal": "a",
+    "got": "an"
+   },
+   {
+    "id": "tsi/user08/task2/21/w0",
+    "target": "I",
+    "literal": "i",
+    "got": "in"
+   },
+   {
+    "id": "tsi/user08/task2/21/w2",
+    "target": "to",
+    "literal": "to",
+    "got": "tob"
+   },
+   {
+    "id": "tsi/user08/task4/6/w0",
+    "target": "We",
+    "literal": "we",
+    "got": "wen"
+   },
+   {
+    "id": "tsi/user08/task4/7/w1",
+    "target": "we",
+    "literal": "we",
+    "got": "wen"
+   },
+   {
+    "id": "tsi/user08/task4/7/w3",
+    "target": "a",
+    "literal": "a",
+    "got": "an"
+   },
+   {
+    "id": "tsi/user08/task4/7/w5",
+    "target": "of",
+    "literal": "of",
+    "got": "ofn"
+   },
+   {
+    "id": "tsi/user10/task1/11/w1",
+    "target": "together",
+    "literal": "togheree",
+    "got": "togheter"
+   },
+   {
+    "id": "tsi/user10/task3/29/w2",
+    "target": "diction",
+    "literal": "dixtipn",
+    "got": "dictionary"
+   },
+   {
+    "id": "tsi/user15/task2/10/w0",
+    "target": "Accompanied",
+    "literal": "accompanies",
+    "got": "accompanies"
+   },
+   {
+    "id": "tsi/user15/task4/24/w1",
+    "target": "through",
+    "literal": "thourgh",
+    "got": "though"
+   }
+  ],
+  "byParticipant": {
+   "user01": {
+    "items": 42,
+    "words": 42,
+    "wer": 0.0,
+    "wordAccuracy": 1.0,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 34,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 8,
+    "noisyRecovered": 8,
+    "noisyRecoveryRate": 1.0
+   },
+   "user04": {
+    "items": 39,
+    "words": 39,
+    "wer": 0.02564102564102564,
+    "wordAccuracy": 0.9743589743589743,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 26,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 13,
+    "noisyRecovered": 12,
+    "noisyRecoveryRate": 0.9230769230769231
+   },
+   "user06": {
+    "items": 41,
+    "words": 41,
+    "wer": 0.17073170731707318,
+    "wordAccuracy": 0.8292682926829268,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 16,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 25,
+    "noisyRecovered": 18,
+    "noisyRecoveryRate": 0.72
+   },
+   "user07": {
+    "items": 36,
+    "words": 36,
+    "wer": 0.0,
+    "wordAccuracy": 1.0,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 27,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 9,
+    "noisyRecovered": 9,
+    "noisyRecoveryRate": 1.0
+   },
+   "user08": {
+    "items": 34,
+    "words": 34,
+    "wer": 0.2647058823529412,
+    "wordAccuracy": 0.7352941176470589,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 10,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 24,
+    "noisyRecovered": 15,
+    "noisyRecoveryRate": 0.625
+   },
+   "user10": {
+    "items": 38,
+    "words": 38,
+    "wer": 0.05263157894736842,
+    "wordAccuracy": 0.9473684210526315,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 22,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 16,
+    "noisyRecovered": 14,
+    "noisyRecoveryRate": 0.875
+   },
+   "user15": {
+    "items": 33,
+    "words": 33,
+    "wer": 0.06060606060606061,
+    "wordAccuracy": 0.9393939393939394,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 25,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 8,
+    "noisyRecovered": 6,
+    "noisyRecoveryRate": 0.75
+   },
+   "user16": {
+    "items": 40,
+    "words": 40,
+    "wer": 0.0,
+    "wordAccuracy": 1.0,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 32,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 8,
+    "noisyRecovered": 8,
+    "noisyRecoveryRate": 1.0
+   }
+  },
+  "terminatorOnSpace": {
+   "items": 275,
+   "words": 275,
+   "wer": 0.03272727272727273,
+   "wordAccuracy": 0.9672727272727273,
+   "contextRewritten": 0,
+   "timingDegraded": 0,
+   "retriedItems": 0,
+   "cleanItems": 192,
+   "falseCorrections": 0,
+   "falseCorrectionRate": 0.0,
+   "noisyItems": 83,
+   "noisyRecovered": 74,
+   "noisyRecoveryRate": 0.891566265060241
+  },
+  "terminatorMissedSpace": {
+   "items": 28,
+   "words": 28,
+   "wer": 0.42857142857142855,
+   "wordAccuracy": 0.5714285714285714,
+   "contextRewritten": 0,
+   "timingDegraded": 0,
+   "retriedItems": 0,
+   "cleanItems": 0,
+   "falseCorrections": 0,
+   "falseCorrectionRate": 0.0,
+   "noisyItems": 28,
+   "noisyRecovered": 16,
+   "noisyRecoveryRate": 0.5714285714285714
+  }
+ }
+}

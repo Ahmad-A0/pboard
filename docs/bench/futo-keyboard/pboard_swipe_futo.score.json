@@ -1,0 +1,176 @@
+{
+ "label": "swipe_futo.test [pboard 0.1.7-12-ga504a65524, app a504a65, reset/chunk100] valid groups",
+ "swipe": {
+  "items": 400,
+  "words": 400,
+  "wer": 0.0675,
+  "wordAccuracy": 0.9325,
+  "contextRewritten": 0,
+  "timingDegraded": 0,
+  "retriedItems": 1,
+  "errors": [
+   {
+    "id": "futo/test/1000994",
+    "target": "unless",
+    "literal": null,
+    "got": "une"
+   },
+   {
+    "id": "futo/test/1013032",
+    "target": "Hertfordshire",
+    "literal": null,
+    "got": "heritable"
+   },
+   {
+    "id": "futo/test/1017840",
+    "target": "Leachs",
+    "literal": null,
+    "got": "leaves"
+   },
+   {
+    "id": "futo/test/1018870",
+    "target": "loved",
+    "literal": null,
+    "got": "lived"
+   },
+   {
+    "id": "futo/test/1023050",
+    "target": "Girards",
+    "literal": null,
+    "got": "girard's"
+   },
+   {
+    "id": "futo/test/103021",
+    "target": "Oval",
+    "literal": null,
+    "got": "ivan"
+   },
+   {
+    "id": "futo/test/103176",
+    "target": "duces",
+    "literal": null,
+    "got": "success"
+   },
+   {
+    "id": "futo/test/1035004",
+    "target": "received",
+    "literal": null,
+    "got": "recorded"
+   },
+   {
+    "id": "futo/test/1035061",
+    "target": "shutout",
+    "literal": null,
+    "got": "shootout"
+   },
+   {
+    "id": "futo/test/1036869",
+    "target": "troublesome",
+    "literal": null,
+    "got": "troubles"
+   },
+   {
+    "id": "futo/test/104448",
+    "target": "TerraLib",
+    "literal": null,
+    "got": "talib"
+   },
+   {
+    "id": "futo/test/105024",
+    "target": "Northfield",
+    "literal": null,
+    "got": "north's"
+   },
+   {
+    "id": "futo/test/1058180",
+    "target": "film",
+    "literal": null,
+    "got": "cult"
+   },
+   {
+    "id": "futo/test/1059421",
+    "target": "Murupara",
+    "literal": null,
+    "got": "muppets"
+   },
+   {
+    "id": "futo/test/1059475",
+    "target": "pigeonholes",
+    "literal": null,
+    "got": ""
+   },
+   {
+    "id": "futo/test/1063938",
+    "target": "Door",
+    "literal": null,
+    "got": "for"
+   },
+   {
+    "id": "futo/test/1065494",
+    "target": "They",
+    "literal": null,
+    "got": "the"
+   },
+   {
+    "id": "futo/test/1067783",
+    "target": "centre",
+    "literal": null,
+    "got": "center"
+   },
+   {
+    "id": "futo/test/108024",
+    "target": "thrives",
+    "literal": null,
+    "got": "this"
+   },
+   {
+    "id": "futo/test/1081968",
+    "target": "free",
+    "literal": null,
+    "got": "few"
+   },
+   {
+    "id": "futo/test/1081977",
+    "target": "Organisation",
+    "literal": null,
+    "got": "organization"
+   },
+   {
+    "id": "futo/test/1082309",
+    "target": "Niel",
+    "literal": null,
+    "got": "noel"
+   },
+   {
+    "id": "futo/test/1084234",
+    "target": "maple",
+    "literal": null,
+    "got": "male"
+   },
+   {
+    "id": "futo/test/1084701",
+    "target": "Anna",
+    "literal": null,
+    "got": "and"
+   },
+   {
+    "id": "futo/test/1088912",
+    "target": "Thisted",
+    "literal": null,
+    "got": "thirsted"
+   },
+   {
+    "id": "futo/test/1097762",
+    "target": "Dorchester",
+    "literal": null,
+    "got": "directer"
+   },
+   {
+    "id": "futo/test/1104013",
+    "target": "manger",
+    "literal": null,
+    "got": "manner"
+   }
+  ]
+ }
+}

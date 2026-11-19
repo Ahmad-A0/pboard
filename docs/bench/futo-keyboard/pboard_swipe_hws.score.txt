@@ -1,0 +1,1 @@
+swipe_hws.test [pboard 0.1.7-12-ga504a65524, app a504a65, reset/chunk100] valid groups: swipe items 400  word acc 78.75%  WER 21.25%  (timing-degraded 0, retried 3)

@@ -1,0 +1,550 @@
+{
+ "label": "tap_tsi [latin 0.1.30, app bc9762d, reset/participant] valid groups",
+ "tap": {
+  "items": 303,
+  "words": 303,
+  "wer": 0.24422442244224424,
+  "wordAccuracy": 0.7920792079207921,
+  "contextRewritten": 0,
+  "timingDegraded": 0,
+  "retriedItems": 2,
+  "cleanItems": 194,
+  "falseCorrections": 8,
+  "falseCorrectionRate": 0.041237113402061855,
+  "noisyItems": 109,
+  "noisyRecovered": 54,
+  "noisyRecoveryRate": 0.4954128440366973,
+  "errors": [
+   {
+    "id": "tsi/user01/task4/7/w2",
+    "target": "withdrawal",
+    "literal": "witbdrawal",
+    "got": "withdrawalc"
+   },
+   {
+    "id": "tsi/user04/task1/7/w2",
+    "target": "diction",
+    "literal": "dictoon",
+    "got": "dictionary"
+   },
+   {
+    "id": "tsi/user04/task1/14/w2",
+    "target": "gap",
+    "literal": "gap",
+    "got": "gapn"
+   },
+   {
+    "id": "tsi/user04/task1/14/w3",
+    "target": "gets",
+    "literal": "gets",
+    "got": "getsb"
+   },
+   {
+    "id": "tsi/user04/task3/17/w3",
+    "target": "allotted",
+    "literal": "allotd",
+    "got": "almost"
+   },
+   {
+    "id": "tsi/user04/task4/12/w3",
+    "target": "pies",
+    "literal": "piea",
+    "got": "piea"
+   },
+   {
+    "id": "tsi/user06/task1/0/w2",
+    "target": "is",
+    "literal": "iw",
+    "got": "iwb"
+   },
+   {
+    "id": "tsi/user06/task1/0/w3",
+    "target": "allotted",
+    "literal": "allott<off>d",
+    "got": "alot d"
+   },
+   {
+    "id": "tsi/user06/task1/0/w4",
+    "target": "for",
+    "literal": "fo",
+    "got": "fo"
+   },
+   {
+    "id": "tsi/user06/task1/3/w1",
+    "target": "powder",
+    "literal": "piwdwr",
+    "got": "piwdwr"
+   },
+   {
+    "id": "tsi/user06/task1/3/w5",
+    "target": "with",
+    "literal": "wiyh",
+    "got": "in other"
+   },
+   {
+    "id": "tsi/user06/task1/7/w3",
+    "target": "our",
+    "literal": "o<off>r",
+    "got": "i r"
+   },
+   {
+    "id": "tsi/user06/task1/7/w4",
+    "target": "country",
+    "literal": "country",
+    "got": "go thru"
+   },
+   {
+    "id": "tsi/user06/task2/17/w0",
+    "target": "The",
+    "literal": "the",
+    "got": "theb"
+   },
+   {
+    "id": "tsi/user06/task2/23/w2",
+    "target": "out",
+    "literal": "o",
+    "got": "o"
+   },
+   {
+    "id": "tsi/user06/task2/23/w3",
+    "target": "the",
+    "literal": "<off>ge",
+    "got": "the most"
+   },
+   {
+    "id": "tsi/user06/task3/26/w0",
+    "target": "Correct",
+    "literal": "corewxt",
+    "got": "corre b"
+   },
+   {
+    "id": "tsi/user06/task3/26/w1",
+    "target": "your",
+    "literal": "yiu<off>",
+    "got": "reduce by"
+   },
+   {
+    "id": "tsi/user06/task3/26/w2",
+    "target": "diction",
+    "literal": "sixtion",
+    "got": "dictionary"
+   },
+   {
+    "id": "tsi/user06/task4/5/w1",
+    "target": "like",
+    "literal": "like",
+    "got": "liken"
+   },
+   {
+    "id": "tsi/user06/task4/5/w2",
+    "target": "to",
+    "literal": "t<off>",
+    "got": "the b"
+   },
+   {
+    "id": "tsi/user06/task4/24/w0",
+    "target": "You",
+    "literal": "yiu",
+    "got": "yiub"
+   },
+   {
+    "id": "tsi/user06/task4/24/w1",
+    "target": "will",
+    "literal": "wuol",
+    "got": "wuoln"
+   },
+   {
+    "id": "tsi/user06/task4/24/w2",
+    "target": "loose",
+    "literal": "loaw",
+    "got": "lose"
+   },
+   {
+    "id": "tsi/user06/task4/24/w3",
+    "target": "your",
+    "literal": "yiur",
+    "got": "you"
+   },
+   {
+    "id": "tsi/user07/task2/16/w1",
+    "target": "psychiatrist",
+    "literal": "pyschuatrist",
+    "got": "pyschuatrist"
+   },
+   {
+    "id": "tsi/user07/task3/24/w4",
+    "target": "jammed",
+    "literal": "hammed",
+    "got": "hammed"
+   },
+   {
+    "id": "tsi/user08/task1/13/w0",
+    "target": "The",
+    "literal": "the",
+    "got": "theb"
+   },
+   {
+    "id": "tsi/user08/task1/25/w0",
+    "target": "Sign",
+    "literal": "sign",
+    "got": "signn"
+   },
+   {
+    "id": "tsi/user08/task1/25/w1",
+    "target": "the",
+    "literal": "the",
+    "got": "then"
+   },
+   {
+    "id": "tsi/user08/task1/25/w2",
+    "target": "withdrawal",
+    "literal": "withdrawal",
+    "got": "withdrawaln"
+   },
+   {
+    "id": "tsi/user08/task2/8/w2",
+    "target": "a",
+    "literal": "a",
+    "got": "qn"
+   },
+   {
+    "id": "tsi/user08/task2/8/w3",
+    "target": "football",
+    "literal": "football",
+    "got": "footballn"
+   },
+   {
+    "id": "tsi/user08/task2/21/w0",
+    "target": "I",
+    "literal": "i",
+    "got": "in"
+   },
+   {
+    "id": "tsi/user08/task2/21/w1",
+    "target": "like",
+    "literal": "like",
+    "got": "liken"
+   },
+   {
+    "id": "tsi/user08/task2/21/w2",
+    "target": "to",
+    "literal": "to",
+    "got": "tob"
+   },
+   {
+    "id": "tsi/user08/task3/1/w0",
+    "target": "The",
+    "literal": "the",
+    "got": "theb"
+   },
+   {
+    "id": "tsi/user08/task3/1/w1",
+    "target": "fire",
+    "literal": "fire",
+    "got": "firen"
+   },
+   {
+    "id": "tsi/user08/task3/1/w2",
+    "target": "blazed",
+    "literal": "blazed",
+    "got": "blazedn"
+   },
+   {
+    "id": "tsi/user08/task3/1/w3",
+    "target": "all",
+    "literal": "all",
+    "got": "alln"
+   },
+   {
+    "id": "tsi/user08/task4/6/w0",
+    "target": "We",
+    "literal": "we",
+    "got": "wen"
+   },
+   {
+    "id": "tsi/user08/task4/6/w1",
+    "target": "park",
+    "literal": "park",
+    "got": "parkn"
+   },
+   {
+    "id": "tsi/user08/task4/6/w2",
+    "target": "in",
+    "literal": "in",
+    "got": "ijn"
+   },
+   {
+    "id": "tsi/user08/task4/6/w3",
+    "target": "driveways",
+    "literal": "drivewats",
+    "got": "drivewats"
+   },
+   {
+    "id": "tsi/user08/task4/7/w0",
+    "target": "Shall",
+    "literal": "shall",
+    "got": "shallb"
+   },
+   {
+    "id": "tsi/user08/task4/7/w1",
+    "target": "we",
+    "literal": "we",
+    "got": "wen"
+   },
+   {
+    "id": "tsi/user08/task4/7/w2",
+    "target": "play",
+    "literal": "play",
+    "got": "playb"
+   },
+   {
+    "id": "tsi/user08/task4/7/w3",
+    "target": "a",
+    "literal": "a",
+    "got": "ab"
+   },
+   {
+    "id": "tsi/user08/task4/7/w4",
+    "target": "round",
+    "literal": "rouhd",
+    "got": "rouhdn"
+   },
+   {
+    "id": "tsi/user08/task4/7/w5",
+    "target": "of",
+    "literal": "of",
+    "got": "ofn"
+   },
+   {
+    "id": "tsi/user10/task1/11/w1",
+    "target": "together",
+    "literal": "togheree",
+    "got": "togheree"
+   },
+   {
+    "id": "tsi/user10/task2/0/w1",
+    "target": "you",
+    "literal": "ypy",
+    "got": "ypyn"
+   },
+   {
+    "id": "tsi/user10/task3/19/w2",
+    "target": "jones",
+    "literal": "jones",
+    "got": "just nes"
+   },
+   {
+    "id": "tsi/user10/task3/29/w0",
+    "target": "Correct",
+    "literal": "c<off>rrexr",
+    "got": "city react"
+   },
+   {
+    "id": "tsi/user10/task3/29/w1",
+    "target": "your",
+    "literal": "ypyr",
+    "got": "y"
+   },
+   {
+    "id": "tsi/user10/task3/29/w2",
+    "target": "diction",
+    "literal": "dixtipn",
+    "got": "dixti"
+   },
+   {
+    "id": "tsi/user15/task1/10/w0",
+    "target": "Motivational",
+    "literal": "motivayional",
+    "got": "motivayional"
+   },
+   {
+    "id": "tsi/user15/task2/7/w4",
+    "target": "to",
+    "literal": "to",
+    "got": "the n"
+   },
+   {
+    "id": "tsi/user15/task2/10/w0",
+    "target": "Accompanied",
+    "literal": "accompanies",
+    "got": "accompanies"
+   },
+   {
+    "id": "tsi/user15/task2/10/w1",
+    "target": "by",
+    "literal": "by",
+    "got": "byb"
+   },
+   {
+    "id": "tsi/user15/task2/23/w2",
+    "target": "levee",
+    "literal": "levee",
+    "got": "level"
+   },
+   {
+    "id": "tsi/user15/task2/28/w5",
+    "target": "risen",
+    "literal": "ris<off>n",
+    "got": "a n"
+   },
+   {
+    "id": "tsi/user15/task4/24/w1",
+    "target": "through",
+    "literal": "thourgh",
+    "got": "though"
+   }
+  ],
+  "byParticipant": {
+   "user01": {
+    "items": 42,
+    "words": 42,
+    "wer": 0.023809523809523808,
+    "wordAccuracy": 0.9761904761904762,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 34,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 8,
+    "noisyRecovered": 7,
+    "noisyRecoveryRate": 0.875
+   },
+   "user04": {
+    "items": 39,
+    "words": 39,
+    "wer": 0.1282051282051282,
+    "wordAccuracy": 0.8717948717948718,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 26,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.038461538461538464,
+    "noisyItems": 13,
+    "noisyRecovered": 9,
+    "noisyRecoveryRate": 0.6923076923076923
+   },
+   "user06": {
+    "items": 41,
+    "words": 41,
+    "wer": 0.6341463414634146,
+    "wordAccuracy": 0.5365853658536586,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 17,
+    "falseCorrections": 3,
+    "falseCorrectionRate": 0.17647058823529413,
+    "noisyItems": 24,
+    "noisyRecovered": 8,
+    "noisyRecoveryRate": 0.3333333333333333
+   },
+   "user07": {
+    "items": 36,
+    "words": 36,
+    "wer": 0.05555555555555555,
+    "wordAccuracy": 0.9444444444444444,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 27,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 9,
+    "noisyRecovered": 7,
+    "noisyRecoveryRate": 0.7777777777777778
+   },
+   "user08": {
+    "items": 34,
+    "words": 34,
+    "wer": 0.6764705882352942,
+    "wordAccuracy": 0.3235294117647059,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 10,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.1,
+    "noisyItems": 24,
+    "noisyRecovered": 2,
+    "noisyRecoveryRate": 0.08333333333333333
+   },
+   "user10": {
+    "items": 38,
+    "words": 38,
+    "wer": 0.21052631578947367,
+    "wordAccuracy": 0.8421052631578947,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 2,
+    "cleanItems": 22,
+    "falseCorrections": 1,
+    "falseCorrectionRate": 0.045454545454545456,
+    "noisyItems": 16,
+    "noisyRecovered": 11,
+    "noisyRecoveryRate": 0.6875
+   },
+   "user15": {
+    "items": 33,
+    "words": 33,
+    "wer": 0.2727272727272727,
+    "wordAccuracy": 0.7878787878787878,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 26,
+    "falseCorrections": 2,
+    "falseCorrectionRate": 0.07692307692307693,
+    "noisyItems": 7,
+    "noisyRecovered": 2,
+    "noisyRecoveryRate": 0.2857142857142857
+   },
+   "user16": {
+    "items": 40,
+    "words": 40,
+    "wer": 0.0,
+    "wordAccuracy": 1.0,
+    "contextRewritten": 0,
+    "timingDegraded": 0,
+    "retriedItems": 0,
+    "cleanItems": 32,
+    "falseCorrections": 0,
+    "falseCorrectionRate": 0.0,
+    "noisyItems": 8,
+    "noisyRecovered": 8,
+    "noisyRecoveryRate": 1.0
+   }
+  },
+  "terminatorOnSpace": {
+   "items": 275,
+   "words": 275,
+   "wer": 0.16,
+   "wordAccuracy": 0.8727272727272727,
+   "contextRewritten": 0,
+   "timingDegraded": 0,
+   "retriedItems": 2,
+   "cleanItems": 192,
+   "falseCorrections": 6,
+   "falseCorrectionRate": 0.03125,
+   "noisyItems": 83,
+   "noisyRecovered": 54,
+   "noisyRecoveryRate": 0.6506024096385542
+  },
+  "terminatorMissedSpace": {
+   "items": 28,
+   "words": 28,
+   "wer": 1.0714285714285714,
+   "wordAccuracy": 0.0,
+   "contextRewritten": 0,
+   "timingDegraded": 0,
+   "retriedItems": 0,
+   "cleanItems": 2,
+   "falseCorrections": 2,
+   "falseCorrectionRate": 1.0,
+   "noisyItems": 26,
+   "noisyRecovered": 0,
+   "noisyRecoveryRate": 0.0
+  }
+ }
+}

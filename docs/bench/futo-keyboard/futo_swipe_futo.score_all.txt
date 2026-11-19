@@ -1,0 +1,1 @@
+swipe_futo.test [latin 0.1.30, app d831502, reset/chunk100] ALL groups: swipe items 400  word acc 93.00%  WER 7.00%  (timing-degraded 0, retried 1)

@@ -3,6 +3,7 @@
 
 Usage: headline.py --gboard G/results_valid.jsonl --pboard P/results_valid.jsonl [--set G/set.jsonl
         --geometry geo.json] [--noise A/results.jsonl B/results.jsonl] [--reps 2000] [--label NAME]
+        [--names A B]   (any two keyboards: --gboard is A, --pboard is B)
 
 Metrics per keyboard: word accuracy, WER, false-correction rate (clean words), noisy recovery and,
 for tap sets with terminators, accuracy on words whose terminator hit the space bar. CIs resample
@@ -75,7 +76,10 @@ def main():
     ap.add_argument("--reps", type=int, default=2000)
     ap.add_argument("--label", default="")
     ap.add_argument("--json")
+    ap.add_argument("--names", nargs=2, default=["Gboard", "pboard"], metavar=("A", "B"),
+                    help="column names when --gboard / --pboard hold two other keyboards (B - A is reported)")
     a = ap.parse_args()
+    na, nb = a.names
     lits = score.literals_on_geometry(a.set, a.geometry) if a.set and a.geometry else None
     G, P = per_item(load(a.gboard), lits), per_item(load(a.pboard), lits)
     ids = sorted(set(G) & set(P))
@@ -103,7 +107,7 @@ def main():
     names = {"acc": "word accuracy", "wer": "WER", "fc": "false corrections", "rec": "noisy recovery",
              "acc_term": "accuracy, terminator on bar"}
     print("%s: %d items, %d participants (paired, both keyboards on every item)" % (a.label, len(ids), len(parts)))
-    print("| metric | Gboard | pboard | pboard - Gboard | real? |")
+    print("| metric | %s | %s | %s - %s | real? |" % (na, nb, nb, na))
     print("|---|---|---|---|---|")
     res = {"label": a.label, "items": len(ids), "participants": len(parts), "metrics": {}, "noise": noise}
     for k in keys:

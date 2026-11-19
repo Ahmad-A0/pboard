@@ -1,0 +1,524 @@
+{
+ "label": "swipe_hws.test [pboard 0.1.7-12-ga504a65524, app a504a65, reset/chunk100] valid groups",
+ "swipe": {
+  "items": 400,
+  "words": 400,
+  "wer": 0.2125,
+  "wordAccuracy": 0.7875,
+  "contextRewritten": 0,
+  "timingDegraded": 0,
+  "retriedItems": 3,
+  "errors": [
+   {
+    "id": "hws/0069j4rbe1si9pjqgfhks8sprm/cent_readings_lyondellbasell_blood/w0/1580048834705",
+    "target": "cent",
+    "literal": null,
+    "got": "vent"
+   },
+   {
+    "id": "hws/0069j4rbe1si9pjqgfhks8sprm/dns_column_rat_core/w2/1580017868662",
+    "target": "rat",
+    "literal": null,
+    "got": "rest"
+   },
+   {
+    "id": "hws/0069j4rbe1si9pjqgfhks8sprm/san_prepare_indusind_ati/w2/1580048937143",
+    "target": "indusind",
+    "literal": null,
+    "got": "industrious"
+   },
+   {
+    "id": "hws/00h10g2j0m7vujuscdvispdkub/citizen_august_corpus_mastercard/w1/1582652255310",
+    "target": "august",
+    "literal": null,
+    "got": "\u00e4"
+   },
+   {
+    "id": "hws/00h10g2j0m7vujuscdvispdkub/i_changed_that_in_one_prior_draft/w5/1582652396175",
+    "target": "prior",
+    "literal": null,
+    "got": ""
+   },
+   {
+    "id": "hws/00h10g2j0m7vujuscdvispdkub/surge_panasonic_illinois_ab/w0/1582652015943",
+    "target": "surge",
+    "literal": null,
+    "got": "ss"
+   },
+   {
+    "id": "hws/038qovd34aj82cqc9ip8fqu6sc/chem_artists_reality_equality/w1/1581259373654",
+    "target": "artists",
+    "literal": null,
+    "got": "\u00e1"
+   },
+   {
+    "id": "hws/03rfss9shetb8h3n7aq70j1sjj/pretty_hr_evaluations_wuliangye/w0/1581553707237",
+    "target": "pretty",
+    "literal": null,
+    "got": "pet"
+   },
+   {
+    "id": "hws/03rfss9shetb8h3n7aq70j1sjj/pretty_hr_evaluations_wuliangye/w1/1581553709194",
+    "target": "hr",
+    "literal": null,
+    "got": "he"
+   },
+   {
+    "id": "hws/06c848png23tueouglo78fhhbb/put_wr_meets_talanx/w1/1581221012284",
+    "target": "wr",
+    "literal": null,
+    "got": "were"
+   },
+   {
+    "id": "hws/0cgivjmfvr7jnqqpcdo5jggqrp/coupled_manual_industry_retirement/w3/1580137791939",
+    "target": "retirement",
+    "literal": null,
+    "got": "rimet"
+   },
+   {
+    "id": "hws/0f29l241oicoro0crftndffftu/money_wise_that_is/w1/1582834156938",
+    "target": "wise",
+    "literal": null,
+    "got": "wide"
+   },
+   {
+    "id": "hws/0i2sopphm63aj2knmt0mmgt0eg/did_we_get_ours_back/w3/1581165469058",
+    "target": "ours",
+    "literal": null,
+    "got": "puts"
+   },
+   {
+    "id": "hws/0ihu4fa7ilvhrge9bb8vdis0d4/referring_pvh_consumers_subject/w1/1582851150105",
+    "target": "pvh",
+    "literal": null,
+    "got": "och"
+   },
+   {
+    "id": "hws/0j6q09do0nng7a3hnle567fdol/os_completely_cunt_css/w0/1583343605845",
+    "target": "os",
+    "literal": null,
+    "got": "is"
+   },
+   {
+    "id": "hws/0nr1ib5m909k65fffkonftokvv/showtimes_llc_vtb_sensors/w2/1580125370460",
+    "target": "vtb",
+    "literal": null,
+    "got": "been"
+   },
+   {
+    "id": "hws/0utue8rico7grfpgd0odffj6il/coin_viacom_concentration_message/w0/1581339468301",
+    "target": "coin",
+    "literal": null,
+    "got": "coun"
+   },
+   {
+    "id": "hws/124p7a10vadpv7d0rk37oiv3g5/roles_sinotruk_filename_program/w1/1583137063976",
+    "target": "sinotruk",
+    "literal": null,
+    "got": "since"
+   },
+   {
+    "id": "hws/17st0afor2vhnaa27ig1qlm8gc/xilinx_relevance_busty_cat/w0/1583324873128",
+    "target": "xilinx",
+    "literal": null,
+    "got": "collins"
+   },
+   {
+    "id": "hws/185dt72aiqbvp1ifefepqmb3ih/biggest_tool_appointments_crh/w3/1583271662860",
+    "target": "crh",
+    "literal": null,
+    "got": "ch"
+   },
+   {
+    "id": "hws/19qrnicvir9817joijlmg52afq/ma_valuation_msn_annotation/w2/1581372304259",
+    "target": "msn",
+    "literal": null,
+    "got": "man"
+   },
+   {
+    "id": "hws/1bghv3mbruun75m1mhl053et4t/warning_bytes_legitimate_synopsys/w1/1580580562635",
+    "target": "bytes",
+    "literal": null,
+    "got": "bees"
+   },
+   {
+    "id": "hws/1e9jiev6cofgu3nisolldhr8t4/im_going_to_class/w3/1580390388047",
+    "target": "class",
+    "literal": null,
+    "got": "clear"
+   },
+   {
+    "id": "hws/1e9jiev6cofgu3nisolldhr8t4/paragraphs_comprehensive_service_still/w0/1580390393790",
+    "target": "paragraphs",
+    "literal": null,
+    "got": "parasols"
+   },
+   {
+    "id": "hws/1eq3lrfih285jt26l5u9oulbu3/endless_delivered_dead_shionogi/w3/1582764629176",
+    "target": "shionogi",
+    "literal": null,
+    "got": "shingo"
+   },
+   {
+    "id": "hws/1evbgh3q4m9rr0i7dn1mfc2ser/securities_gathering_beyond_msn/w3/1582442850495",
+    "target": "msn",
+    "literal": null,
+    "got": "man"
+   },
+   {
+    "id": "hws/1hfgbj8ri6ms1ojpkfudk893sc/supports_yara_about_acknowledged/w3/1583260332214",
+    "target": "acknowledged",
+    "literal": null,
+    "got": "ab"
+   },
+   {
+    "id": "hws/1ib8tc83fkt64o7em0i10u8ms0/it_reads_like_she_is_in/w3/1582828679361",
+    "target": "she",
+    "literal": null,
+    "got": "\u00df"
+   },
+   {
+    "id": "hws/1ib8tc83fkt64o7em0i10u8ms0/negative_publications_ageas_peripherals/w2/1582828943003",
+    "target": "ageas",
+    "literal": null,
+    "got": "ages"
+   },
+   {
+    "id": "hws/1ib8tc83fkt64o7em0i10u8ms0/varco_language_startup_conversation/w0/1582828813659",
+    "target": "varco",
+    "literal": null,
+    "got": "barco"
+   },
+   {
+    "id": "hws/1j5iitf3if64n9v7dcl1lje3l1/future_prospects_vtb_founded/w0/1583346100841",
+    "target": "future",
+    "literal": null,
+    "got": "f"
+   },
+   {
+    "id": "hws/1j5iitf3if64n9v7dcl1lje3l1/this_looks_fine/w0/1583345829754",
+    "target": "this",
+    "literal": null,
+    "got": "f"
+   },
+   {
+    "id": "hws/1jis48734j5ssblrsfj5243pb6/fake_satellite_supply_completely/w3/1583625029635",
+    "target": "completely",
+    "literal": null,
+    "got": "company"
+   },
+   {
+    "id": "hws/1jis48734j5ssblrsfj5243pb6/no_surprise_there/w1/1583624933613",
+    "target": "surprise",
+    "literal": null,
+    "got": "siri"
+   },
+   {
+    "id": "hws/1kf79g0l0ub6li7fisvf2rench/excellent_guestbook_andorra_asml/w0/1581463804758",
+    "target": "excellent",
+    "literal": null,
+    "got": "\u00e9"
+   },
+   {
+    "id": "hws/1kf79g0l0ub6li7fisvf2rench/if_so_what_was_it/w3/1581463729106",
+    "target": "was",
+    "literal": null,
+    "got": "2"
+   },
+   {
+    "id": "hws/1oq7j88lfma27kckoiibr32fqn/i_think_that_is_the_right_answer/w5/1582131356068",
+    "target": "right",
+    "literal": null,
+    "got": "4"
+   },
+   {
+    "id": "hws/1qu6jf8p9gd8rssc5dibo272hp/chemistry_atm_provider_martins/w1/1580852702394",
+    "target": "atm",
+    "literal": null,
+    "got": "arm"
+   },
+   {
+    "id": "hws/1r9895hro6j0m9hb0ak0861r87/not_even_close/w0/1582404092051",
+    "target": "not",
+    "literal": null,
+    "got": "but"
+   },
+   {
+    "id": "hws/1tv36l1viejgc96p35ifkeoaes/dial_interested_astrazeneca_oxygen/w1/1580515478186",
+    "target": "interested",
+    "literal": null,
+    "got": "inserted"
+   },
+   {
+    "id": "hws/1tv36l1viejgc96p35ifkeoaes/sought_personnel_liuhe_subject/w2/1580515526983",
+    "target": "liuhe",
+    "literal": null,
+    "got": "life"
+   },
+   {
+    "id": "hws/24unskk8k5e3thf2j13bak34v3/burst_wall_korea_revision/w0/1580578993121",
+    "target": "burst",
+    "literal": null,
+    "got": "bust"
+   },
+   {
+    "id": "hws/24unskk8k5e3thf2j13bak34v3/nov_siemens_keyword_crossword/w0/1580578932731",
+    "target": "nov",
+    "literal": null,
+    "got": "nox"
+   },
+   {
+    "id": "hws/24unskk8k5e3thf2j13bak34v3/what_do_you_think/w3/1580578911464",
+    "target": "think",
+    "literal": null,
+    "got": "took"
+   },
+   {
+    "id": "hws/25q4p5jk4ami3jo5la8spruev1/institute_palestinian_bodies_shekou/w3/1583175884272",
+    "target": "shekou",
+    "literal": null,
+    "got": "shelly"
+   },
+   {
+    "id": "hws/27mmuj0o8b20pieicbck0qvo2i/eversource_scored_router_size/w3/1581372215436",
+    "target": "size",
+    "literal": null,
+    "got": "space"
+   },
+   {
+    "id": "hws/27mmuj0o8b20pieicbck0qvo2i/nonferrous_conducted_laden_happy/w0/1581372282619",
+    "target": "nonferrous",
+    "literal": null,
+    "got": ""
+   },
+   {
+    "id": "hws/27mmuj0o8b20pieicbck0qvo2i/smith_challenged_failed_wiley/w3/1581372375215",
+    "target": "wiley",
+    "literal": null,
+    "got": "ellie"
+   },
+   {
+    "id": "hws/29pqajt4go7tc60ibq0dmq8em9/gmbh_logo_dump_airline/w0/1580265187148",
+    "target": "gmbh",
+    "literal": null,
+    "got": "hing"
+   },
+   {
+    "id": "hws/2chg3chjs300cu7oenvbo9votb/diego_tenet_develop_recorders/w1/1582181451376",
+    "target": "tenet",
+    "literal": null,
+    "got": "reenter"
+   },
+   {
+    "id": "hws/2chg3chjs300cu7oenvbo9votb/greene_stone_chairs_msn/w0/1582181430365",
+    "target": "greene",
+    "literal": null,
+    "got": "gene"
+   },
+   {
+    "id": "hws/2e9d94k0l5je3uibe6shktcuoq/ceramic_within_tokyu_instrument/w2/1582048979814",
+    "target": "tokyu",
+    "literal": null,
+    "got": "tilly"
+   },
+   {
+    "id": "hws/2e9d94k0l5je3uibe6shktcuoq/phenomenon_bringing_general_link/w0/1582049010533",
+    "target": "phenomenon",
+    "literal": null,
+    "got": "penman"
+   },
+   {
+    "id": "hws/2eu6hf02h118abbmh0nkpnkdit/has_dynegy_made_a_specific_request/w1/1583243552147",
+    "target": "dynegy",
+    "literal": null,
+    "got": "dubey"
+   },
+   {
+    "id": "hws/2eu6hf02h118abbmh0nkpnkdit/holdings_candidates_usb_turner/w2/1583243638132",
+    "target": "usb",
+    "literal": null,
+    "got": "usn"
+   },
+   {
+    "id": "hws/2fv391b0tscbnhibfopoc7d8tp/can_you_help_get_this_cleared_up/w6/1580572315994",
+    "target": "up",
+    "literal": null,
+    "got": "\u00ed"
+   },
+   {
+    "id": "hws/2fv391b0tscbnhibfopoc7d8tp/were_on_the_way/w1/1580572349272",
+    "target": "on",
+    "literal": null,
+    "got": "in"
+   },
+   {
+    "id": "hws/2irfea8ptu6lc8rg14b4dj33k9/october_sarah_wh_colleague/w2/1582082344023",
+    "target": "wh",
+    "literal": null,
+    "got": "why"
+   },
+   {
+    "id": "hws/2m645k1klclo1frrbche51p7kf/what_a_jerk/w2/1580535779485",
+    "target": "jerk",
+    "literal": null,
+    "got": "hell"
+   },
+   {
+    "id": "hws/2mlh9rsmu30ihssgmo4rhakufi/live_congress_fundraising_guarantee/w1/1582587289521",
+    "target": "congress",
+    "literal": null,
+    "got": "confers"
+   },
+   {
+    "id": "hws/2purrlkinqmagfji6v38a752vn/garmin_spirituality_kb_fans/w1/1582966188804",
+    "target": "spirituality",
+    "literal": null,
+    "got": "spiritually"
+   },
+   {
+    "id": "hws/2rla6t2fnvr5el1fru60q6vf9n/differences_main_hwy_coremark/w2/1581832966898",
+    "target": "hwy",
+    "literal": null,
+    "got": "hey"
+   },
+   {
+    "id": "hws/2rla6t2fnvr5el1fru60q6vf9n/press_phil_kde_hainan/w0/1581832351034",
+    "target": "press",
+    "literal": null,
+    "got": "presses"
+   },
+   {
+    "id": "hws/2sd22gsn7kdnhs3mrmh93j7hvk/starwood_galleries_por_conflict/w2/1581726202693",
+    "target": "por",
+    "literal": null,
+    "got": "poor"
+   },
+   {
+    "id": "hws/2sd22gsn7kdnhs3mrmh93j7hvk/witnesses_shinsei_international_te/w1/1581726293546",
+    "target": "shinsei",
+    "literal": null,
+    "got": "sinai"
+   },
+   {
+    "id": "hws/2u644p4gdklc7l7jc87rmcdp4d/i_wanted_to_go_drinking_with_you/w4/1580491391992",
+    "target": "drinking",
+    "literal": null,
+    "got": "smoking"
+   },
+   {
+    "id": "hws/2ujnsj85dffqlv2833k956rq6j/has_dynegy_made_a_specific_request/w4/1582692084845",
+    "target": "specific",
+    "literal": null,
+    "got": "\u00df"
+   },
+   {
+    "id": "hws/2ujnsj85dffqlv2833k956rq6j/i_agreed_terms_with_greg/w1/1582692000398",
+    "target": "agreed",
+    "literal": null,
+    "got": "\u00e2"
+   },
+   {
+    "id": "hws/2ujnsj85dffqlv2833k956rq6j/she_has_absolutely_everything/w3/1582692523530",
+    "target": "everything",
+    "literal": null,
+    "got": "\u00e9"
+   },
+   {
+    "id": "hws/2vsvol3psv9s1rjdqfclgnruq1/what_is_up_with_ene/w4/1582025118425",
+    "target": "ene",
+    "literal": null,
+    "got": "end"
+   },
+   {
+    "id": "hws/399hkt4mv9ocorj75g765l73q7/i_changed_that_in_one_prior_draft/w3/1582368217121",
+    "target": "in",
+    "literal": null,
+    "got": ""
+   },
+   {
+    "id": "hws/3a064eetjpjpr55674f3qc5t55/rhode_munich_herb_son/w3/1582827440459",
+    "target": "son",
+    "literal": null,
+    "got": "soon"
+   },
+   {
+    "id": "hws/3dvaivrpc48qcfk8d3ubrqcd8u/im_in_stans_office/w2/1580870758278",
+    "target": "stans",
+    "literal": null,
+    "got": "stan's"
+   },
+   {
+    "id": "hws/3ef67b8t0k3t23fdk6c0bkdk74/reach_witness_panel_finatis/w0/1580351379467",
+    "target": "reach",
+    "literal": null,
+    "got": "each"
+   },
+   {
+    "id": "hws/3issbv9n1qubj3eode7p1sqtoe/they_are_more_efficiently_pooled/w3/1582072947429",
+    "target": "efficiently",
+    "literal": null,
+    "got": "efi"
+   },
+   {
+    "id": "hws/3m94gkcdq45h607h4if58l6vhc/could_you_see_where_this_stands/w5/1580318798989",
+    "target": "stands",
+    "literal": null,
+    "got": "starts"
+   },
+   {
+    "id": "hws/3m94gkcdq45h607h4if58l6vhc/whats_his_problem/w0/1580334755568",
+    "target": "whats",
+    "literal": null,
+    "got": "what's"
+   },
+   {
+    "id": "hws/3rs48o8srup53k44nltr8ufrda/loans_mtv_transmitted_paint/w1/1581977926599",
+    "target": "mtv",
+    "literal": null,
+    "got": "myc"
+   },
+   {
+    "id": "hws/3rs48o8srup53k44nltr8ufrda/markets_pen_marker_diageo/w2/1581978264782",
+    "target": "marker",
+    "literal": null,
+    "got": "market"
+   },
+   {
+    "id": "hws/3rs48o8srup53k44nltr8ufrda/ruling_feature_matt_bj/w3/1581978187266",
+    "target": "bj",
+    "literal": null,
+    "got": "book"
+   },
+   {
+    "id": "hws/3skbfobe25jrha6aj7eha1ud5m/dont_forget_the_wood/w0/1580988065313",
+    "target": "dont",
+    "literal": null,
+    "got": "don't"
+   },
+   {
+    "id": "hws/3skbfobe25jrha6aj7eha1ud5m/whats_your_proposal/w0/1580988124904",
+    "target": "whats",
+    "literal": null,
+    "got": "what's"
+   },
+   {
+    "id": "hws/3t65lkgnrtv209kmehdm6pdtnv/tvs_drums_study_absolute/w0/1581463911456",
+    "target": "tvs",
+    "literal": null,
+    "got": "5"
+   },
+   {
+    "id": "hws/41lapgbg66qj1vvosspl0kbc9p/running_dj_segro_rat/w3/1583548009466",
+    "target": "rat",
+    "literal": null,
+    "got": "ray"
+   },
+   {
+    "id": "hws/4bmh9ise7qmk3sgdvk597ia17r/ill_get_you_one/w0/1580806008378",
+    "target": "ill",
+    "literal": null,
+    "got": "i'll"
+   }
+  ]
+ }
+}

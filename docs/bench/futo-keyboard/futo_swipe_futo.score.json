@@ -1,0 +1,182 @@
+{
+ "label": "swipe_futo.test [latin 0.1.30, app d831502, reset/chunk100] valid groups",
+ "swipe": {
+  "items": 400,
+  "words": 400,
+  "wer": 0.07,
+  "wordAccuracy": 0.93,
+  "contextRewritten": 0,
+  "timingDegraded": 0,
+  "retriedItems": 1,
+  "errors": [
+   {
+    "id": "futo/test/1017840",
+    "target": "Leachs",
+    "literal": null,
+    "got": "lacks"
+   },
+   {
+    "id": "futo/test/1018870",
+    "target": "loved",
+    "literal": null,
+    "got": "lived"
+   },
+   {
+    "id": "futo/test/1019293",
+    "target": "Gwendoline",
+    "literal": null,
+    "got": "handline"
+   },
+   {
+    "id": "futo/test/1023050",
+    "target": "Girards",
+    "literal": null,
+    "got": "girard's"
+   },
+   {
+    "id": "futo/test/103176",
+    "target": "duces",
+    "literal": null,
+    "got": "dives"
+   },
+   {
+    "id": "futo/test/103202",
+    "target": "Shepherds",
+    "literal": null,
+    "got": "shepherd"
+   },
+   {
+    "id": "futo/test/1032655",
+    "target": "Riddle",
+    "literal": null,
+    "got": "rifle"
+   },
+   {
+    "id": "futo/test/1032670",
+    "target": "as",
+    "literal": null,
+    "got": "s"
+   },
+   {
+    "id": "futo/test/1033759",
+    "target": "donates",
+    "literal": null,
+    "got": "dungarees"
+   },
+   {
+    "id": "futo/test/1035004",
+    "target": "received",
+    "literal": null,
+    "got": "recorded"
+   },
+   {
+    "id": "futo/test/1035061",
+    "target": "shutout",
+    "literal": null,
+    "got": "shootout"
+   },
+   {
+    "id": "futo/test/1037202",
+    "target": "on",
+    "literal": null,
+    "got": "in"
+   },
+   {
+    "id": "futo/test/1039508",
+    "target": "out",
+    "literal": null,
+    "got": "or"
+   },
+   {
+    "id": "futo/test/104448",
+    "target": "TerraLib",
+    "literal": null,
+    "got": "terrapin"
+   },
+   {
+    "id": "futo/test/1058180",
+    "target": "film",
+    "literal": null,
+    "got": "font"
+   },
+   {
+    "id": "futo/test/1059293",
+    "target": "Duckworth",
+    "literal": null,
+    "got": "ductwork"
+   },
+   {
+    "id": "futo/test/1059421",
+    "target": "Murupara",
+    "literal": null,
+    "got": "mouthparts"
+   },
+   {
+    "id": "futo/test/1063938",
+    "target": "Door",
+    "literal": null,
+    "got": "for"
+   },
+   {
+    "id": "futo/test/1065494",
+    "target": "They",
+    "literal": null,
+    "got": "the"
+   },
+   {
+    "id": "futo/test/1068533",
+    "target": "Segre",
+    "literal": null,
+    "got": "degree"
+   },
+   {
+    "id": "futo/test/1070219",
+    "target": "Tikhonov",
+    "literal": null,
+    "got": "typhonic"
+   },
+   {
+    "id": "futo/test/1077003",
+    "target": "boys",
+    "literal": null,
+    "got": "boots"
+   },
+   {
+    "id": "futo/test/108024",
+    "target": "thrives",
+    "literal": null,
+    "got": "through"
+   },
+   {
+    "id": "futo/test/1081968",
+    "target": "free",
+    "literal": null,
+    "got": "few"
+   },
+   {
+    "id": "futo/test/1082309",
+    "target": "Niel",
+    "literal": null,
+    "got": "noel"
+   },
+   {
+    "id": "futo/test/1084701",
+    "target": "Anna",
+    "literal": null,
+    "got": "and"
+   },
+   {
+    "id": "futo/test/1088912",
+    "target": "Thisted",
+    "literal": null,
+    "got": "those"
+   },
+   {
+    "id": "futo/test/1104013",
+    "target": "manger",
+    "literal": null,
+    "got": "manner"
+   }
+  ]
+ }
+}

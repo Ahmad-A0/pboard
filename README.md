@@ -19,13 +19,14 @@ can't download anything, so they are installed by hand.
 
 Top-1 word accuracy, replaying recorded human typing through each keyboard on a device:
 
-| Set | pboard | Gboard 18.6 |
-|---|---|---|
-| FUTO swipe | 92.8% | 86.0% |
-| How We Swipe | 79.3% | 75.8% |
-| VTAP (taps) | 95.8% | 96.2% |
-| TSI (taps) | 93.1% | 92.4% |
+| Set | pboard | Gboard 18.6 | FUTO Keyboard 0.1.30 |
+|---|---|---|---|
+| FUTO swipe | 92.8% | 86.0% | 93.0% |
+| How We Swipe | 79.3% | 75.8% | 79.3% |
+| VTAP (taps) | 95.8% | 96.2% | 93.0% |
+| TSI (taps) | 93.1% | 92.4% | 79.2% |
 
+FUTO Keyboard was measured in a separate run, alongside pboard: [docs/bench/futo-keyboard](docs/bench/futo-keyboard/README.md).
 Harness: `tools/bench`. Method: `docs/bench/README.md`.
 
 ## Privacy

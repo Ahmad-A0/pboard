@@ -33,6 +33,8 @@
 #        device of the list; dynamic: devices claim the next group when free - for pools of identical
 #        read-only instances, where the device does not matter),
 #      LOAD_FACTOR=<f> (start a group only when the 1-min load average <= f x cores; default 1.5),
+#      GROUP_GATE=<command> (called as `<command> <device> <group>` before each group; the group waits
+#        until it exits 0),
 #      OVERLOAD_FACTOR=<f> / OVERLOAD_PSI=<pct> (a group is invalid if, while it ran, the 1-min load
 #        exceeded f x cores (default 3.5) or PSI memory "some avg10" exceeded pct (default 25): another
 #        job overloading the host biases the IME even when no injection stalls; sampled every 5 s),
@@ -234,6 +236,9 @@ process_group() {  # $1 = device, $2 = group: reset, replay, pull (load-gated)
      [ "$(wc -l < "$OUT/res/$g.jsonl")" = "$(wc -l < "$OUT/groups/$g.jsonl")" ]; then
     echo "== [$dev] group $g already complete (RESUME)"; return 0
   fi
+  # Optional site gate (GROUP_GATE=<command>): the group starts only once the command exits 0 (polled
+  # every 30 s), e.g. a script that yields the host to another job or brings the device back up.
+  while [ -n "${GROUP_GATE:-}" ] && ! $GROUP_GATE "$dev" "$g"; do sleep 30; done
   # Load gate: an oversubscribed host delays the IME's decoder (Gboard then commits literal words),
   # which biases results. Start a group only at load1 <= LOAD_FACTOR x cores (polling every 30 s).
   while ! awk -v f="${LOAD_FACTOR:-1.5}" -v n="$(nproc)" '{ exit !($1 <= f * n) }' /proc/loadavg; do

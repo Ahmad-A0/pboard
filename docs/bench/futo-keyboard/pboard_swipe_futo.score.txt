@@ -1,0 +1,1 @@
+swipe_futo.test [pboard 0.1.7-12-ga504a65524, app a504a65, reset/chunk100] valid groups: swipe items 400  word acc 93.25%  WER 6.75%  (timing-degraded 0, retried 1)

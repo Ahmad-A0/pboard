@@ -1,0 +1,186 @@
+[
+ {
+  "group": "000",
+  "items": 42,
+  "results": 42,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user01"
+  ],
+  "device": "emulator-5558",
+  "seconds": "92",
+  "load_start": "10.74",
+  "load_end": "32.00",
+  "waited": "0",
+  "load_max": "36.10",
+  "psi_max": "0.14"
+ },
+ {
+  "group": "001",
+  "items": 39,
+  "results": 39,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user04"
+  ],
+  "device": "emulator-5558",
+  "seconds": "124",
+  "load_start": "22.18",
+  "load_end": "26.25",
+  "waited": "120",
+  "load_max": "27.21",
+  "psi_max": "0.31"
+ },
+ {
+  "group": "002",
+  "items": 41,
+  "results": 41,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user06"
+  ],
+  "device": "emulator-5560",
+  "seconds": "142",
+  "load_start": "10.74",
+  "load_end": "28.01",
+  "waited": "0",
+  "load_max": "36.10",
+  "psi_max": "2.32"
+ },
+ {
+  "group": "003",
+  "items": 36,
+  "results": 36,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user07"
+  ],
+  "device": "emulator-5560",
+  "seconds": "119",
+  "load_start": "22.56",
+  "load_end": "23.74",
+  "waited": "30",
+  "load_max": "27.21",
+  "psi_max": "0.22"
+ },
+ {
+  "group": "004",
+  "items": 34,
+  "results": 34,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user08"
+  ],
+  "device": "emulator-5560",
+  "seconds": "128",
+  "load_start": "23.74",
+  "load_end": "31.87",
+  "waited": "0",
+  "load_max": "31.02",
+  "psi_max": "0.40"
+ },
+ {
+  "group": "005",
+  "items": 38,
+  "results": 38,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user10"
+  ],
+  "device": "emulator-5558",
+  "seconds": "180",
+  "load_start": "21.00",
+  "load_end": "26.09",
+  "waited": "150",
+  "load_max": "41.39",
+  "psi_max": "0.34"
+ },
+ {
+  "group": "006",
+  "items": 33,
+  "results": 33,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user15"
+  ],
+  "device": "emulator-5558",
+  "seconds": "90",
+  "load_start": "17.59",
+  "load_end": "26.96",
+  "waited": "90",
+  "load_max": "28.29",
+  "psi_max": "0.14"
+ },
+ {
+  "group": "007",
+  "items": 40,
+  "results": 40,
+  "valid": true,
+  "reasons": [],
+  "sanity": [
+   "Because ",
+   "Because ",
+   "Because "
+  ],
+  "degraded": 0,
+  "participants": [
+   "user16"
+  ],
+  "device": "emulator-5560",
+  "seconds": "105",
+  "load_start": "22.48",
+  "load_end": "40.72",
+  "waited": "60",
+  "load_max": "41.39",
+  "psi_max": "0.29"
+ }
+]

@@ -1,0 +1,1 @@
+swipe_hws.test [latin 0.1.30, app d818a89, reset/chunk100] ALL groups: swipe items 400  word acc 79.25%  WER 20.75%  (timing-degraded 0, retried 1)
