@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Record the README demo (docs/media/demo.gif): two glide-typed sentences and an emoji from the panel, typed without
-# a break while the keyboard changes theme about every second.
+# Record the README demo (docs/media/demo.gif): two sentences (the first two words tapped, the rest glide-typed) and
+# an emoji from the panel, typed without a break while the keyboard changes theme about every second.
 #
 #   ANDROID_SERIAL=emulator-5556 tools/media/demo_gif.sh [out.gif]
 #
@@ -14,7 +14,7 @@
 # For the same reason the recording is made with the screen at a lower resolution (RENDER_WIDTH, same layout, set
 # with `wm size` and `wm density` and reset afterwards); the GIF is 540 px wide anyway.
 #
-# The touches are recorded human typing: demo_trace.py takes the glide strokes from the human
+# The touches are recorded human typing: demo_trace.py takes the taps and the glide strokes from the human
 # evaluation sets (tools/data/human/splits/v1, sources and licences in its ATTRIBUTION.txt), places them on the keys
 # as located on a screenshot (tools/bench/measure_geometry.py) and joins them into one performance; the pauses
 # between words, a few taps on single keys and the emoji taps are made up (see demo_trace.py). The bench injector
@@ -49,14 +49,18 @@ IME=dev.pboard/.ime.PboardIme
 # Screen coordinates on the emoji panel: an emoji in the grid, and the ABC key.
 EMOJI_XY="${EMOJI_XY:-81,1764}"
 ABC_XY="${ABC_XY:-79,2212}"
-# The performance (demo_trace.py steps): every word is glide-typed with a recorded stroke, twelve different people,
+# The performance (demo_trace.py steps): "This" and "keyboard" are tapped with recorded taps: "This" (and the space
+# after it) as one person typed it in Google's TSI set (tsi/..., CC BY 4.0), "keyboard" joined from one person's
+# "mikey" and "board" in Vertanen and Kristensson's noisy typing set (vtap/..., CC BY 4.0; no set has the word
+# itself), then a made-up space tap. Every later word is glide-typed with a recorded stroke, ten different people,
 # from How We Swipe (hws/..., MIT) and swipe.futo.org (futo/..., MIT); the ids are in tools/data/human/splits/v1 or
 # tools/media/demo_strokes.jsonl. "doesnt" is glided as its letters and comes out with the apostrophe. keys=__ : two
 # spaces after a word make the full stop.
 if [ -z "${STEPS:-}" ]; then
   STEPS="
-    glide=futo/tune/988592
-    glide=hws/42q3qldluslc37vad5i8oa27uo/keyboard_private_cayman_spouse/w0/1580131963532
+    tap=tsi/user05/task1/26/w0
+    tap=vtap/vt_exp3/p6/mobile1940.50/w0:2-5+vtap/vt_exp3/p6/mobile582.42/w2:0-5
+    keys=_
     glide=futo/test/185730
     glide=futo/tune/1055394
     glide=futo/tune/870889

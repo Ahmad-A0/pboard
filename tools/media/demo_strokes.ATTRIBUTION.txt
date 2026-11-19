@@ -7,3 +7,8 @@ ids hws/...: How-We-Swipe Shape-writing Dataset, Copyright (c) 2021 L. A. Leiva,
   A. Oulasvirta, MIT License. https://osf.io/sj67f/
 
 The MIT permission notice is reproduced in tools/data/human/splits/v1/ATTRIBUTION.txt.
+
+The demo's tapped words (tools/media/demo_gif.sh, steps tap=...) are taken from tools/data/human/splits/v1, not
+from this file: ids tsi/... from the Tap Typing with Touch Sensing Images (TSI) Dataset, Google, CC BY 4.0, and
+ids vtap/... from A Dataset of Noisy Typing on QWERTY Keyboards, K. Vertanen and P. O. Kristensson, CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/); full credits and changes in tools/data/human/splits/v1/ATTRIBUTION.txt.
