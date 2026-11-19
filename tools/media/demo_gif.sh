@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Record the README demo (docs/media/demo.gif): two glide-typed sentences and an emoji from the panel, typed without
-# a break while the keyboard fades from theme to theme about every second.
+# a break while the keyboard changes theme about every second.
 #
 #   ANDROID_SERIAL=emulator-5556 tools/media/demo_gif.sh [out.gif]
 #
@@ -74,14 +74,14 @@ typed="This keyboard doesn't have internet access. Everything you type stays on 
 EXPECT="${EXPECT:-$typed}"
 # The theme typed in, and the themes it changes to at equal intervals: the first after THEME_FIRST_MS, the last
 # (the first theme again: the GIF loops) THEME_LAST_MS before the end, while the emoji panel is still open, so that
-# the keyboard comes back in it. Each change is a cross-fade of THEME_FADE_MS. The order is a walk through colour
+# the keyboard comes back in it. Each change is a hard cut (THEME_FADE_MS > 0: a cross-fade). The order is a walk through colour
 # space in small steps (keyboard backgrounds in OKLab): light, tinted lights, cyan, green, teal, darks, purple, pinks,
 # sand, and back to light; every one shows the glide trail clearly.
 THEME="${THEME:-default_light}"
 THEMES="${THEMES:-gradient_light_6 color_cyan color_green color_teal color_material_dark default_dark gradient_dark_1 gradient_light_5 gradient_light_1 color_sand gradient_light_7 dynamic default_light}"
 THEME_FIRST_MS="${THEME_FIRST_MS:-600}"
 THEME_LAST_MS="${THEME_LAST_MS:-700}"
-THEME_FADE_MS="${THEME_FADE_MS:-220}"
+THEME_FADE_MS="${THEME_FADE_MS:-0}"
 TRAIL_FADE_MS="${TRAIL_FADE_MS:-650}"   # the keyboard's own is 1000: consecutive strokes read cleaner
 LANGUAGE="${LANGUAGE:-en-US:qwerty}"
 BAND_TEXT="${BAND_TEXT:-132:284}"   # rows of the screen with the field's first two lines of text
@@ -89,7 +89,7 @@ WIDTH="${WIDTH:-540}"
 RENDER_WIDTH="${RENDER_WIDTH:-720}"
 SLOW="${SLOW:-3}"
 FPS="${FPS:-30}"
-QUALITY="${QUALITY:-80}"
+QUALITY="${QUALITY:-90}"
 
 pref() { "${A[@]}" shell am broadcast -n dev.pboard/.debug.PrefsReceiver "$@" >/dev/null; }
 playground() { "${A[@]}" shell am broadcast -a dev.pboard.bench.PLAYGROUND -p dev.pboard --es cmd "$@"; }
