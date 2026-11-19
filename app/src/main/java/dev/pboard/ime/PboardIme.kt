@@ -148,16 +148,52 @@ class PboardIme : InputMethodService(), KeyboardHost, dev.pboard.ime.view.Toolba
 
     private val themeCycleToken = Any()
 
-    /** Debug broadcast: draws the built views in theme [themeId] (null: the selected theme) without rebuilding them. */
-    private fun recolor(themeId: String?) {
-        KeyboardTheme.debugOverride = themeId?.let { id ->
-            KeyboardTheme.resolve(id, KeyboardTheme.systemDark(this), { dark -> dev.pboard.ime.theme.Palette.resolve(this, dark) })
+    private var themeFade: android.animation.ValueAnimator? = null
+
+    /**
+     * Debug broadcast: draws the built views in theme [themeId] (null: the selected theme) without rebuilding them,
+     * cross-fading from the colours shown over [fadeMs].
+     */
+    private fun recolor(themeId: String?, fadeMs: Long = 0) {
+        themeFade?.cancel()
+        val from = KeyboardTheme.colors(this)
+        KeyboardTheme.debugOverride = null
+        val to = if (themeId == null) KeyboardTheme.colors(this) else
+            KeyboardTheme.resolve(themeId, KeyboardTheme.systemDark(this), { dark -> dev.pboard.ime.theme.Palette.resolve(this, dark) })
+        fun show(c: dev.pboard.ime.theme.KeyboardColors) {
+            KeyboardTheme.debugOverride = c
+            painter?.colors = c
+            root?.let { it.colors = c; it.overlay.colors = c; it.invalidate(); it.overlay.invalidate() }
+            topBar?.let { it.colors = c; it.invalidate() }
+            keyboardView?.invalidateKeys()
         }
-        val c = KeyboardTheme.colors(this)
-        painter?.colors = c
-        root?.let { it.colors = c; it.overlay.colors = c; it.invalidate(); it.overlay.invalidate() }
-        topBar?.let { it.colors = c; it.invalidate() }
-        keyboardView?.invalidateKeys()
+        if (fadeMs <= 0) { show(to); if (themeId == null) KeyboardTheme.debugOverride = null; return }
+        themeFade = android.animation.ValueAnimator.ofFloat(0f, 1f).apply {
+            duration = fadeMs
+            interpolator = android.view.animation.LinearInterpolator()
+            addUpdateListener { a -> show(if (a.animatedFraction >= 1f) to else blendColors(from, to, a.animatedFraction)) }
+            start()
+        }
+    }
+
+    /** Every colour of [a] moved the fraction [t] towards [b]'s (a missing gradient end counts as the background). */
+    private fun blendColors(a: dev.pboard.ime.theme.KeyboardColors, b: dev.pboard.ime.theme.KeyboardColors, t: Float): dev.pboard.ime.theme.KeyboardColors {
+        fun mix(x: Int, y: Int): Int {
+            fun ch(s: Int) = (((x ushr s) and 0xff) * (1 - t) + ((y ushr s) and 0xff) * t + 0.5f).toInt()
+            return (ch(24) shl 24) or (ch(16) shl 16) or (ch(8) shl 8) or ch(0)
+        }
+        // A solid theme fading to or from a gradient: its gradient is its one colour.
+        val from = if (a.backgroundEnd == null && b.backgroundEnd != null) a.copy(backgroundEnd = a.background) else a
+        val to = if (b.backgroundEnd == null && a.backgroundEnd != null) b.copy(backgroundEnd = b.background) else b
+        // The data class's componentN() are its constructor parameters, in order.
+        val cls = dev.pboard.ime.theme.KeyboardColors::class.java
+        val ctor = cls.declaredConstructors.first { c -> c.parameterTypes.size == cls.declaredFields.count { !java.lang.reflect.Modifier.isStatic(it.modifiers) } }
+        val args = (1..ctor.parameterTypes.size).map { i ->
+            val component = cls.getMethod("component$i")
+            val x = component.invoke(from); val y = component.invoke(to)
+            if (x is Int && y is Int) mix(x, y) else y
+        }
+        return ctor.newInstance(*args.toTypedArray()) as dev.pboard.ime.theme.KeyboardColors
     }
 
     /**
@@ -170,14 +206,15 @@ class PboardIme : InputMethodService(), KeyboardHost, dev.pboard.ime.view.Toolba
             intent.getStringExtra("voiceWav")?.let { openVoice(java.io.File(it)); return }
             // Restyle the keyboard in place, on a timer, while it is being typed on (demo recordings; a theme chosen
             // in Settings rebuilds the views instead): --es themes color_blue,default_dark --ei themeEveryMs 1500
-            // [--ei themeDelayMs 500]; --es themes "" goes back to the selected theme.
+            // [--ei themeDelayMs 500] [--ei themeFadeMs 200: cross-fade]; --es themes , goes back to the selected theme.
             intent.getStringExtra("themes")?.let { list ->
                 main.removeCallbacksAndMessages(themeCycleToken)
                 val every = intent.getIntExtra("themeEveryMs", 1500).toLong()
                 val delay = intent.getIntExtra("themeDelayMs", 0).toLong()
+                val fade = intent.getIntExtra("themeFadeMs", 0).toLong()
                 val ids = list.split(',').filter { it.isNotEmpty() }
                 if (ids.isEmpty()) recolor(null)
-                ids.forEachIndexed { i, id -> main.postDelayed({ recolor(id) }, themeCycleToken, delay + i * every) }
+                ids.forEachIndexed { i, id -> main.postDelayed({ recolor(id, fade) }, themeCycleToken, delay + i * every) }
                 return
             }
             val p = painter ?: return

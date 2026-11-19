@@ -6,7 +6,9 @@ Usage: demo_trace.py <geometry.json> <out.jsonl> <step> [<step> ...]
 Steps, performed in order on one clock:
   sentence=<id prefix>   a tapped sentence from tap_tsi / tap_vtap, e.g. tsi/user01/task4/6: every word's touch-down
                          positions and times as the person typed them, typos included
-  glide=<id>             a glide-typed word from swipe_futo / swipe_hws: the recorded stroke with its sample times
+  glide=<id>             a glide-typed word from swipe_futo / swipe_hws or from demo_strokes.jsonl (strokes of the
+                         same two datasets outside the committed core subsets, converted the same way by
+                         tools/data/human/build.py): the recorded stroke with its sample times
   keys=<keys>            made-up taps on named keys (letters, . and ,; _ is the space bar)
   emoji=X,Y,AX,AY        made-up taps: the emoji key, an emoji at screen position X,Y, the panel's ABC key at AX,AY
 
@@ -39,12 +41,17 @@ sys.path.insert(0, os.path.join(ROOT, "tools", "bench"))
 import prepare_set  # noqa: E402
 
 SPLITS = os.path.join(ROOT, "tools", "data", "human", "splits", "v1")
+EXTRA_STROKES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "demo_strokes.jsonl")
 SOURCE_GEOMETRY = os.path.join(ROOT, "tools", "data", "human", "geometry", "gboard_pixel8.json")
 
 
 def human_items(kind):
     for path in sorted(glob.glob(os.path.join(SPLITS, kind + "_*.jsonl.gz"))):
         with gzip.open(path, "rt", encoding="utf-8") as f:
+            for line in f:
+                yield json.loads(line)
+    if kind == "swipe":  # strokes of the same sources that are not in the committed core subsets
+        with open(EXTRA_STROKES, encoding="utf-8") as f:
             for line in f:
                 yield json.loads(line)
 

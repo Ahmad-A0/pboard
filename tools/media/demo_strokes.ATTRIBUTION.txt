@@ -1,0 +1,9 @@
+demo_strokes.jsonl holds single glide strokes adapted (re-projected onto a Pixel-8 key geometry by
+tools/data/human/build.py, like tools/data/human/splits/v1) from two datasets; their licences apply.
+
+ids futo/...: swipe.futo.org dataset, Copyright (c) 2025 FUTO, MIT License.
+  https://huggingface.co/datasets/futo-org/swipe.futo.org
+ids hws/...: How-We-Swipe Shape-writing Dataset, Copyright (c) 2021 L. A. Leiva, S. Kim, W. Cui, X. Bi,
+  A. Oulasvirta, MIT License. https://osf.io/sj67f/
+
+The MIT permission notice is reproduced in tools/data/human/splits/v1/ATTRIBUTION.txt.

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Record the README demo (docs/media/demo.gif): three glide-typed sentences and an emoji from the panel, typed without
-# a break while the keyboard changes theme about every second.
+# Record the README demo (docs/media/demo.gif): two glide-typed sentences and an emoji from the panel, typed without
+# a break while the keyboard fades from theme to theme about every second.
 #
 #   ANDROID_SERIAL=emulator-5556 tools/media/demo_gif.sh [out.gif]
 #
@@ -21,19 +21,21 @@
 # plays the whole thing in one go, in real time, with the trace's timestamps.
 #
 # The themes: right before the first touch the injector arms the debug build's in-place restyling (broadcast
-# dev.pboard.DEBUG, extra `themes`), which then runs on the keyboard's own timer, independent of the typing.
+# dev.pboard.DEBUG, extra `themes`), which then runs on the keyboard's own timer, independent of the typing. (The
+# cross-fade is an animator, so it is slowed with the system's animations and needs no scaling here.)
 #
 # Slow motion: a software-rendered emulator draws 15-30 uneven frames a second, which shows as a stuttering glide
 # trail. So everything runs SLOW times slower while it is recorded - the injected touches, the theme timer, the
 # system's animations (animator_duration_scale), the trail's fade and the long-press delay - and the recording is
-# played SLOW times faster: true speed again, with SLOW times the frames to choose from. The text cursor is hidden (its
+# played SLOW times faster: true speed again, with SLOW times the frames to choose from (not more than 3: the decoder
+# reads a much slower stroke differently). The text cursor is hidden (its
 # blinking cannot be slowed). Nothing else is retimed: demo_retime.py only cuts the performance out of the recording,
 # and prints how far each word's appearance in the sped-up recording is from its time in the trace. The picture is the text-field band stacked
 # directly on the keyboard: the empty part of the test screen between them is left out (so is the top of the emoji
 # panel, which is taller than the keyboard).
 #
 # The demo changes these settings and leaves them changed: theme, the enabled languages (one language only), and
-# the key long-press delay (back to its default, 300 ms).
+# the key long-press delay, grammar check and the system's spell checker switch (back to their defaults: 300 ms, on, on).
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 
@@ -45,39 +47,41 @@ A=(adb -s "$ANDROID_SERIAL")
 IME=dev.pboard/.ime.PboardIme
 
 # Screen coordinates on the emoji panel: an emoji in the grid, and the ABC key.
-EMOJI_XY="${EMOJI_XY:-608,1764}"
+EMOJI_XY="${EMOJI_XY:-81,1764}"
 ABC_XY="${ABC_XY:-79,2212}"
-# The performance (demo_trace.py steps; ids in tools/data/human/splits/v1): everything is glide-typed, with strokes
-# by thirteen different people from How We Swipe (hws/..., MIT) and swipe.futo.org (futo/..., MIT). keys=__ : two
+# The performance (demo_trace.py steps): every word is glide-typed with a recorded stroke, twelve different people,
+# from How We Swipe (hws/..., MIT) and swipe.futo.org (futo/..., MIT); the ids are in tools/data/human/splits/v1 or
+# tools/media/demo_strokes.jsonl. "doesnt" is glided as its letters and comes out with the apostrophe. keys=__ : two
 # spaces after a word make the full stop.
 if [ -z "${STEPS:-}" ]; then
   STEPS="
-    glide=hws/glak4t90cofpt4m87h2duu99s4/thanks_for_the_quick_turnaround/w0/1583267957461
-    glide=hws/r21jt4hd575enrjohj7r5iu8ao/nice_weather_for_it/w2/1583726131623
-    glide=futo/tune/34239
-    glide=hws/rkppohiv2dltud3igeoedbu2ip/that_would_be_great/w3/1582819058848
-    glide=futo/tune/987870
+    glide=futo/tune/988592
+    glide=hws/42q3qldluslc37vad5i8oa27uo/keyboard_private_cayman_spouse/w0/1580131963532
+    glide=futo/test/185730
+    glide=futo/tune/1055394
+    glide=futo/tune/870889
+    glide=futo/tune/568119
     keys=__
-    glide=hws/qj2dt0en5angphdf8ndno06eeu/are_you_available/w1/1583262776176
-    glide=futo/tune/545992
-    glide=hws/c6de62d52slctlmelc9725glhn/he_would_love_anything_about_rocks/w2/1581014730038
-    glide=futo/tune/284968
-    glide=hws/2chg3chjs300cu7oenvbo9votb/can_you_help_me_here/w4/1582181513939
-    keys=__
-    glide=hws/40e8ac5f8a9rb5nmeut9ng9hpi/could_you_see_where_this_stands/w2/1581976560551
-    glide=hws/6fcskrnk2ggr1h4sbg127g9smn/hope_you_guys_are_doing_fine/w1/1582867061344
-    glide=futo/test/514875
+    glide=hws/ftf2k2qq6jgl7m0as04o673nhf/she_has_absolutely_everything/w3/1583037664656
+    glide=hws/tgao1rq52v714595mtr89veicf/ill_get_you_one/w2/1581892610200
+    glide=futo/tune/1124152
+    glide=hws/0069j4rbe1si9pjqgfhks8sprm/stays_performed_blood_equities/w0/1580017926727
+    glide=futo/test/936651
+    glide=futo/tune/153060
     keys=_ emoji=@EMOJI@"
 fi
-EXPECT="${EXPECT:-Thanks for the great day. You would love it here. See you soon }"   # then the emoji
+typed="This keyboard doesn't have internet access. Everything you type stays on device "   # then the emoji
+EXPECT="${EXPECT:-$typed}"
 # The theme typed in, and the themes it changes to at equal intervals: the first after THEME_FIRST_MS, the last
 # (the first theme again: the GIF loops) THEME_LAST_MS before the end, while the emoji panel is still open, so that
-# the keyboard comes back in it. Ordered for contrast; every one shows the glide trail clearly except the one before
-# last, which is the theme of the emoji panel.
+# the keyboard comes back in it. Each change is a cross-fade of THEME_FADE_MS. The order is a walk through colour
+# space in small steps (keyboard backgrounds in OKLab): light, tinted lights, cyan, green, teal, darks, purple, pinks,
+# sand, and back to light; every one shows the glide trail clearly.
 THEME="${THEME:-default_light}"
-THEMES="${THEMES:-default_dark gradient_light_1 gradient_dark_1 dynamic color_green color_sand color_black gradient_light_9 color_cyan color_teal default_light}"
+THEMES="${THEMES:-gradient_light_6 color_cyan color_green color_teal color_material_dark default_dark gradient_dark_1 gradient_light_5 gradient_light_1 color_sand gradient_light_7 dynamic default_light}"
 THEME_FIRST_MS="${THEME_FIRST_MS:-600}"
 THEME_LAST_MS="${THEME_LAST_MS:-700}"
+THEME_FADE_MS="${THEME_FADE_MS:-220}"
 TRAIL_FADE_MS="${TRAIL_FADE_MS:-650}"   # the keyboard's own is 1000: consecutive strokes read cleaner
 LANGUAGE="${LANGUAGE:-en-US:qwerty}"
 BAND_TEXT="${BAND_TEXT:-132:284}"   # rows of the screen with the field's first two lines of text
@@ -85,7 +89,7 @@ WIDTH="${WIDTH:-540}"
 RENDER_WIDTH="${RENDER_WIDTH:-720}"
 SLOW="${SLOW:-3}"
 FPS="${FPS:-30}"
-QUALITY="${QUALITY:-90}"
+QUALITY="${QUALITY:-80}"
 
 pref() { "${A[@]}" shell am broadcast -n dev.pboard/.debug.PrefsReceiver "$@" >/dev/null; }
 playground() { "${A[@]}" shell am broadcast -a dev.pboard.bench.PLAYGROUND -p dev.pboard --es cmd "$@"; }
@@ -126,14 +130,16 @@ PY
 restore() {
   "${A[@]}" shell wm size reset; "${A[@]}" shell wm density reset
   "${A[@]}" shell settings put global animator_duration_scale 1
+  "${A[@]}" shell settings put secure spell_checker_enabled 1
   "${A[@]}" shell am broadcast -a dev.pboard.DEBUG --ei trailFadeMs 1000 >/dev/null
   "${A[@]}" shell am broadcast -a dev.pboard.DEBUG --es themes , >/dev/null
-  pref --ei long_press_delay_ms 300
+  pref --ei long_press_delay_ms 300 --ez grammar_check true
   playground reset --ez cursor true >/dev/null
 }
 trap restore EXIT
 "${A[@]}" shell settings put global animator_duration_scale "$SLOW"
-pref --ei long_press_delay_ms $((300 * SLOW))
+pref --ei long_press_delay_ms $((300 * SLOW)) --ez grammar_check false
+"${A[@]}" shell settings put secure spell_checker_enabled 0   # no spelling or grammar marks under the demo text
 "${A[@]}" shell wm size "${SW_PX}x${SH_PX}"
 "${A[@]}" shell wm density $((420 * SW_PX / 1080))
 sleep 5
@@ -149,12 +155,12 @@ s = json.load(open(sys.argv[1])); n, first = int(sys.argv[2]), int(sys.argv[3])
 length = s[-1]["up"] - s[0]["down"]
 print(length, max(1, round((length - int(sys.argv[4]) - first) / max(1, n - 1))))' "$WORK/trace.jsonl.timing.json" "${#themes[@]}" "$THEME_FIRST_MS" "$THEME_LAST_MS")
 echo "performance: $length ms; a theme change every $every ms"
-echo "am broadcast -a dev.pboard.DEBUG --es themes $(IFS=,; echo "${themes[*]}") --ei themeEveryMs $((every * SLOW)) --ei themeDelayMs $((THEME_FIRST_MS * SLOW))" > "$WORK/arm.sh"
+echo "am broadcast -a dev.pboard.DEBUG --es themes $(IFS=,; echo "${themes[*]}") --ei themeEveryMs $((every * SLOW)) --ei themeDelayMs $((THEME_FIRST_MS * SLOW)) --ei themeFadeMs $THEME_FADE_MS" > "$WORK/arm.sh"
 "${A[@]}" push "$WORK/trace.jsonl" /data/local/tmp/demo_trace.jsonl >/dev/null
 "${A[@]}" push "$WORK/arm.sh" /data/local/tmp/demo_arm.sh >/dev/null
 
 echo "== record"
-"${A[@]}" shell "screenrecord --bit-rate 20000000 --time-limit 170 /sdcard/pboard_demo.mp4" &
+"${A[@]}" shell "screenrecord --bit-rate 20000000 --time-limit 175 /sdcard/pboard_demo.mp4" &
 REC=$!
 sleep 1.5
 "${A[@]}" shell am instrument -w -e mode replay -e trace /data/local/tmp/demo_trace.jsonl -e retries 0 -e settleMs $((1500 * SLOW)) -e stallSwipeMs 1000 \

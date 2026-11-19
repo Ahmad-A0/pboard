@@ -29,8 +29,8 @@ def main():
     ap.add_argument("--fps", type=float, default=30)
     ap.add_argument("--field-rows", type=int, required=True)
     ap.add_argument("--timing", required=True)
-    ap.add_argument("--lead", type=float, default=0.4)
-    ap.add_argument("--last", type=float, default=1.2)
+    ap.add_argument("--lead", type=float, default=0.3)
+    ap.add_argument("--last", type=float, default=1.0)
     a = ap.parse_args()
     w, h = a.width, a.height
     size = w * h * 3
